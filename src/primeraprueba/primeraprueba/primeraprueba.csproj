@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionBBDD.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
