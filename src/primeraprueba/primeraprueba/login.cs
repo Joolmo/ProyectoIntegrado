@@ -29,5 +29,26 @@ namespace primeraprueba
 			homeusuario.ShowDialog();
 			
 		}
+
+		private void btRegistrar_Click(object sender, EventArgs e)
+		{
+			Hide();
+			Registrarse Registro = new Registrarse();
+			Registro.ShowDialog();
+		}
+
+		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void linlContraseña_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Hide();
+			/*Registrarse reg = new Registrarse();
+			reg.ShowDialog();
+			*/
+			
+		}
 	}
 }

@@ -533,7 +533,7 @@
 			// 
 			// panel3
 			// 
-			this.panel3.BackColor = System.Drawing.Color.White;
+			this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
 			this.panel3.Controls.Add(this.label19);
 			this.panel3.Controls.Add(this.pictureBox19);
 			this.panel3.Controls.Add(this.btRegistro);
