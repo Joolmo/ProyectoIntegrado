@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recetas.Designer.cs">
+      <DependentUpon>Recetas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registrarse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recetas.resx">
+      <DependentUpon>Recetas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registrarse.resx">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </EmbeddedResource>
