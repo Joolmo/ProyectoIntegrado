@@ -51,6 +51,23 @@ namespace primeraprueba
 
         }
 
+        //Hace la consulta para contar los seguidores de cierto usuario
+        public int Cont_NumSeguidores()
+        {
+
+
+
+        }
+
+
+        //Hace la consulta para contar el numero de recetas de cierto usuario
+        public int Cont_NumRecetas()
+        {
+
+
+        }
+
+
 
 
 
