@@ -84,6 +84,7 @@
     <Compile Include="Registrarse.Designer.cs">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reto.cs" />
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
