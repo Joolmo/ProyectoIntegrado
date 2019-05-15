@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0A97F3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: navy;
+}
+
+body {
+    background-color: #0A97F3;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+}
+
+/* imagen del logo */
+#img {
+    margin-left: 40px;
+    margin-top: 5px;
+    border-radius: round;
+    width: 50px;
+    align-content: center;
+}
+
+#imgLetra{
+    margin-top: 10px;
+    width: 200px;
+}
+
+table {
+    width: 85%;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 5px solid white;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+td, td {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*para los iconos de las redes sociales*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+hr{
+    border-width: 2px;
+    display: block;
+    border-style: solid;
+    color: white;
+}
+
