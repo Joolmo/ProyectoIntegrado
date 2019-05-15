@@ -54,18 +54,18 @@ namespace primeraprueba
         //Hace la consulta para contar los seguidores de cierto usuario
         public int Cont_NumSeguidores()
         {
+			throw new NotImplementedException();
 
 
-
-        }
+		}
 
 
         //Hace la consulta para contar el numero de recetas de cierto usuario
         public int Cont_NumRecetas()
         {
+			throw new NotImplementedException();
 
-
-        }
+		}
 
         
 

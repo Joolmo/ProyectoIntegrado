@@ -79,6 +79,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receta.cs" />
+    <Compile Include="Recetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recetas.Designer.cs">
+      <DependentUpon>Recetas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registrarse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="Reto.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioInterfaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioInterfaz.Designer.cs">
+      <DependentUpon>UsuarioInterfaz.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,10 +114,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recetas.resx">
+      <DependentUpon>Recetas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registrarse.resx">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <EmbeddedResource Include="UsuarioInterfaz.resx">
+      <DependentUpon>UsuarioInterfaz.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

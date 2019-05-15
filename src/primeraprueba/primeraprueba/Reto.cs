@@ -43,9 +43,7 @@ namespace primeraprueba
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Reto> GetReto(int usuari)
         {
-
-
-
+			throw new NotImplementedException();
         }
 
 

@@ -28,24 +28,25 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.listBox1 = new System.Windows.Forms.ListBox();
+			this.ltbInicio = new System.Windows.Forms.ListBox();
 			this.lblNombre = new System.Windows.Forms.Label();
 			this.lblContraseña = new System.Windows.Forms.Label();
-			this.linlContraseña = new System.Windows.Forms.LinkLabel();
+			this.linkContraseña = new System.Windows.Forms.LinkLabel();
 			this.btIniciar = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.lblInicio = new System.Windows.Forms.Label();
+			this.txtNombre = new System.Windows.Forms.TextBox();
+			this.txtContra = new System.Windows.Forms.TextBox();
 			this.btRegistrar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// listBox1
+			// ltbInicio
 			// 
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.Location = new System.Drawing.Point(172, 72);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(423, 290);
-			this.listBox1.TabIndex = 0;
+			this.ltbInicio.FormattingEnabled = true;
+			this.ltbInicio.Location = new System.Drawing.Point(172, 72);
+			this.ltbInicio.Name = "ltbInicio";
+			this.ltbInicio.Size = new System.Drawing.Size(423, 290);
+			this.ltbInicio.TabIndex = 0;
+			this.ltbInicio.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
 			// 
 			// lblNombre
 			// 
@@ -65,15 +66,16 @@
 			this.lblContraseña.TabIndex = 2;
 			this.lblContraseña.Text = "Contraseña";
 			// 
-			// linlContraseña
+			// linkContraseña
 			// 
-			this.linlContraseña.AutoSize = true;
-			this.linlContraseña.Location = new System.Drawing.Point(208, 322);
-			this.linlContraseña.Name = "linlContraseña";
-			this.linlContraseña.Size = new System.Drawing.Size(104, 13);
-			this.linlContraseña.TabIndex = 3;
-			this.linlContraseña.TabStop = true;
-			this.linlContraseña.Text = "Contraseña olvidada";
+			this.linkContraseña.AutoSize = true;
+			this.linkContraseña.Location = new System.Drawing.Point(208, 322);
+			this.linkContraseña.Name = "linkContraseña";
+			this.linkContraseña.Size = new System.Drawing.Size(104, 13);
+			this.linkContraseña.TabIndex = 3;
+			this.linkContraseña.TabStop = true;
+			this.linkContraseña.Text = "Contraseña olvidada";
+			this.linkContraseña.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linlContraseña_LinkClicked);
 			// 
 			// btIniciar
 			// 
@@ -85,30 +87,30 @@
 			this.btIniciar.UseVisualStyleBackColor = true;
 			this.btIniciar.Click += new System.EventHandler(this.btIniciar_Click);
 			// 
-			// label3
+			// lblInicio
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(280, 89);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(184, 25);
-			this.label3.TabIndex = 5;
-			this.label3.Text = "INICIAR SESIÓN";
-			this.label3.Click += new System.EventHandler(this.label3_Click);
+			this.lblInicio.AutoSize = true;
+			this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblInicio.Location = new System.Drawing.Point(280, 89);
+			this.lblInicio.Name = "lblInicio";
+			this.lblInicio.Size = new System.Drawing.Size(184, 25);
+			this.lblInicio.TabIndex = 5;
+			this.lblInicio.Text = "INICIAR SESIÓN";
+			this.lblInicio.Click += new System.EventHandler(this.label3_Click);
 			// 
-			// textBox1
+			// txtNombre
 			// 
-			this.textBox1.Location = new System.Drawing.Point(349, 161);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 6;
+			this.txtNombre.Location = new System.Drawing.Point(349, 161);
+			this.txtNombre.Name = "txtNombre";
+			this.txtNombre.Size = new System.Drawing.Size(100, 20);
+			this.txtNombre.TabIndex = 6;
 			// 
-			// textBox2
+			// txtContra
 			// 
-			this.textBox2.Location = new System.Drawing.Point(349, 219);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 20);
-			this.textBox2.TabIndex = 7;
+			this.txtContra.Location = new System.Drawing.Point(349, 219);
+			this.txtContra.Name = "txtContra";
+			this.txtContra.Size = new System.Drawing.Size(100, 20);
+			this.txtContra.TabIndex = 7;
 			// 
 			// btRegistrar
 			// 
@@ -118,6 +120,7 @@
 			this.btRegistrar.TabIndex = 8;
 			this.btRegistrar.Text = "Registrar";
 			this.btRegistrar.UseVisualStyleBackColor = true;
+			this.btRegistrar.Click += new System.EventHandler(this.btRegistrar_Click);
 			// 
 			// login
 			// 
@@ -125,14 +128,14 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.btRegistrar);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.label3);
+			this.Controls.Add(this.txtContra);
+			this.Controls.Add(this.txtNombre);
+			this.Controls.Add(this.lblInicio);
 			this.Controls.Add(this.btIniciar);
-			this.Controls.Add(this.linlContraseña);
+			this.Controls.Add(this.linkContraseña);
 			this.Controls.Add(this.lblContraseña);
 			this.Controls.Add(this.lblNombre);
-			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.ltbInicio);
 			this.Name = "login";
 			this.Text = "login";
 			this.ResumeLayout(false);
@@ -142,14 +145,14 @@
 
 		#endregion
 
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.ListBox ltbInicio;
 		private System.Windows.Forms.Label lblNombre;
 		private System.Windows.Forms.Label lblContraseña;
-		private System.Windows.Forms.LinkLabel linlContraseña;
+		private System.Windows.Forms.LinkLabel linkContraseña;
 		private System.Windows.Forms.Button btIniciar;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.Label lblInicio;
+		private System.Windows.Forms.TextBox txtNombre;
+		private System.Windows.Forms.TextBox txtContra;
 		private System.Windows.Forms.Button btRegistrar;
 	}
 }
