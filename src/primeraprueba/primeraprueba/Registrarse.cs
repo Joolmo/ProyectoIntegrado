@@ -17,30 +17,11 @@ namespace primeraprueba
 			InitializeComponent();
 		}
 
-		private void label2_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void textBox5_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
-		private void textBox6_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void Registrarse_Load(object sender, EventArgs e)
-		{
-
-		}
+		private void label2_Click(object sender, EventArgs e){}
+		private void textBox5_TextChanged(object sender, EventArgs e){}
+		private void textBox6_TextChanged(object sender, EventArgs e){}
+		private void pictureBox2_Click(object sender, EventArgs e){}
+		private void Registrarse_Load(object sender, EventArgs e){}
 
 		private void button1_Click(object sender, EventArgs e)
 		{

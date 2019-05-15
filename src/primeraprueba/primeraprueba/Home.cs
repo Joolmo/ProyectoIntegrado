@@ -17,15 +17,11 @@ namespace primeraprueba
 			InitializeComponent();
 		}
 
-		private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-		{
+		private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e){}
+		private void progressBar1_Click(object sender, EventArgs e){}
+		private void label12_Click(object sender, EventArgs e) { }
+		private void lblUsuDes4_Click(object sender, EventArgs e) { }
 
-		}
-
-		private void progressBar1_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void btSesion_Click(object sender, EventArgs e)
 		{
@@ -42,5 +38,7 @@ namespace primeraprueba
 			Registrarse registro = new Registrarse();
 			registro.ShowDialog();
 		}
+
+		
 	}
 }

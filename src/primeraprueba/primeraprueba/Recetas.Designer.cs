@@ -28,90 +28,131 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.pictureBox10 = new System.Windows.Forms.PictureBox();
-			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.pnlCabecera = new System.Windows.Forms.Panel();
+			this.ptbUsuario = new System.Windows.Forms.PictureBox();
+			this.ptbIcon = new System.Windows.Forms.PictureBox();
+			this.ptbFoto = new System.Windows.Forms.PictureBox();
+			this.pnlComentarios = new System.Windows.Forms.Panel();
+			this.lblComentario = new System.Windows.Forms.Label();
+			this.lblNombreUsu = new System.Windows.Forms.Label();
+			this.ptbComentario = new System.Windows.Forms.PictureBox();
+			this.btENVIAR = new System.Windows.Forms.Button();
+			this.txtComentario = new System.Windows.Forms.TextBox();
+			this.tbcRecetas = new System.Windows.Forms.TabControl();
 			this.tbpIngredientes = new System.Windows.Forms.TabPage();
 			this.tbpPasos = new System.Windows.Forms.TabPage();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.lblNombreUsu = new System.Windows.Forms.Label();
-			this.lblComentario = new System.Windows.Forms.Label();
 			this.lblRetoRecetas = new System.Windows.Forms.Label();
 			this.lblnomusu = new System.Windows.Forms.Label();
-			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.panel2.SuspendLayout();
-			this.tabControl1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.pnlCabecera.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbFoto)).BeginInit();
+			this.pnlComentarios.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ptbComentario)).BeginInit();
+			this.tbcRecetas.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// panel1
+			// pnlCabecera
 			// 
-			this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-			this.panel1.Controls.Add(this.pictureBox7);
-			this.panel1.Controls.Add(this.pictureBox10);
-			this.panel1.Location = new System.Drawing.Point(-1, -2);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(803, 94);
-			this.panel1.TabIndex = 0;
+			this.pnlCabecera.BackColor = System.Drawing.Color.DodgerBlue;
+			this.pnlCabecera.Controls.Add(this.ptbUsuario);
+			this.pnlCabecera.Controls.Add(this.ptbIcon);
+			this.pnlCabecera.Location = new System.Drawing.Point(-1, -2);
+			this.pnlCabecera.Name = "pnlCabecera";
+			this.pnlCabecera.Size = new System.Drawing.Size(803, 94);
+			this.pnlCabecera.TabIndex = 0;
 			// 
-			// pictureBox10
+			// ptbUsuario
 			// 
-			this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.pictureBox10.Location = new System.Drawing.Point(13, 14);
-			this.pictureBox10.Name = "pictureBox10";
-			this.pictureBox10.Size = new System.Drawing.Size(63, 48);
-			this.pictureBox10.TabIndex = 14;
-			this.pictureBox10.TabStop = false;
+			this.ptbUsuario.BackColor = System.Drawing.Color.White;
+			this.ptbUsuario.Location = new System.Drawing.Point(698, 10);
+			this.ptbUsuario.Name = "ptbUsuario";
+			this.ptbUsuario.Size = new System.Drawing.Size(91, 75);
+			this.ptbUsuario.TabIndex = 14;
+			this.ptbUsuario.TabStop = false;
 			// 
-			// pictureBox7
+			// ptbIcon
 			// 
-			this.pictureBox7.BackColor = System.Drawing.Color.White;
-			this.pictureBox7.Location = new System.Drawing.Point(698, 10);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(91, 75);
-			this.pictureBox7.TabIndex = 14;
-			this.pictureBox7.TabStop = false;
+			this.ptbIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.ptbIcon.Location = new System.Drawing.Point(13, 14);
+			this.ptbIcon.Name = "ptbIcon";
+			this.ptbIcon.Size = new System.Drawing.Size(63, 48);
+			this.ptbIcon.TabIndex = 14;
+			this.ptbIcon.TabStop = false;
 			// 
-			// pictureBox1
+			// ptbFoto
 			// 
-			this.pictureBox1.Location = new System.Drawing.Point(12, 113);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(91, 75);
-			this.pictureBox1.TabIndex = 12;
-			this.pictureBox1.TabStop = false;
+			this.ptbFoto.Location = new System.Drawing.Point(12, 113);
+			this.ptbFoto.Name = "ptbFoto";
+			this.ptbFoto.Size = new System.Drawing.Size(91, 75);
+			this.ptbFoto.TabIndex = 12;
+			this.ptbFoto.TabStop = false;
 			// 
-			// panel2
+			// pnlComentarios
 			// 
-			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Controls.Add(this.lblComentario);
-			this.panel2.Controls.Add(this.lblNombreUsu);
-			this.panel2.Controls.Add(this.pictureBox2);
-			this.panel2.Controls.Add(this.button1);
-			this.panel2.Controls.Add(this.textBox1);
-			this.panel2.Location = new System.Drawing.Point(462, 138);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(288, 110);
-			this.panel2.TabIndex = 13;
+			this.pnlComentarios.BackColor = System.Drawing.Color.White;
+			this.pnlComentarios.Controls.Add(this.lblComentario);
+			this.pnlComentarios.Controls.Add(this.lblNombreUsu);
+			this.pnlComentarios.Controls.Add(this.ptbComentario);
+			this.pnlComentarios.Controls.Add(this.btENVIAR);
+			this.pnlComentarios.Controls.Add(this.txtComentario);
+			this.pnlComentarios.Location = new System.Drawing.Point(462, 138);
+			this.pnlComentarios.Name = "pnlComentarios";
+			this.pnlComentarios.Size = new System.Drawing.Size(288, 110);
+			this.pnlComentarios.TabIndex = 13;
 			// 
-			// tabControl1
+			// lblComentario
 			// 
-			this.tabControl1.Controls.Add(this.tbpIngredientes);
-			this.tabControl1.Controls.Add(this.tbpPasos);
-			this.tabControl1.Location = new System.Drawing.Point(462, 254);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(288, 184);
-			this.tabControl1.TabIndex = 14;
+			this.lblComentario.AutoSize = true;
+			this.lblComentario.Location = new System.Drawing.Point(96, 36);
+			this.lblComentario.Name = "lblComentario";
+			this.lblComentario.Size = new System.Drawing.Size(60, 13);
+			this.lblComentario.TabIndex = 17;
+			this.lblComentario.Text = "Comentario";
+			// 
+			// lblNombreUsu
+			// 
+			this.lblNombreUsu.AutoSize = true;
+			this.lblNombreUsu.Location = new System.Drawing.Point(93, 13);
+			this.lblNombreUsu.Name = "lblNombreUsu";
+			this.lblNombreUsu.Size = new System.Drawing.Size(83, 13);
+			this.lblNombreUsu.TabIndex = 16;
+			this.lblNombreUsu.Text = "Nombre Usuario";
+			// 
+			// ptbComentario
+			// 
+			this.ptbComentario.Location = new System.Drawing.Point(11, 13);
+			this.ptbComentario.Name = "ptbComentario";
+			this.ptbComentario.Size = new System.Drawing.Size(65, 59);
+			this.ptbComentario.TabIndex = 15;
+			this.ptbComentario.TabStop = false;
+			this.ptbComentario.Click += new System.EventHandler(this.pictureBox2_Click);
+			// 
+			// btENVIAR
+			// 
+			this.btENVIAR.Location = new System.Drawing.Point(210, 81);
+			this.btENVIAR.Name = "btENVIAR";
+			this.btENVIAR.Size = new System.Drawing.Size(75, 23);
+			this.btENVIAR.TabIndex = 1;
+			this.btENVIAR.Text = "ENVIAR";
+			this.btENVIAR.UseVisualStyleBackColor = true;
+			// 
+			// txtComentario
+			// 
+			this.txtComentario.Location = new System.Drawing.Point(0, 84);
+			this.txtComentario.Name = "txtComentario";
+			this.txtComentario.Size = new System.Drawing.Size(204, 20);
+			this.txtComentario.TabIndex = 0;
+			// 
+			// tbcRecetas
+			// 
+			this.tbcRecetas.Controls.Add(this.tbpIngredientes);
+			this.tbcRecetas.Controls.Add(this.tbpPasos);
+			this.tbcRecetas.Location = new System.Drawing.Point(462, 254);
+			this.tbcRecetas.Name = "tbcRecetas";
+			this.tbcRecetas.SelectedIndex = 0;
+			this.tbcRecetas.Size = new System.Drawing.Size(288, 184);
+			this.tbcRecetas.TabIndex = 14;
 			// 
 			// tbpIngredientes
 			// 
@@ -133,49 +174,6 @@
 			this.tbpPasos.Text = "Pasos";
 			this.tbpPasos.UseVisualStyleBackColor = true;
 			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(0, 84);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(204, 20);
-			this.textBox1.TabIndex = 0;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(210, 81);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Location = new System.Drawing.Point(11, 13);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(65, 59);
-			this.pictureBox2.TabIndex = 15;
-			this.pictureBox2.TabStop = false;
-			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-			// 
-			// lblNombreUsu
-			// 
-			this.lblNombreUsu.AutoSize = true;
-			this.lblNombreUsu.Location = new System.Drawing.Point(93, 13);
-			this.lblNombreUsu.Name = "lblNombreUsu";
-			this.lblNombreUsu.Size = new System.Drawing.Size(83, 13);
-			this.lblNombreUsu.TabIndex = 16;
-			this.lblNombreUsu.Text = "Nombre Usuario";
-			// 
-			// lblComentario
-			// 
-			this.lblComentario.AutoSize = true;
-			this.lblComentario.Location = new System.Drawing.Point(96, 36);
-			this.lblComentario.Name = "lblComentario";
-			this.lblComentario.Size = new System.Drawing.Size(60, 13);
-			this.lblComentario.TabIndex = 17;
-			this.lblComentario.Text = "Comentario";
-			// 
 			// lblRetoRecetas
 			// 
 			this.lblRetoRecetas.AutoSize = true;
@@ -194,11 +192,6 @@
 			this.lblnomusu.TabIndex = 16;
 			this.lblnomusu.Text = "Nombre Usuario";
 			// 
-			// contextMenuStrip1
-			// 
-			this.contextMenuStrip1.Name = "contextMenuStrip1";
-			this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
-			// 
 			// Recetas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,20 +199,20 @@
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.lblnomusu);
 			this.Controls.Add(this.lblRetoRecetas);
-			this.Controls.Add(this.tabControl1);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.tbcRecetas);
+			this.Controls.Add(this.pnlComentarios);
+			this.Controls.Add(this.ptbFoto);
+			this.Controls.Add(this.pnlCabecera);
 			this.Name = "Recetas";
 			this.Text = "Recetas";
-			this.panel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			this.tabControl1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			this.pnlCabecera.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbFoto)).EndInit();
+			this.pnlComentarios.ResumeLayout(false);
+			this.pnlComentarios.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ptbComentario)).EndInit();
+			this.tbcRecetas.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -227,21 +220,20 @@
 
 		#endregion
 
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.PictureBox pictureBox10;
-		private System.Windows.Forms.PictureBox pictureBox7;
-		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TabControl tabControl1;
+		private System.Windows.Forms.Panel pnlCabecera;
+		private System.Windows.Forms.PictureBox ptbIcon;
+		private System.Windows.Forms.PictureBox ptbUsuario;
+		private System.Windows.Forms.PictureBox ptbFoto;
+		private System.Windows.Forms.Panel pnlComentarios;
+		private System.Windows.Forms.Button btENVIAR;
+		private System.Windows.Forms.TextBox txtComentario;
+		private System.Windows.Forms.TabControl tbcRecetas;
 		private System.Windows.Forms.TabPage tbpIngredientes;
 		private System.Windows.Forms.TabPage tbpPasos;
-		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.PictureBox ptbComentario;
 		private System.Windows.Forms.Label lblComentario;
 		private System.Windows.Forms.Label lblNombreUsu;
 		private System.Windows.Forms.Label lblRetoRecetas;
 		private System.Windows.Forms.Label lblnomusu;
-		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
 	}
 }
