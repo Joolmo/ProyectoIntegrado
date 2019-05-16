@@ -86,6 +86,15 @@ namespace primeraprueba
             return (conexion.State.ToString() == "Open");
         }
 
+        /// <summary>
+        /// La función consulta devuelve el resultado de una consulta SQL SELECT
+        /// </summary> 
+        /// <param name="consulta">La consulta a realizar</param>
+        /// <returns>
+        ///     Si no hay ninguna coincidencia devulece un list vacio.
+        ///     Si todo funciona bien devuelve un list de filas, que contiene un list de columnas.
+        ///     Si falla devulve null y añade el error a LastError
+        /// </returns>
         public List<List<object>> Query(string consulta)
         {
             try
@@ -116,6 +125,14 @@ namespace primeraprueba
             }
         }
 
+        /// <summary>
+        /// La funcion realiza INSERTS, UPDATES y cualquier tipo de modificación que no sea un SELECT
+        /// </summary>
+        /// <param name="consulta"></param>
+        /// <returns>
+        ///     Devuelve true si se ha ejecutado correctamente y false si no,
+        ///     en el caso de haber algun error lo pushea a LastError
+        /// </returns>
         public bool NonQuery(string consulta)
         {
             try
