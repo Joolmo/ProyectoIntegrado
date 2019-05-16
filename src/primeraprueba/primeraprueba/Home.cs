@@ -38,7 +38,5 @@ namespace primeraprueba
 			Registrarse registro = new Registrarse();
 			registro.ShowDialog();
 		}
-
-		
-	}
+    }
 }
