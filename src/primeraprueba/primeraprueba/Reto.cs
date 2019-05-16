@@ -14,14 +14,14 @@ namespace primeraprueba
         private DateTime fecha_final;
         private int idreto;
         private string descripcion;
-    
-        
+
+
         public string Nombre { get { return nombre; } }
         public int ID_Usuario { get { return id_usuario; } }
         public DateTime Fecha_Inicial { get { return fecha_inicial; } }
         public DateTime Fecha_Final { get { return fecha_final; } }
         public int IdReto { get { return idreto; } }
-        public string Descripcion { get { return descripcion; }  set { descripcion = value; } }
+        public string Descripcion { get { return descripcion; } set { descripcion = value; } }
         public ConexionBBDD bbdd = ConexionBBDD.Instanciar();
 
 
@@ -36,37 +36,37 @@ namespace primeraprueba
 
         public Reto()
         {
-           
+
         }
 
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Reto> GetReto(int user)
         {
             List<Reto> List_Reto = new List<Reto>();
-            
+
             string consulta = string.Format("select * from retos where ID_Usuario_P={0}", user);
-            List<List<object>> lista = ConexionBBDD.Query(consulta);
+            List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
             foreach (List<object> l1 in lista)
             {
-                    Reto r = new Reto(l1[1], l1[2],l1[3],l1[4],l1[5]);
-                    List_Reto.Add(r);
+                Reto r = new Reto((int)l1[1], (string)l1[2], (string)l1[3], (DateTime)l1[4], (DateTime)l1[5]);
+                List_Reto.Add(r);
             }
             return List_Reto;
         }
-           
+
 
         public static bool CrearReto(Reto ret)
         {
-            
+
             string consulta = string.Format("insert into reto values({0},{1},{2},{3},{4})",
                 ret.id_usuario, ret.nombre, ret.descripcion, ret.fecha_inicial, ret.fecha_final);
-            if (ConexionBBDD.NonQuery(consulta)) 
+            if (ConexionBBDD.Instanciar().NonQuery(consulta))
             {
                 return true;
             }
             else
             {
-                string error = ConexionBBDD.LastError;
+                string error = ConexionBBDD.Instanciar().LastError;
                 return false;
             }
 
@@ -75,14 +75,14 @@ namespace primeraprueba
         public static bool BorrarReto(int id)
         {
             string consulta = string.Format("Delete from reto where ID_Reto={0}", id);
-            
-            if (ConexionBBDD.NonQuery(consulta)) 
+
+            if (ConexionBBDD.Instanciar().NonQuery(consulta))
             {
                 return true;
             }
             else
             {
-                string error = ConexionBBDD.LastError;
+                string error = ConexionBBDD.Instanciar().LastError;
                 return false;
             }
 
