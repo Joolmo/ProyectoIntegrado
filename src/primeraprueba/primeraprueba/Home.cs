@@ -38,5 +38,15 @@ namespace primeraprueba
 			Registrarse registro = new Registrarse();
 			registro.ShowDialog();
 		}
-    }
+
+		private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+
+		}
+
+		private void pnlCabecera_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }
