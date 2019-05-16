@@ -58,7 +58,7 @@ namespace primeraprueba
         public static bool CrearReto(Reto ret)
         {
 
-            string consulta = string.Format("insert into reto values({0},{1},{2},{3},{4})",
+            string consulta = string.Format("insert into reto values(null,'{0}','{1}','{2}','{3}','{4}')",
                 ret.id_usuario, ret.nombre, ret.descripcion, ret.fecha_inicial, ret.fecha_final);
             if (ConexionBBDD.Instanciar().NonQuery(consulta))
             {
