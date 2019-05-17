@@ -44,9 +44,5 @@ namespace primeraprueba
 
 		}
 
-		private void pnlCabecera_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-	}
+    }
 }
