@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControlesPersonalizados
 {
-    public partial class UserControl1: UserControl
+    public partial class AccesoURR: UserControl
     {
-        public UserControl1()
+        public AccesoURR()
         {
             InitializeComponent();
         }

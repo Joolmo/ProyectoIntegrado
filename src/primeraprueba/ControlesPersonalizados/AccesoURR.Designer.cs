@@ -1,6 +1,6 @@
 ﻿namespace ControlesPersonalizados
 {
-    partial class UserControl1
+    partial class AccesoURR
     {
         /// <summary>
         /// Variable del diseñador necesaria.
