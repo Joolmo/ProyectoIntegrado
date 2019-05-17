@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `Nombre_Usuario` varchar(25) NOT NULL,
   `descripcion` varchar(50) DEFAULT NULL,
   `Correo` varchar(35) NOT NULL,
-  `Contraseña` varchar(25) NOT NULL,
+  `Contraseña` VARCHAR(70) NOT NULL,
   `NºReceta` int(11) NOT NULL,
   `NºSeguidor` int(11) NOT NULL,
   PRIMARY KEY (`ID_Usuario`)

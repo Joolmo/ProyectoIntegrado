@@ -39,6 +39,18 @@ namespace primeraprueba
 
         }
 
+        public Reto(List<object> listaReto)
+        {
+            idreto = (int)listaReto[0];
+            id_usuario = (int)listaReto[1];
+            idreto = (int)listaReto[0];
+            nombre = (string)listaReto[2];
+            descripcion = (string)listaReto[3];
+            fecha_inicial = (DateTime)listaReto[4];
+            fecha_final = (DateTime)listaReto[5];
+
+        }
+
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Reto> GetReto(int user)
         {
