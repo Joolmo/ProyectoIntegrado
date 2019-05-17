@@ -57,6 +57,24 @@ namespace primeraprueba
             set { idUsuario = value;}
         }
         #endregion
+        public Receta()
+        {
+
+
+        }
+
+        public Receta(List<object> listaReceta)
+        {
+            idReceta = (int)listaReceta[0];
+            IdUsuario = (int)listaReceta[1];
+            nombre = (string)listaReceta[2];
+            pasos = (string)listaReceta[3];
+            ingredientes = (List<string>)listaReceta[4];
+            foto = (Image)listaReceta[5];
+            tags = (List<string>)listaReceta[6];
+
+
+        }
 
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Receta> GetReceta(int user)

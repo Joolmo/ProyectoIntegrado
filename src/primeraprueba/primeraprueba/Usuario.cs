@@ -14,6 +14,8 @@ namespace primeraprueba
         private string contraseña;
         private string correo;
         private string descripcion;
+        private int numSeguidores;
+        private int numRecetas;
 
         static Usuario usuarioActual = new Usuario();
 
@@ -22,6 +24,8 @@ namespace primeraprueba
         public string Contraseña { get { return contraseña; } set { contraseña = value; } }
         public string Correo { get { return correo; } }
         public string Descripcion { get { return descripcion;  } set { descripcion = value; } }
+        public int NumeroSeguidores { get { return numSeguidores; } }
+        public int NumeroRecetas { get { return numRecetas; } }
 
         public Usuario(string nomb, string paswd, string mail)
         {
@@ -33,6 +37,17 @@ namespace primeraprueba
         public Usuario()
         {
 
+        }
+
+        public Usuario(List<object> listaUsuario)
+        {
+                id_usuario = (int)listaUsuario[0];
+                nombre = (string)listaUsuario[1];
+                descripcion = (string)listaUsuario[2];
+                correo = (string)listaUsuario[3];
+                contraseña = ConexionBBDD.EncriptarContraseña((string)listaUsuario[4]);
+                numRecetas = (int)listaUsuario[5];
+                numSeguidores = (int)listaUsuario[6];
         }
 
 
