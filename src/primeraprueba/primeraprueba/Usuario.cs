@@ -52,24 +52,17 @@ namespace primeraprueba
         {
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
                 "AND contraseña ='{1}'", nom, passwd);
+            Usuario user = new Usuario();
 
-            MySqlCommand comando = new MySqlCommand(consulta, conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-
-            if (reader.HasRows)
+            List <List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+            foreach (List<object> l1 in lista)
             {
-                usuarioActual.nombre = reader.GetString(1);
-                usuarioActual.correo = reader.GetString(3);
-                usuarioActual.contraseña = reader.GetString(4);
-                reader.Close();
+                user.nombre = (string)l1[1];
+                user.correo = (string)l1[3];
+                user.contraseña = (string)l1[4];
+            }
+            return user;
 
-                return usuarioActual;
-            }
-            else
-            {
-                reader.Close();
-                return null;
-            }
         }
 
         public Usuario LogOut(MySqlConnection conexion, string nom, string passwd)
