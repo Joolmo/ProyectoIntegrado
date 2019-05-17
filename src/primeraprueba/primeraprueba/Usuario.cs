@@ -39,8 +39,9 @@ namespace primeraprueba
         //Funcionalidad para insertar un usuario en la base de datos;
         public void RegistrarUsuario(MySqlConnection conexion, Usuario u)
         {
+            string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
             string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, descripcion, Correo, Contraseña, NºReceta, NºSeguidor) " +
-                "VALUES('{0}','{1}','{2}','{3}',0,0)", u.Nombre, u.Descripcion, u.Correo, u.Contraseña);
+                "VALUES('{0}','{1}','{2}','{3}',0,0)", u.Nombre, u.Descripcion, u.Correo, passhash);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
 
@@ -50,8 +51,9 @@ namespace primeraprueba
 
         public Usuario LogIn(MySqlConnection conexion, string nom, string passwd)
         {
+            string passhash = ConexionBBDD.EncriptarContraseña(passwd);
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
-                "AND contraseña ='{1}'", nom, passwd);
+                "AND contraseña ='{1}'", nom, passhash);
             Usuario user = new Usuario();
 
             List <List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);

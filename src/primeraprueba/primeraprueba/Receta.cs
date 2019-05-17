@@ -82,7 +82,7 @@ namespace primeraprueba
 
         public static bool CrearReceta(Receta recet)
         {
-            byte[] buffer = ConexionBBDD.Instanciar().FormImageToByte(recet.foto);
+            byte[] buffer = ConexionBBDD.FormImageToByte(recet.foto);
 
             string consulta = string.Format("insert into recetas values(null,'{0}','{1}','{2}',{3},'{4}')", 
                 recet.IdUsuario, recet.Nombre, recet.pasos, buffer, recet.Tags);

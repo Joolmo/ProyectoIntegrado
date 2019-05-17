@@ -154,7 +154,7 @@ namespace primeraprueba
             }
         }
 
-        public byte[] FormImageToByte(Image foto)
+        public static byte[] FormImageToByte(Image foto)
         {
             byte[] byteArr = new byte[0];
             using (MemoryStream stream = new MemoryStream())
@@ -169,7 +169,7 @@ namespace primeraprueba
         }
 
         //La encriptacion de la contraseña, puede que no este completa
-        public static string getHash(string password)
+        public static string EncriptarContraseña(string password)
         {
             using (var sha256 = SHA256.Create())
             { 
