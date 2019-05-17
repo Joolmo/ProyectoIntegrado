@@ -82,7 +82,7 @@ namespace primeraprueba
 
         public static bool CrearReceta(Receta recet)
         {
-            byte[] buffer = ImageToByte(recet.Foto);
+            byte[] buffer = ConexionBBDD.Instanciar().FormImageToByte(recet.foto);
 
             string consulta = string.Format("insert into recetas values(null,'{0}','{1}','{2}',{3},'{4}')", 
                 recet.IdUsuario, recet.Nombre, recet.pasos, buffer, recet.Tags);
@@ -113,22 +113,5 @@ namespace primeraprueba
             }
 
         }
-
-       private static byte[] ImageToByte(Image img)
-        {
-            byte[] byteArr = new byte[0];
-            using (MemoryStream stream = new MemoryStream())
-            {
-                img.Save(stream, ImageFormat.Png);
-                stream.Close();
-
-                byteArr = stream.ToArray();
-            }
-            return byteArr;
-
-
-        }
-
-
     }
 }

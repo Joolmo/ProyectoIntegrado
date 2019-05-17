@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using Dispenser;
+using System.Security.Cryptography;
 namespace primeraprueba
 {
     class ConexionBBDD
@@ -147,6 +151,30 @@ namespace primeraprueba
             {
                 errores.Push(ex.Message);
                 return false;
+            }
+        }
+
+        public byte[] FormImageToByte(Image foto)
+        {
+            byte[] byteArr = new byte[0];
+            using (MemoryStream stream = new MemoryStream())
+            {
+                foto.Save(stream, ImageFormat.Png);
+                stream.Close();
+
+                byteArr = stream.ToArray();
+            }
+            return byteArr;
+
+        }
+
+        //La encriptacion de la contraseña, puede que no este completa
+        public static string getHash(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            { 
+                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password)); 
+                return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
     }
