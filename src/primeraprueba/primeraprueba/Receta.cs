@@ -80,18 +80,12 @@ namespace primeraprueba
         static List<Receta> GetReceta(int user)
         {
             List<Receta> List_Receta = new List<Receta>();
-
+            Receta r;
             string consulta = string.Format("select * from recetas where ID_Usuario_P={0}", user);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
             foreach (List<object> l1 in lista)
             {
-                Receta r = new Receta();
-                r.IdUsuario = (int) l1[1];
-                r.Nombre = (string) l1[2];
-                r.Pasos = (string) l1[3];
-                r.Indredientes = (List<string>)l1[4];
-                r.Foto =(Image) l1[5];
-                r.Tags = (List<string>)l1[6];
+                r = new Receta(l1);
                 List_Receta.Add(r);
             }
             return List_Receta;

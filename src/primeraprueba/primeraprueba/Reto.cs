@@ -54,13 +54,14 @@ namespace primeraprueba
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Reto> GetReto(int user)
         {
+            Reto r;
             List<Reto> List_Reto = new List<Reto>();
 
             string consulta = string.Format("select * from retos where ID_Usuario_P={0}", user);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
             foreach (List<object> l1 in lista)
             {
-                Reto r = new Reto((int)l1[1], (string)l1[2], (string)l1[3], (DateTime)l1[4], (DateTime)l1[5]);
+                r = new Reto(l1);
                 List_Reto.Add(r);
             }
             return List_Reto;

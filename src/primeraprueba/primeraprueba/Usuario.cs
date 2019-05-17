@@ -69,16 +69,8 @@ namespace primeraprueba
             string passhash = ConexionBBDD.EncriptarContraseña(passwd);
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
                 "AND contraseña ='{1}'", nom, passhash);
-            Usuario user = new Usuario();
 
-            List <List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
-            foreach (List<object> l1 in lista)
-            {
-                user.nombre = (string)l1[1];
-                user.correo = (string)l1[3];
-                user.contraseña = (string)l1[4];
-            }
-            return user;
+            return new Usuario(ConexionBBDD.Instanciar().Query(consulta)[0]);
 
         }
 
