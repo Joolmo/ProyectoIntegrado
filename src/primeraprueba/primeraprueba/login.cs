@@ -40,9 +40,9 @@ namespace primeraprueba
 		private void linlContraseña_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
 			Hide();
-			/*Registrarse reg = new Registrarse();
+			Contrasenya reg = new Contrasenya();
 			reg.ShowDialog();
-			*/
+			
 			
 		}
 	}

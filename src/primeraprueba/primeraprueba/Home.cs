@@ -22,14 +22,11 @@ namespace primeraprueba
 		private void label12_Click(object sender, EventArgs e) { }
 		private void lblUsuDes4_Click(object sender, EventArgs e) { }
 
-
 		private void btSesion_Click(object sender, EventArgs e)
 		{
 			Hide();
 			login log = new login();
 			log.ShowDialog();
-			
-			
 		}
 
 		private void btRegistro_Click(object sender, EventArgs e)
@@ -38,11 +35,5 @@ namespace primeraprueba
 			Registrarse registro = new Registrarse();
 			registro.ShowDialog();
 		}
-
-		private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-		{
-
-		}
-
-    }
+	}
 }
