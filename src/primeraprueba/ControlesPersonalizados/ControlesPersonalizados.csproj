@@ -48,22 +48,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserControl1.cs">
+    <Compile Include="AccesoURRh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="AccesoURRh.Designer.cs">
+      <DependentUpon>AccesoURRh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoURRv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccesoURRv.Designer.cs">
+      <DependentUpon>AccesoURRv.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <EmbeddedResource Include="AccesoURRh.resx">
+      <DependentUpon>AccesoURRh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccesoURRv.resx">
+      <DependentUpon>AccesoURRv.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
