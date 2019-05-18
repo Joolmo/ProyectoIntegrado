@@ -37,37 +37,10 @@
             this.btRegistro = new System.Windows.Forms.Button();
             this.btSesion = new System.Windows.Forms.Button();
             this.pnlAmarillo = new System.Windows.Forms.Panel();
-            this.pnlCabecera = new System.Windows.Forms.Panel();
             this.ptbApp = new System.Windows.Forms.PictureBox();
             this.ptbIcon = new System.Windows.Forms.PictureBox();
             this.tbcHome = new System.Windows.Forms.TabControl();
-            this.tbpRecetas = new System.Windows.Forms.TabPage();
             this.tbpUsuarios = new System.Windows.Forms.TabPage();
-            this.tbpRetos = new System.Windows.Forms.TabPage();
-            this.ptbNom1 = new System.Windows.Forms.PictureBox();
-            this.ptbNom4 = new System.Windows.Forms.PictureBox();
-            this.ptbNom5 = new System.Windows.Forms.PictureBox();
-            this.ptbNom2 = new System.Windows.Forms.PictureBox();
-            this.ptbNom6 = new System.Windows.Forms.PictureBox();
-            this.ptbNom3 = new System.Windows.Forms.PictureBox();
-            this.lblNom1 = new System.Windows.Forms.Label();
-            this.lblNom3 = new System.Windows.Forms.Label();
-            this.lblNom4 = new System.Windows.Forms.Label();
-            this.lblNom5 = new System.Windows.Forms.Label();
-            this.lblNom6 = new System.Windows.Forms.Label();
-            this.lblNom2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.ptbReto6 = new System.Windows.Forms.PictureBox();
-            this.ptbReto3 = new System.Windows.Forms.PictureBox();
-            this.ptbReto5 = new System.Windows.Forms.PictureBox();
-            this.ptbReto2 = new System.Windows.Forms.PictureBox();
-            this.ptbReto4 = new System.Windows.Forms.PictureBox();
-            this.ptbReto1 = new System.Windows.Forms.PictureBox();
             this.lblUsuario6 = new System.Windows.Forms.Label();
             this.lblUsuario5 = new System.Windows.Forms.Label();
             this.lblUsuario4 = new System.Windows.Forms.Label();
@@ -80,39 +53,67 @@
             this.ptbUsuario2 = new System.Windows.Forms.PictureBox();
             this.ptbUsuario4 = new System.Windows.Forms.PictureBox();
             this.ptbUsuario1 = new System.Windows.Forms.PictureBox();
+            this.tbpRetos = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.ptbReto6 = new System.Windows.Forms.PictureBox();
+            this.ptbReto3 = new System.Windows.Forms.PictureBox();
+            this.ptbReto5 = new System.Windows.Forms.PictureBox();
+            this.ptbReto2 = new System.Windows.Forms.PictureBox();
+            this.ptbReto4 = new System.Windows.Forms.PictureBox();
+            this.ptbReto1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tbpRecetas = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.accesoURRv1 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv2 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv3 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv4 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv5 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv6 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv7 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv8 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv9 = new ControlesPersonalizados.AccesoURRv();
             this.menuStrip1.SuspendLayout();
-            this.pnlCabecera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
             this.tbcHome.SuspendLayout();
-            this.tbpRecetas.SuspendLayout();
             this.tbpUsuarios.SuspendLayout();
-            this.tbpRetos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario1)).BeginInit();
+            this.tbpRetos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.tbpRecetas.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btEspanyol
             // 
             this.btEspanyol.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btEspanyol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEspanyol.Location = new System.Drawing.Point(1086, 124);
+            this.btEspanyol.Location = new System.Drawing.Point(187, 3);
             this.btEspanyol.Name = "btEspanyol";
             this.btEspanyol.Size = new System.Drawing.Size(86, 29);
             this.btEspanyol.TabIndex = 25;
@@ -123,7 +124,7 @@
             // 
             this.btIngles.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btIngles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btIngles.Location = new System.Drawing.Point(994, 124);
+            this.btIngles.Location = new System.Drawing.Point(95, 3);
             this.btIngles.Name = "btIngles";
             this.btIngles.Size = new System.Drawing.Size(86, 29);
             this.btIngles.TabIndex = 26;
@@ -132,16 +133,18 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(272, 124);
+            this.txtDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDireccion.Location = new System.Drawing.Point(285, 3);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(622, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(855, 20);
             this.txtDireccion.TabIndex = 29;
             // 
             // lblDirección
             // 
+            this.lblDirección.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDirección.AutoSize = true;
             this.lblDirección.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDirección.Location = new System.Drawing.Point(187, 124);
+            this.lblDirección.Location = new System.Drawing.Point(193, 0);
             this.lblDirección.Name = "lblDirección";
             this.lblDirección.Size = new System.Drawing.Size(86, 20);
             this.lblDirección.TabIndex = 30;
@@ -154,7 +157,7 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msRecetas});
-            this.menuStrip1.Location = new System.Drawing.Point(579, -62);
+            this.menuStrip1.Location = new System.Drawing.Point(579, -1);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.menuStrip1.Size = new System.Drawing.Size(67, 24);
@@ -171,7 +174,7 @@
             // 
             this.btRegistro.BackColor = System.Drawing.Color.White;
             this.btRegistro.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btRegistro.Location = new System.Drawing.Point(1032, 51);
+            this.btRegistro.Location = new System.Drawing.Point(113, 49);
             this.btRegistro.Name = "btRegistro";
             this.btRegistro.Size = new System.Drawing.Size(126, 34);
             this.btRegistro.TabIndex = 6;
@@ -182,7 +185,7 @@
             // 
             this.btSesion.BackColor = System.Drawing.Color.White;
             this.btSesion.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btSesion.Location = new System.Drawing.Point(1032, 11);
+            this.btSesion.Location = new System.Drawing.Point(113, 9);
             this.btSesion.Name = "btSesion";
             this.btSesion.Size = new System.Drawing.Size(126, 34);
             this.btSesion.TabIndex = 7;
@@ -192,37 +195,28 @@
             // pnlAmarillo
             // 
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnlAmarillo.Location = new System.Drawing.Point(1, 97);
+            this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAmarillo.Location = new System.Drawing.Point(3, 3);
             this.pnlAmarillo.Name = "pnlAmarillo";
-            this.pnlAmarillo.Size = new System.Drawing.Size(1179, 5);
+            this.pnlAmarillo.Size = new System.Drawing.Size(1442, 4);
             this.pnlAmarillo.TabIndex = 37;
-            // 
-            // pnlCabecera
-            // 
-            this.pnlCabecera.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pnlCabecera.Controls.Add(this.ptbApp);
-            this.pnlCabecera.Controls.Add(this.ptbIcon);
-            this.pnlCabecera.Controls.Add(this.btSesion);
-            this.pnlCabecera.Controls.Add(this.btRegistro);
-            this.pnlCabecera.Location = new System.Drawing.Point(1, 1);
-            this.pnlCabecera.Name = "pnlCabecera";
-            this.pnlCabecera.Size = new System.Drawing.Size(1182, 95);
-            this.pnlCabecera.TabIndex = 36;
             // 
             // ptbApp
             // 
+            this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
-            this.ptbApp.Location = new System.Drawing.Point(402, 0);
+            this.ptbApp.Location = new System.Drawing.Point(279, 3);
             this.ptbApp.Name = "ptbApp";
-            this.ptbApp.Size = new System.Drawing.Size(372, 88);
+            this.ptbApp.Size = new System.Drawing.Size(871, 91);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
             // 
             // ptbIcon
             // 
+            this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
-            this.ptbIcon.Location = new System.Drawing.Point(108, 3);
+            this.ptbIcon.Location = new System.Drawing.Point(87, 3);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(101, 87);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -234,35 +228,13 @@
             this.tbcHome.Controls.Add(this.tbpRecetas);
             this.tbcHome.Controls.Add(this.tbpUsuarios);
             this.tbcHome.Controls.Add(this.tbpRetos);
+            this.tbcHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbcHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbcHome.Location = new System.Drawing.Point(1, 159);
+            this.tbcHome.Location = new System.Drawing.Point(3, 62);
             this.tbcHome.Name = "tbcHome";
             this.tbcHome.SelectedIndex = 0;
-            this.tbcHome.Size = new System.Drawing.Size(1182, 405);
+            this.tbcHome.Size = new System.Drawing.Size(1442, 521);
             this.tbcHome.TabIndex = 38;
-            // 
-            // tbpRecetas
-            // 
-            this.tbpRecetas.Controls.Add(this.lblNom6);
-            this.tbpRecetas.Controls.Add(this.lblNom5);
-            this.tbpRecetas.Controls.Add(this.lblNom4);
-            this.tbpRecetas.Controls.Add(this.lblNom3);
-            this.tbpRecetas.Controls.Add(this.lblNom2);
-            this.tbpRecetas.Controls.Add(this.lblNom1);
-            this.tbpRecetas.Controls.Add(this.ptbNom6);
-            this.tbpRecetas.Controls.Add(this.ptbNom3);
-            this.tbpRecetas.Controls.Add(this.ptbNom5);
-            this.tbpRecetas.Controls.Add(this.ptbNom2);
-            this.tbpRecetas.Controls.Add(this.ptbNom4);
-            this.tbpRecetas.Controls.Add(this.ptbNom1);
-            this.tbpRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbpRecetas.Location = new System.Drawing.Point(4, 25);
-            this.tbpRecetas.Name = "tbpRecetas";
-            this.tbpRecetas.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpRecetas.Size = new System.Drawing.Size(1174, 376);
-            this.tbpRecetas.TabIndex = 0;
-            this.tbpRecetas.Text = "Recetas Destacadas";
-            this.tbpRecetas.UseVisualStyleBackColor = true;
             // 
             // tbpUsuarios
             // 
@@ -281,236 +253,10 @@
             this.tbpUsuarios.Location = new System.Drawing.Point(4, 25);
             this.tbpUsuarios.Name = "tbpUsuarios";
             this.tbpUsuarios.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpUsuarios.Size = new System.Drawing.Size(1174, 376);
+            this.tbpUsuarios.Size = new System.Drawing.Size(1434, 492);
             this.tbpUsuarios.TabIndex = 1;
             this.tbpUsuarios.Text = "Usuarios Destacados";
             this.tbpUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // tbpRetos
-            // 
-            this.tbpRetos.Controls.Add(this.label7);
-            this.tbpRetos.Controls.Add(this.label8);
-            this.tbpRetos.Controls.Add(this.label9);
-            this.tbpRetos.Controls.Add(this.label10);
-            this.tbpRetos.Controls.Add(this.label11);
-            this.tbpRetos.Controls.Add(this.label12);
-            this.tbpRetos.Controls.Add(this.ptbReto6);
-            this.tbpRetos.Controls.Add(this.ptbReto3);
-            this.tbpRetos.Controls.Add(this.ptbReto5);
-            this.tbpRetos.Controls.Add(this.ptbReto2);
-            this.tbpRetos.Controls.Add(this.ptbReto4);
-            this.tbpRetos.Controls.Add(this.ptbReto1);
-            this.tbpRetos.Location = new System.Drawing.Point(4, 25);
-            this.tbpRetos.Name = "tbpRetos";
-            this.tbpRetos.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpRetos.Size = new System.Drawing.Size(1174, 376);
-            this.tbpRetos.TabIndex = 2;
-            this.tbpRetos.Text = "Retos";
-            this.tbpRetos.UseVisualStyleBackColor = true;
-            // 
-            // ptbNom1
-            // 
-            this.ptbNom1.Location = new System.Drawing.Point(149, 16);
-            this.ptbNom1.Name = "ptbNom1";
-            this.ptbNom1.Size = new System.Drawing.Size(147, 129);
-            this.ptbNom1.TabIndex = 0;
-            this.ptbNom1.TabStop = false;
-            // 
-            // ptbNom4
-            // 
-            this.ptbNom4.Location = new System.Drawing.Point(149, 198);
-            this.ptbNom4.Name = "ptbNom4";
-            this.ptbNom4.Size = new System.Drawing.Size(147, 129);
-            this.ptbNom4.TabIndex = 4;
-            this.ptbNom4.TabStop = false;
-            // 
-            // ptbNom5
-            // 
-            this.ptbNom5.Location = new System.Drawing.Point(508, 198);
-            this.ptbNom5.Name = "ptbNom5";
-            this.ptbNom5.Size = new System.Drawing.Size(147, 129);
-            this.ptbNom5.TabIndex = 6;
-            this.ptbNom5.TabStop = false;
-            // 
-            // ptbNom2
-            // 
-            this.ptbNom2.Location = new System.Drawing.Point(508, 16);
-            this.ptbNom2.Name = "ptbNom2";
-            this.ptbNom2.Size = new System.Drawing.Size(147, 129);
-            this.ptbNom2.TabIndex = 5;
-            this.ptbNom2.TabStop = false;
-            // 
-            // ptbNom6
-            // 
-            this.ptbNom6.Location = new System.Drawing.Point(855, 198);
-            this.ptbNom6.Name = "ptbNom6";
-            this.ptbNom6.Size = new System.Drawing.Size(147, 129);
-            this.ptbNom6.TabIndex = 8;
-            this.ptbNom6.TabStop = false;
-            // 
-            // ptbNom3
-            // 
-            this.ptbNom3.Location = new System.Drawing.Point(855, 16);
-            this.ptbNom3.Name = "ptbNom3";
-            this.ptbNom3.Size = new System.Drawing.Size(147, 129);
-            this.ptbNom3.TabIndex = 7;
-            this.ptbNom3.TabStop = false;
-            // 
-            // lblNom1
-            // 
-            this.lblNom1.AutoSize = true;
-            this.lblNom1.Location = new System.Drawing.Point(194, 167);
-            this.lblNom1.Name = "lblNom1";
-            this.lblNom1.Size = new System.Drawing.Size(57, 16);
-            this.lblNom1.TabIndex = 9;
-            this.lblNom1.Text = "Nombre";
-            // 
-            // lblNom3
-            // 
-            this.lblNom3.AutoSize = true;
-            this.lblNom3.Location = new System.Drawing.Point(907, 167);
-            this.lblNom3.Name = "lblNom3";
-            this.lblNom3.Size = new System.Drawing.Size(57, 16);
-            this.lblNom3.TabIndex = 11;
-            this.lblNom3.Text = "Nombre";
-            // 
-            // lblNom4
-            // 
-            this.lblNom4.AutoSize = true;
-            this.lblNom4.Location = new System.Drawing.Point(194, 341);
-            this.lblNom4.Name = "lblNom4";
-            this.lblNom4.Size = new System.Drawing.Size(57, 16);
-            this.lblNom4.TabIndex = 12;
-            this.lblNom4.Text = "Nombre";
-            // 
-            // lblNom5
-            // 
-            this.lblNom5.AutoSize = true;
-            this.lblNom5.Location = new System.Drawing.Point(555, 341);
-            this.lblNom5.Name = "lblNom5";
-            this.lblNom5.Size = new System.Drawing.Size(57, 16);
-            this.lblNom5.TabIndex = 13;
-            this.lblNom5.Text = "Nombre";
-            // 
-            // lblNom6
-            // 
-            this.lblNom6.AutoSize = true;
-            this.lblNom6.Location = new System.Drawing.Point(907, 341);
-            this.lblNom6.Name = "lblNom6";
-            this.lblNom6.Size = new System.Drawing.Size(57, 16);
-            this.lblNom6.TabIndex = 14;
-            this.lblNom6.Text = "Nombre";
-            // 
-            // lblNom2
-            // 
-            this.lblNom2.AutoSize = true;
-            this.lblNom2.Location = new System.Drawing.Point(555, 167);
-            this.lblNom2.Name = "lblNom2";
-            this.lblNom2.Size = new System.Drawing.Size(57, 16);
-            this.lblNom2.TabIndex = 10;
-            this.lblNom2.Text = "Nombre";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(919, 343);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 16);
-            this.label7.TabIndex = 38;
-            this.label7.Text = "Reto";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(567, 343);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 16);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Reto";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(206, 343);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 16);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Reto";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(919, 169);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(37, 16);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Reto";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(567, 169);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 16);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "Reto";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(206, 169);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 16);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Reto";
-            // 
-            // ptbReto6
-            // 
-            this.ptbReto6.Location = new System.Drawing.Point(867, 200);
-            this.ptbReto6.Name = "ptbReto6";
-            this.ptbReto6.Size = new System.Drawing.Size(147, 129);
-            this.ptbReto6.TabIndex = 32;
-            this.ptbReto6.TabStop = false;
-            // 
-            // ptbReto3
-            // 
-            this.ptbReto3.Location = new System.Drawing.Point(867, 18);
-            this.ptbReto3.Name = "ptbReto3";
-            this.ptbReto3.Size = new System.Drawing.Size(147, 129);
-            this.ptbReto3.TabIndex = 31;
-            this.ptbReto3.TabStop = false;
-            // 
-            // ptbReto5
-            // 
-            this.ptbReto5.Location = new System.Drawing.Point(520, 200);
-            this.ptbReto5.Name = "ptbReto5";
-            this.ptbReto5.Size = new System.Drawing.Size(147, 129);
-            this.ptbReto5.TabIndex = 30;
-            this.ptbReto5.TabStop = false;
-            // 
-            // ptbReto2
-            // 
-            this.ptbReto2.Location = new System.Drawing.Point(520, 18);
-            this.ptbReto2.Name = "ptbReto2";
-            this.ptbReto2.Size = new System.Drawing.Size(147, 129);
-            this.ptbReto2.TabIndex = 29;
-            this.ptbReto2.TabStop = false;
-            // 
-            // ptbReto4
-            // 
-            this.ptbReto4.Location = new System.Drawing.Point(161, 200);
-            this.ptbReto4.Name = "ptbReto4";
-            this.ptbReto4.Size = new System.Drawing.Size(147, 129);
-            this.ptbReto4.TabIndex = 28;
-            this.ptbReto4.TabStop = false;
-            // 
-            // ptbReto1
-            // 
-            this.ptbReto1.Location = new System.Drawing.Point(161, 18);
-            this.ptbReto1.Name = "ptbReto1";
-            this.ptbReto1.Size = new System.Drawing.Size(147, 129);
-            this.ptbReto1.TabIndex = 27;
-            this.ptbReto1.TabStop = false;
             // 
             // lblUsuario6
             // 
@@ -614,54 +360,399 @@
             this.ptbUsuario1.TabIndex = 39;
             this.ptbUsuario1.TabStop = false;
             // 
+            // tbpRetos
+            // 
+            this.tbpRetos.Controls.Add(this.label7);
+            this.tbpRetos.Controls.Add(this.label8);
+            this.tbpRetos.Controls.Add(this.label9);
+            this.tbpRetos.Controls.Add(this.label10);
+            this.tbpRetos.Controls.Add(this.label11);
+            this.tbpRetos.Controls.Add(this.label12);
+            this.tbpRetos.Controls.Add(this.ptbReto6);
+            this.tbpRetos.Controls.Add(this.ptbReto3);
+            this.tbpRetos.Controls.Add(this.ptbReto5);
+            this.tbpRetos.Controls.Add(this.ptbReto2);
+            this.tbpRetos.Controls.Add(this.ptbReto4);
+            this.tbpRetos.Controls.Add(this.ptbReto1);
+            this.tbpRetos.Location = new System.Drawing.Point(4, 25);
+            this.tbpRetos.Name = "tbpRetos";
+            this.tbpRetos.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpRetos.Size = new System.Drawing.Size(1434, 492);
+            this.tbpRetos.TabIndex = 2;
+            this.tbpRetos.Text = "Retos";
+            this.tbpRetos.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(919, 343);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 16);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Reto";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(567, 343);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 16);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Reto";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(206, 343);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 16);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Reto";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(919, 169);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(37, 16);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Reto";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(567, 169);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 16);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Reto";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(206, 169);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 16);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Reto";
+            // 
+            // ptbReto6
+            // 
+            this.ptbReto6.Location = new System.Drawing.Point(867, 200);
+            this.ptbReto6.Name = "ptbReto6";
+            this.ptbReto6.Size = new System.Drawing.Size(147, 129);
+            this.ptbReto6.TabIndex = 32;
+            this.ptbReto6.TabStop = false;
+            // 
+            // ptbReto3
+            // 
+            this.ptbReto3.Location = new System.Drawing.Point(867, 18);
+            this.ptbReto3.Name = "ptbReto3";
+            this.ptbReto3.Size = new System.Drawing.Size(147, 129);
+            this.ptbReto3.TabIndex = 31;
+            this.ptbReto3.TabStop = false;
+            // 
+            // ptbReto5
+            // 
+            this.ptbReto5.Location = new System.Drawing.Point(520, 200);
+            this.ptbReto5.Name = "ptbReto5";
+            this.ptbReto5.Size = new System.Drawing.Size(147, 129);
+            this.ptbReto5.TabIndex = 30;
+            this.ptbReto5.TabStop = false;
+            // 
+            // ptbReto2
+            // 
+            this.ptbReto2.Location = new System.Drawing.Point(520, 18);
+            this.ptbReto2.Name = "ptbReto2";
+            this.ptbReto2.Size = new System.Drawing.Size(147, 129);
+            this.ptbReto2.TabIndex = 29;
+            this.ptbReto2.TabStop = false;
+            // 
+            // ptbReto4
+            // 
+            this.ptbReto4.Location = new System.Drawing.Point(161, 200);
+            this.ptbReto4.Name = "ptbReto4";
+            this.ptbReto4.Size = new System.Drawing.Size(147, 129);
+            this.ptbReto4.TabIndex = 28;
+            this.ptbReto4.TabStop = false;
+            // 
+            // ptbReto1
+            // 
+            this.ptbReto1.Location = new System.Drawing.Point(161, 18);
+            this.ptbReto1.Name = "ptbReto1";
+            this.ptbReto1.Size = new System.Drawing.Size(147, 129);
+            this.ptbReto1.TabIndex = 27;
+            this.ptbReto1.TabStop = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.08784F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.64189F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.35473F));
+            this.tableLayoutPanel1.Controls.Add(this.ptbApp, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1448, 97);
+            this.tableLayoutPanel1.TabIndex = 39;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btRegistro);
+            this.panel1.Controls.Add(this.btSesion);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(1156, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(289, 91);
+            this.panel1.TabIndex = 26;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pnlAmarillo, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbcHome, 0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 97);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.680555F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.31944F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1448, 586);
+            this.tableLayoutPanel2.TabIndex = 40;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.61326F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.73757F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.64917F));
+            this.tableLayoutPanel3.Controls.Add(this.panel2, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtDireccion, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblDirección, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 13);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1442, 43);
+            this.tableLayoutPanel3.TabIndex = 41;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel3_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btIngles);
+            this.panel2.Controls.Add(this.btEspanyol);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(1146, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(293, 37);
+            this.panel2.TabIndex = 0;
+            // 
+            // tbpRecetas
+            // 
+            this.tbpRecetas.Controls.Add(this.tableLayoutPanel4);
+            this.tbpRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbpRecetas.Location = new System.Drawing.Point(4, 25);
+            this.tbpRecetas.Name = "tbpRecetas";
+            this.tbpRecetas.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpRecetas.Size = new System.Drawing.Size(1434, 492);
+            this.tbpRecetas.TabIndex = 0;
+            this.tbpRecetas.Text = "Recetas Destacadas";
+            this.tbpRecetas.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv1, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv2, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv3, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv4, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv5, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv6, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv7, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv8, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv9, 0, 2);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1428, 486);
+            this.tableLayoutPanel4.TabIndex = 15;
+            // 
+            // accesoURRv1
+            // 
+            this.accesoURRv1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv1.Foto = null;
+            this.accesoURRv1.ID = 0;
+            this.accesoURRv1.Location = new System.Drawing.Point(593, 4);
+            this.accesoURRv1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv1.Name = "accesoURRv1";
+            this.accesoURRv1.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv1.TabIndex = 0;
+            this.accesoURRv1.Tipo = null;
+            this.accesoURRv1.Titulo = "label1";
+            // 
+            // accesoURRv2
+            // 
+            this.accesoURRv2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv2.Foto = null;
+            this.accesoURRv2.ID = 0;
+            this.accesoURRv2.Location = new System.Drawing.Point(118, 4);
+            this.accesoURRv2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv2.Name = "accesoURRv2";
+            this.accesoURRv2.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv2.TabIndex = 1;
+            this.accesoURRv2.Tipo = null;
+            this.accesoURRv2.Titulo = "label1";
+            // 
+            // accesoURRv3
+            // 
+            this.accesoURRv3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv3.Foto = null;
+            this.accesoURRv3.ID = 0;
+            this.accesoURRv3.Location = new System.Drawing.Point(1069, 4);
+            this.accesoURRv3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv3.Name = "accesoURRv3";
+            this.accesoURRv3.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv3.TabIndex = 2;
+            this.accesoURRv3.Tipo = null;
+            this.accesoURRv3.Titulo = "label1";
+            // 
+            // accesoURRv4
+            // 
+            this.accesoURRv4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv4.Foto = null;
+            this.accesoURRv4.ID = 0;
+            this.accesoURRv4.Location = new System.Drawing.Point(1069, 165);
+            this.accesoURRv4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv4.Name = "accesoURRv4";
+            this.accesoURRv4.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv4.TabIndex = 3;
+            this.accesoURRv4.Tipo = null;
+            this.accesoURRv4.Titulo = "label1";
+            // 
+            // accesoURRv5
+            // 
+            this.accesoURRv5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv5.Foto = null;
+            this.accesoURRv5.ID = 0;
+            this.accesoURRv5.Location = new System.Drawing.Point(593, 165);
+            this.accesoURRv5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv5.Name = "accesoURRv5";
+            this.accesoURRv5.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv5.TabIndex = 4;
+            this.accesoURRv5.Tipo = null;
+            this.accesoURRv5.Titulo = "label1";
+            // 
+            // accesoURRv6
+            // 
+            this.accesoURRv6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv6.Foto = null;
+            this.accesoURRv6.ID = 0;
+            this.accesoURRv6.Location = new System.Drawing.Point(118, 165);
+            this.accesoURRv6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv6.Name = "accesoURRv6";
+            this.accesoURRv6.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv6.TabIndex = 5;
+            this.accesoURRv6.Tipo = null;
+            this.accesoURRv6.Titulo = "label1";
+            // 
+            // accesoURRv7
+            // 
+            this.accesoURRv7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv7.Foto = null;
+            this.accesoURRv7.ID = 0;
+            this.accesoURRv7.Location = new System.Drawing.Point(593, 326);
+            this.accesoURRv7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv7.Name = "accesoURRv7";
+            this.accesoURRv7.Size = new System.Drawing.Size(239, 156);
+            this.accesoURRv7.TabIndex = 6;
+            this.accesoURRv7.Tipo = null;
+            this.accesoURRv7.Titulo = "label1";
+            // 
+            // accesoURRv8
+            // 
+            this.accesoURRv8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv8.Foto = null;
+            this.accesoURRv8.ID = 0;
+            this.accesoURRv8.Location = new System.Drawing.Point(1069, 326);
+            this.accesoURRv8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv8.Name = "accesoURRv8";
+            this.accesoURRv8.Size = new System.Drawing.Size(239, 156);
+            this.accesoURRv8.TabIndex = 7;
+            this.accesoURRv8.Tipo = null;
+            this.accesoURRv8.Titulo = "label1";
+            // 
+            // accesoURRv9
+            // 
+            this.accesoURRv9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv9.Foto = null;
+            this.accesoURRv9.ID = 0;
+            this.accesoURRv9.Location = new System.Drawing.Point(118, 326);
+            this.accesoURRv9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accesoURRv9.Name = "accesoURRv9";
+            this.accesoURRv9.Size = new System.Drawing.Size(239, 156);
+            this.accesoURRv9.TabIndex = 8;
+            this.accesoURRv9.Tipo = null;
+            this.accesoURRv9.Titulo = "label1";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
-            this.Controls.Add(this.tbcHome);
-            this.Controls.Add(this.pnlAmarillo);
-            this.Controls.Add(this.pnlCabecera);
+            this.ClientSize = new System.Drawing.Size(1448, 683);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.lblDirección);
-            this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.btEspanyol);
-            this.Controls.Add(this.btIngles);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pnlCabecera.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
             this.tbcHome.ResumeLayout(false);
-            this.tbpRecetas.ResumeLayout(false);
-            this.tbpRecetas.PerformLayout();
             this.tbpUsuarios.ResumeLayout(false);
             this.tbpUsuarios.PerformLayout();
-            this.tbpRetos.ResumeLayout(false);
-            this.tbpRetos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNom3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario1)).EndInit();
+            this.tbpRetos.ResumeLayout(false);
+            this.tbpRetos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.tbpRecetas.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -677,25 +768,11 @@
         private System.Windows.Forms.Button btRegistro;
         private System.Windows.Forms.Button btSesion;
         private System.Windows.Forms.Panel pnlAmarillo;
-        private System.Windows.Forms.Panel pnlCabecera;
         private System.Windows.Forms.PictureBox ptbApp;
         private System.Windows.Forms.PictureBox ptbIcon;
         private System.Windows.Forms.TabControl tbcHome;
-        private System.Windows.Forms.TabPage tbpRecetas;
         private System.Windows.Forms.TabPage tbpUsuarios;
         private System.Windows.Forms.TabPage tbpRetos;
-        private System.Windows.Forms.PictureBox ptbNom6;
-        private System.Windows.Forms.PictureBox ptbNom3;
-        private System.Windows.Forms.PictureBox ptbNom5;
-        private System.Windows.Forms.PictureBox ptbNom2;
-        private System.Windows.Forms.PictureBox ptbNom4;
-        private System.Windows.Forms.PictureBox ptbNom1;
-        private System.Windows.Forms.Label lblNom6;
-        private System.Windows.Forms.Label lblNom5;
-        private System.Windows.Forms.Label lblNom4;
-        private System.Windows.Forms.Label lblNom3;
-        private System.Windows.Forms.Label lblNom1;
-        private System.Windows.Forms.Label lblNom2;
         private System.Windows.Forms.Label lblUsuario6;
         private System.Windows.Forms.Label lblUsuario5;
         private System.Windows.Forms.Label lblUsuario4;
@@ -720,6 +797,22 @@
         private System.Windows.Forms.PictureBox ptbReto2;
         private System.Windows.Forms.PictureBox ptbReto4;
         private System.Windows.Forms.PictureBox ptbReto1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TabPage tbpRecetas;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private ControlesPersonalizados.AccesoURRv accesoURRv1;
+        private ControlesPersonalizados.AccesoURRv accesoURRv2;
+        private ControlesPersonalizados.AccesoURRv accesoURRv3;
+        private ControlesPersonalizados.AccesoURRv accesoURRv4;
+        private ControlesPersonalizados.AccesoURRv accesoURRv5;
+        private ControlesPersonalizados.AccesoURRv accesoURRv6;
+        private ControlesPersonalizados.AccesoURRv accesoURRv7;
+        private ControlesPersonalizados.AccesoURRv accesoURRv8;
+        private ControlesPersonalizados.AccesoURRv accesoURRv9;
     }
 }
 

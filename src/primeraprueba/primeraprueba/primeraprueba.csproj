@@ -156,5 +156,11 @@
   <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlesPersonalizados\ControlesPersonalizados.csproj">
+      <Project>{E9431A17-2EA3-4DE8-A9AF-10F8C251FDDB}</Project>
+      <Name>ControlesPersonalizados</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
