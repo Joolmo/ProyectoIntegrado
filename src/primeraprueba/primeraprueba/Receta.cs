@@ -77,7 +77,7 @@ namespace primeraprueba
         }
 
         //Obtiene una lista de los retos del usuario seleccionado
-        static List<Receta> GetReceta(int user)
+        static List<Receta> GetRecetas(int user)
         {
             List<Receta> List_Receta = new List<Receta>();
             Receta r;
@@ -123,6 +123,20 @@ namespace primeraprueba
                 string error = ConexionBBDD.Instanciar().LastError;
                 return false;
             }
+
+        }
+
+        public static Receta GetReceta(int id)
+        {
+            Receta recip = null;
+            string consulta = string.Format("select * from receta where ID_Receta={0}", id);
+            List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+            foreach (List<object> l1 in lista)
+            {
+                recip = new Receta(l1);
+
+            }
+            return recip;
 
         }
     }
