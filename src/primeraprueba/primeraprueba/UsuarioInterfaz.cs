@@ -21,5 +21,12 @@ namespace primeraprueba
 		private void pictureBox9_Click(object sender, EventArgs e){}
 		private void label12_Click(object sender, EventArgs e){}
 		private void UsuarioInterfaz_Load(object sender, EventArgs e){}
+
+		private void btCrearReceta_Click(object sender, EventArgs e)
+		{
+			Hide();
+			CrearReceta nuevaReceta = new CrearReceta();
+			nuevaReceta.ShowDialog();
+		}
 	}
 }

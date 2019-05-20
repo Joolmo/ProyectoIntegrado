@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.btEspanyol = new System.Windows.Forms.Button();
 			this.btIngles = new System.Windows.Forms.Button();
 			this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -78,6 +79,11 @@
 			this.ptbReto2 = new System.Windows.Forms.PictureBox();
 			this.ptbReto4 = new System.Windows.Forms.PictureBox();
 			this.ptbReto1 = new System.Windows.Forms.PictureBox();
+			this.msDesplegable = new System.Windows.Forms.MenuStrip();
+			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.miUsuario = new System.Windows.Forms.ToolStripMenuItem();
+			this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.recetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pnlCabecera.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
@@ -103,6 +109,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbReto4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).BeginInit();
+			this.msDesplegable.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btEspanyol
@@ -183,6 +190,7 @@
 			this.pnlCabecera.Controls.Add(this.ptbIcon);
 			this.pnlCabecera.Controls.Add(this.btSesion);
 			this.pnlCabecera.Controls.Add(this.btRegistro);
+			this.pnlCabecera.Controls.Add(this.msDesplegable);
 			this.pnlCabecera.Location = new System.Drawing.Point(1, 0);
 			this.pnlCabecera.Name = "pnlCabecera";
 			this.pnlCabecera.Size = new System.Drawing.Size(1182, 95);
@@ -593,6 +601,48 @@
 			this.ptbReto1.TabIndex = 27;
 			this.ptbReto1.TabStop = false;
 			// 
+			// msDesplegable
+			// 
+			this.msDesplegable.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+			this.msDesplegable.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.msDesplegable.Dock = System.Windows.Forms.DockStyle.None;
+			this.msDesplegable.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+			this.msDesplegable.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miUsuario});
+			this.msDesplegable.Location = new System.Drawing.Point(838, 21);
+			this.msDesplegable.Name = "msDesplegable";
+			this.msDesplegable.Size = new System.Drawing.Size(191, 24);
+			this.msDesplegable.TabIndex = 26;
+			this.msDesplegable.Text = "menuStrip1";
+			// 
+			// contextMenuStrip1
+			// 
+			this.contextMenuStrip1.Name = "contextMenuStrip1";
+			this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+			// 
+			// miUsuario
+			// 
+			this.miUsuario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.perfilToolStripMenuItem,
+            this.recetasToolStripMenuItem});
+			this.miUsuario.Name = "miUsuario";
+			this.miUsuario.Size = new System.Drawing.Size(59, 20);
+			this.miUsuario.Text = "Usuario";
+			// 
+			// perfilToolStripMenuItem
+			// 
+			this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
+			this.perfilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.perfilToolStripMenuItem.Text = "Perfil";
+			this.perfilToolStripMenuItem.Click += new System.EventHandler(this.perfilToolStripMenuItem_Click);
+			// 
+			// recetasToolStripMenuItem
+			// 
+			this.recetasToolStripMenuItem.Name = "recetasToolStripMenuItem";
+			this.recetasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.recetasToolStripMenuItem.Text = "Recetas";
+			this.recetasToolStripMenuItem.Click += new System.EventHandler(this.recetasToolStripMenuItem_Click);
+			// 
 			// Home
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,10 +657,12 @@
 			this.Controls.Add(this.btEspanyol);
 			this.Controls.Add(this.btIngles);
 			this.ForeColor = System.Drawing.Color.Black;
+			this.MainMenuStrip = this.msDesplegable;
 			this.Name = "Home";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Home";
 			this.pnlCabecera.ResumeLayout(false);
+			this.pnlCabecera.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
 			this.tbcHome.ResumeLayout(false);
@@ -638,6 +690,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbReto4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).EndInit();
+			this.msDesplegable.ResumeLayout(false);
+			this.msDesplegable.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -694,6 +748,11 @@
         private System.Windows.Forms.PictureBox ptbReto2;
         private System.Windows.Forms.PictureBox ptbReto4;
         private System.Windows.Forms.PictureBox ptbReto1;
+		private System.Windows.Forms.MenuStrip msDesplegable;
+		private System.Windows.Forms.ToolStripMenuItem miUsuario;
+		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem perfilToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem recetasToolStripMenuItem;
 	}
 }
 

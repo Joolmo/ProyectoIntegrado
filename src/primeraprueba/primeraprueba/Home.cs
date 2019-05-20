@@ -35,5 +35,19 @@ namespace primeraprueba
 			Registrarse registro = new Registrarse();
 			registro.ShowDialog();
 		}
+
+		private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Hide();
+			UsuarioInterfaz usuario = new UsuarioInterfaz();
+			usuario.ShowDialog();
+		}
+
+		private void recetasToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Hide();
+			Recetas receta = new Recetas();
+			receta.ShowDialog();
+		}
 	}
 }
