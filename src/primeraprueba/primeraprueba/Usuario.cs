@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Drawing;
+using System.Drawing.Imaging;
+using Dispenser;
 namespace primeraprueba
 {
     class Usuario
@@ -16,6 +19,7 @@ namespace primeraprueba
         private string descripcion;
         private int numSeguidores;
         private int numRecetas;
+        private Image foto;
 
         static Usuario usuarioActual = new Usuario();
 
@@ -26,12 +30,16 @@ namespace primeraprueba
         public string Descripcion { get { return descripcion;  } set { descripcion = value; } }
         public int NumeroSeguidores { get { return numSeguidores; } }
         public int NumeroRecetas { get { return numRecetas; } }
+        public Image Foto { get { return foto; } }
 
-        public Usuario(string nomb, string paswd, string mail)
+        public Usuario(string nomb, string paswd, string mail, string desc, Image f)
         {
             nombre = nomb;
             contraseña = paswd;
             correo = mail;
+            descripcion = desc;
+            foto = f;
+
         }
 
         public Usuario()

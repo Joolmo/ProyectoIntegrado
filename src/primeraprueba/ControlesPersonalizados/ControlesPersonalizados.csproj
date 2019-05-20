@@ -61,6 +61,12 @@
       <DependentUpon>AccesoURRv.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tags.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tags.Designer.cs">
+      <DependentUpon>Tags.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccesoURRv.resx">
       <DependentUpon>AccesoURRv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tags.resx">
+      <DependentUpon>Tags.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
