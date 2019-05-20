@@ -41,18 +41,21 @@
             this.lblContra = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pnlAmarillo = new System.Windows.Forms.Panel();
-            this.pnlCabecera = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ptbApp = new System.Windows.Forms.PictureBox();
             this.ptbIcon = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagen)).BeginInit();
-            this.pnlCabecera.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlRegistro
             // 
+            this.pnlRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlRegistro.BackColor = System.Drawing.Color.White;
             this.pnlRegistro.Controls.Add(this.btRegistrar);
             this.pnlRegistro.Controls.Add(this.linkIniciar);
@@ -67,7 +70,7 @@
             this.pnlRegistro.Controls.Add(this.lblNombre);
             this.pnlRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlRegistro.ForeColor = System.Drawing.Color.White;
-            this.pnlRegistro.Location = new System.Drawing.Point(268, 167);
+            this.pnlRegistro.Location = new System.Drawing.Point(248, 65);
             this.pnlRegistro.Name = "pnlRegistro";
             this.pnlRegistro.Size = new System.Drawing.Size(687, 345);
             this.pnlRegistro.TabIndex = 0;
@@ -185,40 +188,63 @@
             // pnlAmarillo
             // 
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnlAmarillo.Location = new System.Drawing.Point(1, 97);
+            this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAmarillo.Location = new System.Drawing.Point(3, 3);
             this.pnlAmarillo.Name = "pnlAmarillo";
-            this.pnlAmarillo.Size = new System.Drawing.Size(1179, 5);
+            this.pnlAmarillo.Size = new System.Drawing.Size(1178, 5);
             this.pnlAmarillo.TabIndex = 30;
             // 
-            // pnlCabecera
+            // tableLayoutPanel1
             // 
-            this.pnlCabecera.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pnlCabecera.Controls.Add(this.ptbApp);
-            this.pnlCabecera.Controls.Add(this.ptbIcon);
-            this.pnlCabecera.Location = new System.Drawing.Point(1, 1);
-            this.pnlCabecera.Name = "pnlCabecera";
-            this.pnlCabecera.Size = new System.Drawing.Size(1182, 95);
-            this.pnlCabecera.TabIndex = 29;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.13176F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.86824F));
+            this.tableLayoutPanel1.Controls.Add(this.ptbApp, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 97);
+            this.tableLayoutPanel1.TabIndex = 41;
             // 
             // ptbApp
             // 
+            this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
-            this.ptbApp.Location = new System.Drawing.Point(424, 4);
+            this.ptbApp.Location = new System.Drawing.Point(194, 3);
             this.ptbApp.Name = "ptbApp";
-            this.ptbApp.Size = new System.Drawing.Size(367, 88);
+            this.ptbApp.Size = new System.Drawing.Size(987, 91);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
             // 
             // ptbIcon
             // 
+            this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
-            this.ptbIcon.Location = new System.Drawing.Point(114, 2);
+            this.ptbIcon.Location = new System.Drawing.Point(45, 3);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(101, 87);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbIcon.TabIndex = 22;
             this.ptbIcon.TabStop = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.pnlAmarillo, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pnlRegistro, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 97);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1184, 464);
+            this.tableLayoutPanel2.TabIndex = 42;
             // 
             // Registrarse
             // 
@@ -226,18 +252,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1184, 561);
-            this.Controls.Add(this.pnlAmarillo);
-            this.Controls.Add(this.pnlCabecera);
-            this.Controls.Add(this.pnlRegistro);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Registrarse";
             this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.Registrarse_Load);
             this.pnlRegistro.ResumeLayout(false);
             this.pnlRegistro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagen)).EndInit();
-            this.pnlCabecera.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -257,8 +283,9 @@
 		private System.Windows.Forms.LinkLabel linkIniciar;
 		private System.Windows.Forms.PictureBox ptbImagen;
         private System.Windows.Forms.Panel pnlAmarillo;
-        private System.Windows.Forms.Panel pnlCabecera;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox ptbApp;
         private System.Windows.Forms.PictureBox ptbIcon;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
