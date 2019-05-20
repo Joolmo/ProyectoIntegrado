@@ -70,6 +70,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBBDD.cs" />
+    <Compile Include="Contrasenya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrasenya.Designer.cs">
+      <DependentUpon>Contrasenya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearReceta.Designer.cs">
+      <DependentUpon>CrearReceta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
     <Compile Include="UsuarioInterfaz.Designer.cs">
       <DependentUpon>UsuarioInterfaz.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Contrasenya.resx">
+      <DependentUpon>Contrasenya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearReceta.resx">
+      <DependentUpon>CrearReceta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
