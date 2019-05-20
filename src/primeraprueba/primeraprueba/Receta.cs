@@ -83,6 +83,9 @@ namespace primeraprueba
             Receta r;
             string consulta = string.Format("select * from recetas where ID_Usuario_P={0}", user);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            if (lista == null) return null;
+
             foreach (List<object> l1 in lista)
             {
                 r = new Receta(l1);
@@ -131,6 +134,9 @@ namespace primeraprueba
             Receta recip = null;
             string consulta = string.Format("select * from receta where ID_Receta={0}", id);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            if (lista == null) return null;
+
             foreach (List<object> l1 in lista)
             {
                 recip = new Receta(l1);

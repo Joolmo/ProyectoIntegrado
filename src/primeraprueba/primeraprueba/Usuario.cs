@@ -52,15 +52,14 @@ namespace primeraprueba
 
 
         //Funcionalidad para insertar un usuario en la base de datos;
-        public void RegistrarUsuario(MySqlConnection conexion, Usuario u)
+        public bool RegistrarUsuario(MySqlConnection conexion, Usuario u)
         {
             string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
             string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, descripcion, Correo, Contraseña, NºReceta, NºSeguidor) " +
                 "VALUES('{0}','{1}','{2}','{3}',0,0)", u.Nombre, u.Descripcion, u.Correo, passhash);
 
-            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            return ConexionBBDD.Instanciar().NonQuery(consulta);
 
-            int retorno = comando.ExecuteNonQuery();
 
         }
 
@@ -70,41 +69,38 @@ namespace primeraprueba
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
                 "AND contraseña ='{1}'", nom, passhash);
 
-            return new Usuario(ConexionBBDD.Instanciar().Query(consulta)[0]);
+            var resultado = ConexionBBDD.Instanciar().Query(consulta);
+            if (resultado == null)
+                return null;
+            else
+                return new Usuario(resultado[0]);
 
         }
 
         public Usuario LogOut(MySqlConnection conexion, string nom, string passwd)
         {
-            usuarioActual.nombre = null;
-            usuarioActual.correo = null;
-            usuarioActual.contraseña = null;
+            var oldUsuario = usuarioActual;
+            usuarioActual = null;
 
-            return usuarioActual;
+            return oldUsuario;
         }
 
         //Funcionalidad usada para insertar en la base de datos cuando se quiere seguir a un usuario
         public void Seguir()
         {
-
-
-
+            throw new NotImplementedException();
         }
 
         //Funcionalidad para dejar de seguir a un usuario
         public void dejarSeguir()
         {
-
-
-
+            throw new NotImplementedException();
         }
 
         //Hace la consulta para contar los seguidores de cierto usuario
         public int Cont_NumSeguidores()
         {
 			throw new NotImplementedException();
-
-
 		}
 
 
@@ -112,13 +108,6 @@ namespace primeraprueba
         public int Cont_NumRecetas()
         {
 			throw new NotImplementedException();
-
 		}
-
-        
-
-
-
-
     }
 }

@@ -59,6 +59,9 @@ namespace primeraprueba
 
             string consulta = string.Format("select * from retos where ID_Usuario_P={0}", user);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            if (lista == null) return null;
+
             foreach (List<object> l1 in lista)
             {
                 r = new Reto(l1);
@@ -106,6 +109,9 @@ namespace primeraprueba
             Reto ret = null;
             string consulta = string.Format("select * from retos where ID_Reto={0}", id);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            if (lista == null) return null;
+
             foreach (List<object> l1 in lista)
             {
                 ret = new Reto(l1);
