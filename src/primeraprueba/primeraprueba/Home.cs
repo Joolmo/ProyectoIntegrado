@@ -53,5 +53,18 @@ namespace primeraprueba
         {
 
         }
+
+        private void btSesion_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btRegistro_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            Registrarse reg = new Registrarse();
+            reg.ShowDialog();
+            
+        }
     }
 }

@@ -60,18 +60,22 @@ namespace primeraprueba
 
 
         //Funcionalidad para insertar un usuario en la base de datos;
-        public bool RegistrarUsuario(MySqlConnection conexion, Usuario u)
+        public bool RegistrarUsuario(Usuario u)
         {
+            ConexionBBDD.Instanciar().AbrirConexion();
             string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
-            string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, descripcion, Correo, Contraseña, NºReceta, NºSeguidor) " +
-                "VALUES('{0}','{1}','{2}','{3}',0,0)", u.Nombre, u.Descripcion, u.Correo, passhash);
+            string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor) " +
+                "VALUES('{0}','{1}','{2}',0,0)", u.Nombre, u.Correo, passhash);
 
-            return ConexionBBDD.Instanciar().NonQuery(consulta);
+            bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta);
+
+            ConexionBBDD.Instanciar().CerrarConexion();
+            return funciona;
 
 
         }
 
-        public Usuario LogIn(MySqlConnection conexion, string nom, string passwd)
+        public Usuario LogIn(string nom, string passwd)
         {
             string passhash = ConexionBBDD.EncriptarContraseña(passwd);
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +

@@ -70,18 +70,20 @@
             this.pnlRegistro.Controls.Add(this.lblNombre);
             this.pnlRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlRegistro.ForeColor = System.Drawing.Color.White;
-            this.pnlRegistro.Location = new System.Drawing.Point(248, 65);
+            this.pnlRegistro.Location = new System.Drawing.Point(331, 80);
+            this.pnlRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlRegistro.Name = "pnlRegistro";
-            this.pnlRegistro.Size = new System.Drawing.Size(687, 345);
+            this.pnlRegistro.Size = new System.Drawing.Size(916, 425);
             this.pnlRegistro.TabIndex = 0;
             // 
             // btRegistrar
             // 
             this.btRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegistrar.ForeColor = System.Drawing.Color.Black;
-            this.btRegistrar.Location = new System.Drawing.Point(472, 262);
+            this.btRegistrar.Location = new System.Drawing.Point(633, 323);
+            this.btRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btRegistrar.Name = "btRegistrar";
-            this.btRegistrar.Size = new System.Drawing.Size(130, 40);
+            this.btRegistrar.Size = new System.Drawing.Size(173, 49);
             this.btRegistrar.TabIndex = 12;
             this.btRegistrar.Text = "Registrarse";
             this.btRegistrar.UseVisualStyleBackColor = true;
@@ -91,9 +93,10 @@
             // 
             this.linkIniciar.AutoSize = true;
             this.linkIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkIniciar.Location = new System.Drawing.Point(90, 272);
+            this.linkIniciar.Location = new System.Drawing.Point(120, 335);
+            this.linkIniciar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkIniciar.Name = "linkIniciar";
-            this.linkIniciar.Size = new System.Drawing.Size(104, 20);
+            this.linkIniciar.Size = new System.Drawing.Size(129, 25);
             this.linkIniciar.TabIndex = 11;
             this.linkIniciar.TabStop = true;
             this.linkIniciar.Text = "Iniciar Sesión";
@@ -101,39 +104,46 @@
             // 
             // ptbImagen
             // 
-            this.ptbImagen.Location = new System.Drawing.Point(491, 109);
+            this.ptbImagen.Location = new System.Drawing.Point(655, 134);
+            this.ptbImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptbImagen.Name = "ptbImagen";
-            this.ptbImagen.Size = new System.Drawing.Size(113, 92);
+            this.ptbImagen.Size = new System.Drawing.Size(151, 113);
+            this.ptbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbImagen.TabIndex = 10;
             this.ptbImagen.TabStop = false;
+            this.ptbImagen.Click += new System.EventHandler(this.ptbImagen_Click);
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(465, 66);
+            this.txtCorreo.Location = new System.Drawing.Point(620, 81);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(156, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(207, 23);
             this.txtCorreo.TabIndex = 9;
             this.txtCorreo.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // txtConfirContra
             // 
-            this.txtConfirContra.Location = new System.Drawing.Point(263, 147);
+            this.txtConfirContra.Location = new System.Drawing.Point(351, 181);
+            this.txtConfirContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirContra.Name = "txtConfirContra";
-            this.txtConfirContra.Size = new System.Drawing.Size(162, 20);
+            this.txtConfirContra.Size = new System.Drawing.Size(215, 23);
             this.txtConfirContra.TabIndex = 7;
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(238, 109);
+            this.txtContra.Location = new System.Drawing.Point(317, 134);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(162, 20);
+            this.txtContra.Size = new System.Drawing.Size(215, 23);
             this.txtContra.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(175, 66);
+            this.txtNombre.Location = new System.Drawing.Point(233, 81);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(140, 20);
+            this.txtNombre.Size = new System.Drawing.Size(185, 23);
             this.txtNombre.TabIndex = 5;
             // 
             // lblConfirContra
@@ -142,9 +152,10 @@
             this.lblConfirContra.BackColor = System.Drawing.Color.Transparent;
             this.lblConfirContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirContra.ForeColor = System.Drawing.Color.Black;
-            this.lblConfirContra.Location = new System.Drawing.Point(33, 147);
+            this.lblConfirContra.Location = new System.Drawing.Point(44, 181);
+            this.lblConfirContra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirContra.Name = "lblConfirContra";
-            this.lblConfirContra.Size = new System.Drawing.Size(224, 20);
+            this.lblConfirContra.Size = new System.Drawing.Size(282, 25);
             this.lblConfirContra.TabIndex = 4;
             this.lblConfirContra.Text = "CONFIRMAR CONTRASEÑA:";
             // 
@@ -154,9 +165,10 @@
             this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.Color.Black;
-            this.lblCorreo.Location = new System.Drawing.Point(372, 66);
+            this.lblCorreo.Location = new System.Drawing.Point(496, 81);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(83, 20);
+            this.lblCorreo.Size = new System.Drawing.Size(104, 25);
             this.lblCorreo.TabIndex = 2;
             this.lblCorreo.Text = "CORREO:";
             // 
@@ -166,9 +178,10 @@
             this.lblContra.BackColor = System.Drawing.Color.Transparent;
             this.lblContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContra.ForeColor = System.Drawing.Color.Black;
-            this.lblContra.Location = new System.Drawing.Point(109, 107);
+            this.lblContra.Location = new System.Drawing.Point(145, 132);
+            this.lblContra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContra.Name = "lblContra";
-            this.lblContra.Size = new System.Drawing.Size(123, 20);
+            this.lblContra.Size = new System.Drawing.Size(158, 25);
             this.lblContra.TabIndex = 1;
             this.lblContra.Text = "CONTRASEÑA:";
             this.lblContra.Click += new System.EventHandler(this.label2_Click);
@@ -179,9 +192,10 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.Black;
-            this.lblNombre.Location = new System.Drawing.Point(90, 66);
+            this.lblNombre.Location = new System.Drawing.Point(120, 81);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(83, 20);
+            this.lblNombre.Size = new System.Drawing.Size(104, 25);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "NOMBRE:";
             // 
@@ -189,9 +203,10 @@
             // 
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAmarillo.Location = new System.Drawing.Point(3, 3);
+            this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlAmarillo.Name = "pnlAmarillo";
-            this.pnlAmarillo.Size = new System.Drawing.Size(1178, 5);
+            this.pnlAmarillo.Size = new System.Drawing.Size(1571, 6);
             this.pnlAmarillo.TabIndex = 30;
             // 
             // tableLayoutPanel1
@@ -203,19 +218,21 @@
             this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 97);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1579, 119);
             this.tableLayoutPanel1.TabIndex = 41;
             // 
             // ptbApp
             // 
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
-            this.ptbApp.Location = new System.Drawing.Point(194, 3);
+            this.ptbApp.Location = new System.Drawing.Point(258, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptbApp.Name = "ptbApp";
-            this.ptbApp.Size = new System.Drawing.Size(987, 91);
+            this.ptbApp.Size = new System.Drawing.Size(1317, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
@@ -224,9 +241,10 @@
             // 
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
-            this.ptbIcon.Location = new System.Drawing.Point(45, 3);
+            this.ptbIcon.Location = new System.Drawing.Point(59, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(101, 87);
+            this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbIcon.TabIndex = 22;
             this.ptbIcon.TabStop = false;
@@ -238,22 +256,24 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlAmarillo, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pnlRegistro, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 97);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 119);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1184, 464);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1579, 571);
             this.tableLayoutPanel2.TabIndex = 42;
             // 
             // Registrarse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1579, 690);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Registrarse";
             this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.Registrarse_Load);

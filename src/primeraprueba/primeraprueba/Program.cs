@@ -16,7 +16,7 @@ namespace primeraprueba
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new UsuarioInterfaz());
+			Application.Run(new Home());
 		}
 	}
 }

@@ -28,9 +28,13 @@ namespace ControlesPersonalizados
 
         }
 
-        public Tags(List<string> t)
+        public Tags(List<string> tags)
         {
-
+            InitializeComponent();
+            foreach (string t in tags)
+            {
+                AnyadirTag(t);
+            }
 
         }
 
@@ -46,6 +50,7 @@ namespace ControlesPersonalizados
                 tlpMain.Controls.Add(con, tlpMain.ColumnCount - 1, 0);
                 controls.Add(con);
                 tlpMain.ColumnCount += 1;
+                tag.Add(nomTag);
             }
             
         }
@@ -60,6 +65,7 @@ namespace ControlesPersonalizados
                 tlpMain.ColumnStyles.RemoveAt(tlpMain.ColumnCount - 1);
 
                 tlpMain.ColumnCount -= 1;
+                tag.RemoveAt(tag.Count - 1);
             }
             
         }

@@ -25,9 +25,17 @@ namespace primeraprueba
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Hide();
-			Home registra = new Home();
-			registra.ShowDialog();
+            if(txtContra.Text == txtConfirContra.Text)
+            {
+
+                Usuario reg = new Usuario(txtNombre.Text, txtContra.Text, txtCorreo.Text, "", ptbImagen.Image);
+                reg.RegistrarUsuario(reg);
+
+                Hide();
+                Home registra = new Home();
+                registra.ShowDialog();
+            }
+            
 
 		}
 
@@ -37,5 +45,15 @@ namespace primeraprueba
 			login inicio = new login();
 			inicio.ShowDialog();
 		}
-	}
+
+        private void ptbImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                ptbImagen.Image = new Bitmap(open.FileName);
+            }
+        }
+    }
 }
