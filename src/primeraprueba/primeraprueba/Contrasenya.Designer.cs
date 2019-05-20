@@ -81,7 +81,7 @@
             // 
             this.lblConfirmar.AutoSize = true;
             this.lblConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblConfirmar.Location = new System.Drawing.Point(97, 214);
+            this.lblConfirmar.Location = new System.Drawing.Point(96, 216);
             this.lblConfirmar.Name = "lblConfirmar";
             this.lblConfirmar.Size = new System.Drawing.Size(166, 20);
             this.lblConfirmar.TabIndex = 10;
@@ -135,7 +135,7 @@
             // 
             this.lblContraseñaN.AutoSize = true;
             this.lblContraseñaN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblContraseñaN.Location = new System.Drawing.Point(120, 176);
+            this.lblContraseñaN.Location = new System.Drawing.Point(119, 178);
             this.lblContraseñaN.Name = "lblContraseñaN";
             this.lblContraseñaN.Size = new System.Drawing.Size(143, 20);
             this.lblContraseñaN.TabIndex = 2;
