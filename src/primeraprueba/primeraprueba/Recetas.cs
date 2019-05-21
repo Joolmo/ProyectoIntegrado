@@ -12,10 +12,21 @@ namespace primeraprueba
 {
 	public partial class Recetas : Form
 	{
-		public Recetas()
+        Base parent = null;
+
+		public Recetas(Base par, Receta receta)
 		{
 			InitializeComponent();
-		}
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+
+            ptbFoto.Image = Usuario.GetUsuario(receta.IdUsuario).Foto;
+            ptbReceta.Image = receta.Foto;
+            foreach(String tag in receta.Tags) tags1.AnyadirTag(tag);
+            foreach (string ing in receta.Indredientes) tbpIngredientes.Text += ing + "/n";
+            tbpPasos.Text = receta.Pasos;
+        }
 
 		private void pictureBox2_Click(object sender, EventArgs e){}
 
@@ -24,5 +35,14 @@ namespace primeraprueba
 
 		}
 
+        private void btENVIAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

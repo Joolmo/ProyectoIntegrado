@@ -58,6 +58,41 @@ namespace primeraprueba
                 numSeguidores = (int)listaUsuario[6];
         }
 
+        //Obtiene un usuario con un id
+        public static Usuario GetUsuario(int id)
+        {
+            List<Usuario> List_Usuario = new List<Usuario>();
+            Usuario us;
+            string consulta = string.Format("select * from usuario where ID_Usuario={0}", id);
+            List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            if (lista == null) return null;
+
+
+                us = new Usuario(lista[0]);
+
+            return us;
+        }
+
+        //Obtener todos los usuarios
+        public static List<Usuario> GetUsuarios()
+        {
+            List<Usuario> List_Usuario = new List<Usuario>();
+            Usuario us;
+            string consulta = string.Format("select * from usuario");
+            List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            if (lista == null) return null;
+
+            foreach (List<object> l1 in lista)
+            {
+                us = new Usuario(l1);
+                List_Usuario.Add(us);
+            }
+            return List_Usuario;
+        }
+
+
 
         //Funcionalidad para insertar un usuario en la base de datos;
         public static bool RegistrarUsuario(Usuario u)
@@ -77,11 +112,13 @@ namespace primeraprueba
 
         public static Usuario LogIn(string nom, string passwd)
         {
+            ConexionBBDD.Instanciar().AbrirConexion();
             string passhash = ConexionBBDD.EncriptarContraseña(passwd);
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
                 "AND contraseña ='{1}'", nom, passhash);
 
             var resultado = ConexionBBDD.Instanciar().Query(consulta);
+            ConexionBBDD.Instanciar().CerrarConexion();
             if (resultado == null)
                 return null;
             else

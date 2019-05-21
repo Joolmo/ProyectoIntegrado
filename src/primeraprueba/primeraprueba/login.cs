@@ -12,10 +12,15 @@ namespace primeraprueba
 {
 	public partial class login : Form
 	{
-		public login()
+
+        Base parent = null;
+		public login(Base par)
 		{
 			InitializeComponent();
-		}
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+        }
 
 		private void label3_Click(object sender, EventArgs e){}
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e) { }
@@ -23,26 +28,20 @@ namespace primeraprueba
 		private void btIniciar_Click(object sender, EventArgs e)
 		{
 			Usuario.LogIn(txtNombre.Text, txtContra.Text);
-			Hide();
-			Home homeusuario = new Home();
-			homeusuario.ShowDialog();
+            parent.GoHome();
 			
 		}
 
 		private void btRegistrar_Click(object sender, EventArgs e)
 		{
-			Hide();
-			Registrarse Registro = new Registrarse();
-			Registro.ShowDialog();
+            parent.GoRegistro();
 		}
 
 
 
 		private void linlContraseña_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Hide();
-			Contrasenya reg = new Contrasenya();
-			reg.ShowDialog();
+		
 			
 			
 		}

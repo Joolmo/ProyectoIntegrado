@@ -5,7 +5,7 @@ using System.IO;
 using System.Drawing.Imaging;
 namespace primeraprueba
 {
-    class Receta
+    public class Receta
     {
         #region Propieda
         private string nombre;

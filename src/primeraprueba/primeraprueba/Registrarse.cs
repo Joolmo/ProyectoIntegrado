@@ -12,10 +12,14 @@ namespace primeraprueba
 {
 	public partial class Registrarse : Form
 	{
-		public Registrarse()
+        Base parent = null;
+		public Registrarse(Base par)
 		{
 			InitializeComponent();
-		}
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+        }
 
 		private void label2_Click(object sender, EventArgs e){}
 		private void textBox5_TextChanged(object sender, EventArgs e){}
@@ -31,9 +35,7 @@ namespace primeraprueba
                 Usuario reg = new Usuario(txtNombre.Text, txtContra.Text, txtCorreo.Text, "", ptbImagen.Image);
                 Usuario.RegistrarUsuario(reg);
 
-                Hide();
-                Home registra = new Home();
-                registra.ShowDialog();
+                parent.GoHome();
             }
             
 
@@ -41,9 +43,7 @@ namespace primeraprueba
 
 		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Hide();
-			login inicio = new login();
-			inicio.ShowDialog();
+            parent.GoLogin();
 		}
 
         private void ptbImagen_Click(object sender, EventArgs e)

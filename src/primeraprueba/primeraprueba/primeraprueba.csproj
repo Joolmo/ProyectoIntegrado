@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buscador.cs" />
     <Compile Include="ConexionBBDD.cs" />
     <Compile Include="Contrasenya.cs">
@@ -118,6 +124,9 @@
     <Compile Include="UsuarioInterfaz.Designer.cs">
       <DependentUpon>UsuarioInterfaz.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contrasenya.resx">
       <DependentUpon>Contrasenya.cs</DependentUpon>
     </EmbeddedResource>

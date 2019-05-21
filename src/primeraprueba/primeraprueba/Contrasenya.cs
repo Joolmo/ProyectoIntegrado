@@ -12,16 +12,18 @@ namespace primeraprueba
 {
 	public partial class Contrasenya : Form
 	{
-		public Contrasenya()
+        Base parent = null;
+        public Contrasenya(Base par)
 		{
 			InitializeComponent();
-		}
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+        }
 
 		private void btIniciar_Click(object sender, EventArgs e)
 		{
-			Hide();
-			login logear = new login();
-			logear.ShowDialog();
+            parent.GoLogin();
 		}
 
 

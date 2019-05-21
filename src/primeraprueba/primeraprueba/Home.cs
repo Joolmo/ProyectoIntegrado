@@ -11,11 +11,26 @@ using System.Windows.Forms;
 namespace primeraprueba
 {
 	public partial class Home : Form
-	{
-		public Home()
+	{ 
+        Base parent = null;
+
+		public Home(Base par)
 		{
 			InitializeComponent();
-		}
+            accesoURRv2.Titulo = "";
+            accesoURRv1.Titulo = "";
+            accesoURRv3.Titulo = "";
+            accesoURRv4.Titulo = "";
+            accesoURRv5.Titulo = "";
+            accesoURRv6.Titulo = "";
+            accesoURRv7.Titulo = "";
+            accesoURRv8.Titulo = "";
+            accesoURRv9.Titulo = "";
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+
+        }
 
 		private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e){}
 		private void progressBar1_Click(object sender, EventArgs e){}
@@ -25,18 +40,14 @@ namespace primeraprueba
 
 		private void btSesion_Click(object sender, EventArgs e)
 		{
-			Hide();
-			login log = new login();
-			log.ShowDialog();
-			
+
+            parent.GoLogin();
 			
 		}
 
 		private void btRegistro_Click(object sender, EventArgs e)
 		{
-			Hide();
-			Registrarse registro = new Registrarse();
-			registro.ShowDialog();
+            parent.GoRegistro();
 		}
 
 		private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -61,10 +72,17 @@ namespace primeraprueba
 
         private void btRegistro_Click_1(object sender, EventArgs e)
         {
-            Hide();
-            Registrarse reg = new Registrarse();
-            reg.ShowDialog();
-            
+            parent.GoRegistro(); 
+        }
+
+        private void accesoURRv2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
