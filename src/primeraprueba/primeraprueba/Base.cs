@@ -37,12 +37,19 @@ namespace primeraprueba
             actual.Show();
         }
 
-        //public void GoReceta(Receta rec)
-        //{
-        //    actual.Dispose();
-        //    actual = new Recetas(this, rec);
-        //    actual.Show();
-        //}
+        public void GoReceta(Receta rec)
+        {
+            actual.Dispose();
+            actual = new Recetas(this, rec);
+            actual.Show();
+        }
+
+        public void GoCrearReceta()
+        {
+            actual.Dispose();
+            actual = new CrearReceta(this);
+            actual.Show();
+        }
 
         public void GoRegistro()
         {

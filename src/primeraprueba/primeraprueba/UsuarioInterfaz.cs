@@ -24,9 +24,7 @@ namespace primeraprueba
 
 		private void btCrearReceta_Click(object sender, EventArgs e)
 		{
-			Hide();
-			CrearReceta nuevaReceta = new CrearReceta();
-			nuevaReceta.ShowDialog();
+
 		}
 	}
 }

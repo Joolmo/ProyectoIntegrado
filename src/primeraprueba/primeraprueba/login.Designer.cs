@@ -73,7 +73,7 @@
             // 
             this.linkContraseña.AutoSize = true;
             this.linkContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.linkContraseña.Location = new System.Drawing.Point(47, 324);
+            this.linkContraseña.Location = new System.Drawing.Point(46, 331);
             this.linkContraseña.Name = "linkContraseña";
             this.linkContraseña.Size = new System.Drawing.Size(154, 20);
             this.linkContraseña.TabIndex = 3;
@@ -84,7 +84,7 @@
             // btIniciar
             // 
             this.btIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btIniciar.Location = new System.Drawing.Point(491, 317);
+            this.btIniciar.Location = new System.Drawing.Point(520, 324);
             this.btIniciar.Name = "btIniciar";
             this.btIniciar.Size = new System.Drawing.Size(100, 34);
             this.btIniciar.TabIndex = 4;
@@ -120,7 +120,7 @@
             // btRegistrar
             // 
             this.btRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btRegistrar.Location = new System.Drawing.Point(287, 317);
+            this.btRegistrar.Location = new System.Drawing.Point(300, 324);
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(102, 34);
             this.btRegistrar.TabIndex = 8;

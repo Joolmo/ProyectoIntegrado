@@ -21,7 +21,8 @@ namespace primeraprueba
         private int numRecetas;
         private Image foto;
 
-        static Usuario usuarioActual = new Usuario();
+        static Usuario usuarioActual = null;
+        static public Usuario UsuarioActual { get { return usuarioActual; } }
 
         public int ID_Usuario { get { return id_usuario; } }
         public string Nombre { get { return nombre; } }
@@ -125,7 +126,11 @@ namespace primeraprueba
             if (resultado == null)
                 return null;
             else
-                return new Usuario(resultado[0]);
+            {
+                Usuario usuario = new Usuario(resultado[0]);
+                usuarioActual = usuario;
+                return usuario;
+            }
 
         }
 

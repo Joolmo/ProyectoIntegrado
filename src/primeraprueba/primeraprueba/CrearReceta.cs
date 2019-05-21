@@ -11,11 +11,17 @@ using System.Windows.Forms;
 namespace primeraprueba
 {
 	public partial class CrearReceta : Form
-	{
-		public CrearReceta()
+    {
+        Base parent = null;
+
+        public CrearReceta(Base par)
 		{
 			InitializeComponent();
-		}
+
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+        }
 
 		private void textBox1_TextChanged(object sender, EventArgs e)
 		{
@@ -26,5 +32,20 @@ namespace primeraprueba
 		{
 
 		}
-	}
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picFoto.Image = new Bitmap(open.FileName);
+            }
+        }
+
+        private void BtEnviar_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

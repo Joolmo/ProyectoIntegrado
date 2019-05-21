@@ -17,6 +17,14 @@ namespace primeraprueba
 		public Home(Base par)
 		{
 			InitializeComponent();
+
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
             accesoURRv2.Titulo = "";
             accesoURRv1.Titulo = "";
             accesoURRv3.Titulo = "";
@@ -26,48 +34,31 @@ namespace primeraprueba
             accesoURRv7.Titulo = "";
             accesoURRv8.Titulo = "";
             accesoURRv9.Titulo = "";
-            MdiParent = par;
-            parent = par;
-            WindowState = FormWindowState.Maximized;
 
+            if (Usuario.UsuarioActual != null)
+            {
+                btRegistro.Hide();
+                btSesion.Hide();
+                picUsuario.Show();
+                msDesplegable.Show();
+
+                picUsuario.Image = Usuario.UsuarioActual.Foto;
+            }
         }
 
-		private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e){}
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e){}
 		private void progressBar1_Click(object sender, EventArgs e){}
 		private void label12_Click(object sender, EventArgs e) { }
 		private void lblUsuDes4_Click(object sender, EventArgs e) { }
-
-
-		private void btSesion_Click(object sender, EventArgs e)
-		{
-
-            parent.GoLogin();
-			
-		}
 
 		private void btRegistro_Click(object sender, EventArgs e)
 		{
             parent.GoRegistro();
 		}
 
-		private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-		{
-
-		}
-
-        private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btSesion_Click_1(object sender, EventArgs e)
         {
-
+            parent.GoLogin();
         }
 
         private void btRegistro_Click_1(object sender, EventArgs e)
@@ -75,17 +66,17 @@ namespace primeraprueba
             parent.GoRegistro(); 
         }
 
-        private void accesoURRv2_Load(object sender, EventArgs e)
+        private void PicUsuario_Click(object sender, EventArgs e)
         {
-
+            msDesplegable.BringToFront();
         }
 
-        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        private void RecetasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            parent.GoCrearReceta();
         }
 
-        private void ptbApp_Click(object sender, EventArgs e)
+        private void PtbApp_Click(object sender, EventArgs e)
         {
 
         }
