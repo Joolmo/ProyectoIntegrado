@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrarse));
             this.pnlRegistro = new System.Windows.Forms.Panel();
             this.btRegistrar = new System.Windows.Forms.Button();
             this.linkIniciar = new System.Windows.Forms.LinkLabel();
@@ -104,6 +105,7 @@
             // 
             // ptbImagen
             // 
+            this.ptbImagen.Image = ((System.Drawing.Image)(resources.GetObject("ptbImagen.Image")));
             this.ptbImagen.Location = new System.Drawing.Point(655, 134);
             this.ptbImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptbImagen.Name = "ptbImagen";
