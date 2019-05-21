@@ -60,14 +60,14 @@ namespace primeraprueba
 
 
         //Funcionalidad para insertar un usuario en la base de datos;
-        public bool RegistrarUsuario(Usuario u)
+        public static bool RegistrarUsuario(Usuario u)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
             string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
             string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor, Foto) " +
                 "VALUES('{0}','{1}','{2}',0,0, @foto)", u.Nombre, u.Correo, passhash);
-
-            bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, u.Foto);
+            
+            bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, u.foto);
 
             ConexionBBDD.Instanciar().CerrarConexion();
             return funciona;
@@ -75,7 +75,7 @@ namespace primeraprueba
 
         }
 
-        public Usuario LogIn(string nom, string passwd)
+        public static Usuario LogIn(string nom, string passwd)
         {
             string passhash = ConexionBBDD.EncriptarContraseña(passwd);
             string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
@@ -89,7 +89,7 @@ namespace primeraprueba
 
         }
 
-        public Usuario LogOut(MySqlConnection conexion, string nom, string passwd)
+        public static Usuario LogOff(MySqlConnection conexion, string nom, string passwd)
         {
             var oldUsuario = usuarioActual;
             usuarioActual = null;
