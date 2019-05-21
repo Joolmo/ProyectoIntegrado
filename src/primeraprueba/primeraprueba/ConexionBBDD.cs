@@ -156,6 +156,32 @@ namespace primeraprueba
             }
         }
 
+        /// <summary>
+        /// Funcion para hacer inserts, deltes y ipdates que tengan alguna foto
+        /// </summary>
+        /// <param name="consulta">String dondese guarda la consulta MySql</param>
+        /// <param name="picture">La imagen que queremos guardar en la base de datos</param>
+        /// <returns></returns>
+        public bool NonQuery(string consulta, Image picture)
+        {
+
+            try
+            {
+                byte[] pic = FormImageToByte(picture);
+                using (var cmd = new MySqlCommand(consulta, conexion))
+                {
+                    cmd.Parameters.AddWithValue("@foto", pic);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                errores.Push(ex.Message);
+                return false;
+            }
+        }
+
         public static byte[] FormImageToByte(Image foto)
         {
             byte[] byteArr = new byte[0];

@@ -64,10 +64,10 @@ namespace primeraprueba
         {
             ConexionBBDD.Instanciar().AbrirConexion();
             string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
-            string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor) " +
-                "VALUES('{0}','{1}','{2}',0,0)", u.Nombre, u.Correo, passhash);
+            string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor, Foto) " +
+                "VALUES('{0}','{1}','{2}',0,0, @foto)", u.Nombre, u.Correo, passhash);
 
-            bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta);
+            bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, u.Foto);
 
             ConexionBBDD.Instanciar().CerrarConexion();
             return funciona;
