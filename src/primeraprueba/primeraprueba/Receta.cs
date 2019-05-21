@@ -69,9 +69,9 @@ namespace primeraprueba
             IdUsuario = (int)listaReceta[1];
             nombre = (string)listaReceta[2];
             pasos = (string)listaReceta[3];
-            ingredientes = (List<string>)listaReceta[4];
-            foto = (Image)listaReceta[5];
-            tags = (List<string>)listaReceta[6];
+            ingredientes = Buscador.ObtenerIngredientes((string)listaReceta[4]);
+            //foto = ConexionBBDD.FromByteToImage((byte[])listaReceta[5]);
+            tags = Buscador.ObtenerTags((string)listaReceta[6]);
 
 
         }
@@ -79,11 +79,12 @@ namespace primeraprueba
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Receta> GetRecetas(int user)
         {
+            ConexionBBDD.Instanciar().AbrirConexion();
             List<Receta> List_Receta = new List<Receta>();
             Receta r;
             string consulta = string.Format("select * from recetas where ID_Usuario_P={0}", user);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
-
+            ConexionBBDD.Instanciar().CerrarConexion();
             if (lista == null) return null;
 
             foreach (List<object> l1 in lista)
@@ -131,10 +132,11 @@ namespace primeraprueba
 
         public static Receta GetReceta(int id)
         {
+            ConexionBBDD.Instanciar().AbrirConexion();
             Receta recip = null;
-            string consulta = string.Format("select * from receta where ID_Receta={0}", id);
+            string consulta = string.Format("select * from recetas where ID_Receta={0}", id);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
-
+            ConexionBBDD.Instanciar().CerrarConexion();
             if (lista == null) return null;
 
             foreach (List<object> l1 in lista)

@@ -20,12 +20,12 @@ namespace primeraprueba
             MdiParent = par;
             parent = par;
             WindowState = FormWindowState.Maximized;
-
+            lblRetoRecetas.Text = receta.Nombre;
             ptbFoto.Image = Usuario.GetUsuario(receta.IdUsuario).Foto;
-            ptbReceta.Image = receta.Foto;
-            foreach(String tag in receta.Tags) tags1.AnyadirTag(tag);
-            foreach (string ing in receta.Indredientes) tbpIngredientes.Text += ing + "/n";
-            tbpPasos.Text = receta.Pasos;
+          //  ptbReceta.Image = receta.Foto;
+            foreach(string tag in receta.Tags) tags1.AnyadirTag(tag);
+            foreach (string ing in receta.Indredientes) lblIngredientes.Text += ing + "\n";
+            lblPasos.Text = receta.Pasos;
         }
 
 		private void pictureBox2_Click(object sender, EventArgs e){}

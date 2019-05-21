@@ -84,5 +84,10 @@ namespace primeraprueba
         {
 
         }
+
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

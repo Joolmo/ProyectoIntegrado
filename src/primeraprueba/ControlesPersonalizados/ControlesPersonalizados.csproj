@@ -36,7 +36,11 @@
     <Reference Include="Dispenser.Hasher.Sha256, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dispenser.Hasher.Sha256.1.0.0\lib\net452\Dispenser.Hasher.Sha256.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.LiveShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.LiveShare.1.0.181\lib\net461\Microsoft.VisualStudio.LiveShare.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

@@ -51,36 +51,39 @@ namespace primeraprueba
         {
                 id_usuario = (int)listaUsuario[0];
                 nombre = (string)listaUsuario[1];
-                descripcion = (string)listaUsuario[2];
+                //descripcion = (string)listaUsuario[2];
                 correo = (string)listaUsuario[3];
                 contraseña = ConexionBBDD.EncriptarContraseña((string)listaUsuario[4]);
                 numRecetas = (int)listaUsuario[5];
                 numSeguidores = (int)listaUsuario[6];
+                foto = ConexionBBDD.FromByteToImage((byte[])listaUsuario[7]);
         }
 
         //Obtiene un usuario con un id
         public static Usuario GetUsuario(int id)
         {
+            ConexionBBDD.Instanciar().AbrirConexion();
             List<Usuario> List_Usuario = new List<Usuario>();
-            Usuario us;
             string consulta = string.Format("select * from usuario where ID_Usuario={0}", id);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
-
+            ConexionBBDD.Instanciar().CerrarConexion();
             if (lista == null) return null;
 
 
-                us = new Usuario(lista[0]);
+            return new Usuario(lista[0]);
 
-            return us;
+             
         }
 
         //Obtener todos los usuarios
         public static List<Usuario> GetUsuarios()
         {
+            ConexionBBDD.Instanciar().AbrirConexion();
             List<Usuario> List_Usuario = new List<Usuario>();
             Usuario us;
             string consulta = string.Format("select * from usuario");
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+            ConexionBBDD.Instanciar().CerrarConexion();
 
             if (lista == null) return null;
 

@@ -196,6 +196,15 @@ namespace primeraprueba
 
         }
 
+        public static Image FromByteToImage(byte[] b)
+        {
+            using(MemoryStream image = new MemoryStream(b))
+            {
+                return Image.FromStream(image);
+            }
+
+        }
+
         //La encriptacion de la contraseña, puede que no este completa
         public static string EncriptarContraseña(string password)
         {

@@ -13,7 +13,7 @@ namespace ControlesPersonalizados
     public partial class Tags : UserControl
     {
 
-        private List<string> tag;
+        private List<string> tag = new List<string>();
         private List<Control> controls= new List<Control>();
 
         public List<string> Tag { get { return tag; } }

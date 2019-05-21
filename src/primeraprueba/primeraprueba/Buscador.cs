@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace primeraprueba
 {
-    class Buscador
+    static class Buscador
     {
-        public List<Receta> BuscarRecetas(string nombre, List<string> tags = null)
+        public static List<Receta> BuscarRecetas(string nombre, List<string> tags = null)
         {
             int nletras = nombre.Length;
             Receta rec;
@@ -35,7 +35,7 @@ namespace primeraprueba
             return List_Receta;
         }
 
-        public List<Usuario> BuscarUsuarios(string nombre)
+        public static List<Usuario> BuscarUsuarios(string nombre)
         {
             int nletras = nombre.Length;
             Usuario u;
@@ -62,9 +62,10 @@ namespace primeraprueba
             return List_Usuario;
         }
 
-		public List<string> ObtenerTags(string t) 
+		public static List<string> ObtenerTags(string t) 
 		{
-			List<string> resultado = new List<string>();
+            t += " ";
+            List<string> resultado = new List<string>();
 			string palabra = "";
 			bool interruptor = false;
 			foreach (var ch in t)
@@ -84,8 +85,9 @@ namespace primeraprueba
 			return resultado;
 		}
 
-		public List<string> ObtenerIngredientes(string t)
+		public static List<string> ObtenerIngredientes(string t)
 		{
+            t += " ";
 			List<string> resultado = new List<string>();
 			string palabra = "";
 			bool interruptor = false;
