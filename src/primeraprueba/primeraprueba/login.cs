@@ -22,6 +22,7 @@ namespace primeraprueba
 
 		private void btIniciar_Click(object sender, EventArgs e)
 		{
+			Usuario.LogIn(txtNombre.Text, txtContra.Text);
 			Hide();
 			Home homeusuario = new Home();
 			homeusuario.ShowDialog();

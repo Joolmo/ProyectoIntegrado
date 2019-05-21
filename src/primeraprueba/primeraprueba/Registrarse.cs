@@ -29,7 +29,7 @@ namespace primeraprueba
             {
 
                 Usuario reg = new Usuario(txtNombre.Text, txtContra.Text, txtCorreo.Text, "", ptbImagen.Image);
-                reg.RegistrarUsuario(reg);
+                Usuario.RegistrarUsuario(reg);
 
                 Hide();
                 Home registra = new Home();
