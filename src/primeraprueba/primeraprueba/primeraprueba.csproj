@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buscador.cs" />
     <Compile Include="ConexionBBDD.cs" />
     <Compile Include="Contrasenya.cs">
       <SubType>Form</SubType>

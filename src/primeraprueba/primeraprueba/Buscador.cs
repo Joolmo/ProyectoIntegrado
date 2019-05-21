@@ -61,5 +61,49 @@ namespace primeraprueba
             }
             return List_Usuario;
         }
-    }
+
+		public List<string> ObtenerTags(string t) 
+		{
+			List<string> resultado = new List<string>();
+			string palabra = "";
+			bool interruptor = false;
+			foreach (var ch in t)
+			{
+				if (ch == ' ')
+				{
+					interruptor = false;
+					if (palabra != "")
+					{
+						resultado.Add(palabra);
+						palabra = "";
+					}
+				}
+				if (interruptor) palabra += ch;
+				if (ch == '#') interruptor = true;
+			}
+			return resultado;
+		}
+
+		public List<string> ObtenerIngredientes(string t)
+		{
+			List<string> resultado = new List<string>();
+			string palabra = "";
+			bool interruptor = false;
+			foreach (var ch in t)
+			{
+				if (ch == ' ')
+				{
+					interruptor = false;
+					if (palabra != "")
+					{
+						resultado.Add(palabra);
+						palabra = "";
+					}
+				}
+				if (interruptor) palabra += ch;
+				if (ch == '@') interruptor = true;
+			}
+			return resultado;
+		}
+	}
 }
