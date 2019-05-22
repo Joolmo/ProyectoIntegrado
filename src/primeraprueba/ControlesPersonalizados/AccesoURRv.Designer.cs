@@ -39,21 +39,22 @@
             // 
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(99, 177);
+            this.lblTitulo.Location = new System.Drawing.Point(132, 217);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(0, 13);
+            this.lblTitulo.Size = new System.Drawing.Size(0, 17);
             this.lblTitulo.TabIndex = 0;
             // 
             // picFoto
             // 
             this.picFoto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picFoto.Location = new System.Drawing.Point(3, 3);
+            this.picFoto.Location = new System.Drawing.Point(4, 4);
+            this.picFoto.Margin = new System.Windows.Forms.Padding(4);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(193, 171);
+            this.picFoto.Size = new System.Drawing.Size(257, 209);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFoto.TabIndex = 1;
             this.picFoto.TabStop = false;
-            this.picFoto.Click += new System.EventHandler(this.picFoto_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -63,21 +64,22 @@
             this.tableLayoutPanel1.Controls.Add(this.picFoto, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(199, 190);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(265, 234);
             this.tableLayoutPanel1.TabIndex = 2;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // AccesoURRv
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AccesoURRv";
-            this.Size = new System.Drawing.Size(199, 190);
+            this.Size = new System.Drawing.Size(265, 234);
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

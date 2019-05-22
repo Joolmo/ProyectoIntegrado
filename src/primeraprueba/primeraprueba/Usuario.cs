@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Drawing;
-using System.Drawing.Imaging;
-using Dispenser;
+
 namespace primeraprueba
 {
     class Usuario
@@ -50,49 +45,50 @@ namespace primeraprueba
 
         public Usuario(List<object> listaUsuario)
         {
-                id_usuario = (int)listaUsuario[0];
-                nombre = (string)listaUsuario[1];
-                //descripcion = (string)listaUsuario[2];
-                correo = (string)listaUsuario[3];
-                contraseña = ConexionBBDD.EncriptarContraseña((string)listaUsuario[4]);
-                numRecetas = (int)listaUsuario[5];
-                numSeguidores = (int)listaUsuario[6];
-                foto = ConexionBBDD.FromByteToImage((byte[])listaUsuario[7]);
+            id_usuario = (int)listaUsuario[0];
+            nombre = (string)listaUsuario[1];
+
+            descripcion = Convert.IsDBNull(listaUsuario[2]) ? 
+            "Sin descripción" : (string)listaUsuario[2];
+
+            correo = (string)listaUsuario[3];
+            contraseña = ConexionBBDD.EncriptarContraseña((string)listaUsuario[4]);
+            numRecetas = (int)listaUsuario[5];
+            numSeguidores = (int)listaUsuario[6];
+            foto = ConexionBBDD.FromByteToImage((byte[])listaUsuario[7]);
         }
 
         //Obtiene un usuario con un id
         public static Usuario GetUsuario(int id)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
+
             List<Usuario> List_Usuario = new List<Usuario>();
             string consulta = string.Format("select * from usuario where ID_Usuario={0}", id);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
             ConexionBBDD.Instanciar().CerrarConexion();
+
             if (lista == null) return null;
-
-
             return new Usuario(lista[0]);
-
-             
         }
 
         //Obtener todos los usuarios
         public static List<Usuario> GetUsuarios()
         {
             ConexionBBDD.Instanciar().AbrirConexion();
+
             List<Usuario> List_Usuario = new List<Usuario>();
-            Usuario us;
             string consulta = string.Format("select * from usuario");
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
             ConexionBBDD.Instanciar().CerrarConexion();
 
             if (lista == null) return null;
 
             foreach (List<object> l1 in lista)
-            {
-                us = new Usuario(l1);
-                List_Usuario.Add(us);
-            }
+                List_Usuario.Add(new Usuario(l1));
+
             return List_Usuario;
         }
 
@@ -102,44 +98,45 @@ namespace primeraprueba
         public static bool RegistrarUsuario(Usuario u)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
+
             string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
-            string consulta = String.Format("INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor, Foto) " +
-                "VALUES('{0}','{1}','{2}',0,0, @foto)", u.Nombre, u.Correo, passhash);
+            string consulta = String.Format(
+                "INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor, Foto) " +
+                "VALUES('{0}','{1}','{2}',0,0, @foto)", u.Nombre, u.Correo, passhash
+            );
             
             bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, u.foto);
 
             ConexionBBDD.Instanciar().CerrarConexion();
+
             return funciona;
-
-
         }
 
         public static Usuario LogIn(string nom, string passwd)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
+
             string passhash = ConexionBBDD.EncriptarContraseña(passwd);
-            string consulta = String.Format("SELECT * FROM usuario WHERE nombre_usuario = '{0}' " +
-                "AND contraseña ='{1}'", nom, passhash);
+            string consulta = String.Format(
+                "SELECT * FROM usuario WHERE nombre_usuario = '{0}' AND contraseña ='{1}'"
+                , nom, passhash
+            );
 
             var resultado = ConexionBBDD.Instanciar().Query(consulta);
+            
             ConexionBBDD.Instanciar().CerrarConexion();
-            if (resultado == null)
-                return null;
-            else
-            {
-                Usuario usuario = new Usuario(resultado[0]);
-                usuarioActual = usuario;
-                return usuario;
-            }
 
+            if (resultado == null) return null;
+
+            Usuario usuario = new Usuario(resultado[0]);
+            usuarioActual = usuario;
+
+            return usuario;
         }
 
-        public static Usuario LogOff(MySqlConnection conexion, string nom, string passwd)
+        public static void LogOff(MySqlConnection conexion, string nom, string passwd)
         {
-            var oldUsuario = usuarioActual;
             usuarioActual = null;
-
-            return oldUsuario;
         }
 
         //Funcionalidad usada para insertar en la base de datos cuando se quiere seguir a un usuario

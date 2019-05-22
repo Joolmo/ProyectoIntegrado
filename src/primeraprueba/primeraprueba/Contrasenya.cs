@@ -26,6 +26,9 @@ namespace primeraprueba
             parent.GoLogin();
 		}
 
-
-	}
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+            parent.GoHome();
+        }
+    }
 }

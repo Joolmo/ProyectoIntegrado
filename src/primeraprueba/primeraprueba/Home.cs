@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ControlesPersonalizados;
 
 namespace primeraprueba
 {
@@ -25,18 +26,7 @@ namespace primeraprueba
 
         private void Home_Load(object sender, EventArgs e)
         {
-            Receta receta = Receta.GetReceta(14);
-            accesoURRv2.Titulo = receta.Nombre;
-            accesoURRv2.Foto = receta.Foto;
-            accesoURRv2.ID = receta.IdReceta;
-            accesoURRv1.Titulo = "";
-            accesoURRv3.Titulo = "";
-            accesoURRv4.Titulo = "";
-            accesoURRv5.Titulo = "";
-            accesoURRv6.Titulo = "";
-            accesoURRv7.Titulo = "";
-            accesoURRv8.Titulo = "";
-            accesoURRv9.Titulo = "";
+            RellenarRecetas();
 
             if (Usuario.UsuarioActual != null)
             {
@@ -49,10 +39,28 @@ namespace primeraprueba
             }
         }
 
+        private void RellenarRecetas()
+        {
+            Random rnd = new Random();
+            List<Receta> rec = Receta.GetRecetas();
+            int i = rec.Count;
+            foreach (Control con in Controls)
+            {
+                if(con.GetType() == accesoURRv1.GetType())
+                {
+
+                    int z = rnd.Next(0, i);
+                    ((AccesoURRv) con).Titulo = rec[z].Nombre;
+                    ((AccesoURRv)con).Foto = rec[z].Foto;
+                    ((AccesoURRv)con).ID = rec[z].IdReceta;
+
+                    ((AccesoURRv)con).Tipo = "Receta";
+                }
+            }
+
+        }
+
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e){}
-		private void progressBar1_Click(object sender, EventArgs e){}
-		private void label12_Click(object sender, EventArgs e) { }
-		private void lblUsuDes4_Click(object sender, EventArgs e) { }
 
 		private void btRegistro_Click(object sender, EventArgs e)
 		{
@@ -98,6 +106,21 @@ namespace primeraprueba
         {
             parent.GoReceta(Receta.GetReceta(accesoURRv2.ID));
 
+        }
+
+        private void accesoURRv2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accesoURRv2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accesoURRv2_DoubleClick(object sender, EventArgs e)
+        {
+            parent.GoReceta(Receta.GetReceta(17));
         }
     }
 }
