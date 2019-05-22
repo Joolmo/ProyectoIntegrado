@@ -107,5 +107,23 @@ namespace primeraprueba
 			}
 			return resultado;
 		}
+
+        public static string ObtenerTags(List<string> list)
+        {
+            string total = "";
+            foreach (var st in list)
+                total += "#" + st + " ";
+
+            return total;
+        }
+
+        public static string ObtenerIngredientes(List<string> list)
+        {
+            string total = "";
+            foreach (var st in list)
+                total += "@" + st + " ";
+
+            return total;
+        }
 	}
 }

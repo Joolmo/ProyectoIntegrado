@@ -25,7 +25,10 @@ namespace primeraprueba
 
         private void Home_Load(object sender, EventArgs e)
         {
-            accesoURRv2.Titulo = "";
+            Receta receta = Receta.GetReceta(14);
+            accesoURRv2.Titulo = receta.Nombre;
+            accesoURRv2.Foto = receta.Foto;
+            accesoURRv2.ID = receta.IdReceta;
             accesoURRv1.Titulo = "";
             accesoURRv3.Titulo = "";
             accesoURRv4.Titulo = "";
@@ -78,6 +81,22 @@ namespace primeraprueba
 
         private void PtbApp_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void AccesoURRv2_MouseClick(object sender, MouseEventArgs e)
+        {
+            parent.GoReceta(Receta.GetReceta(accesoURRv2.ID));
+        }
+
+        private void TableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtIngles_Click(object sender, EventArgs e)
+        {
+            parent.GoReceta(Receta.GetReceta(accesoURRv2.ID));
 
         }
     }

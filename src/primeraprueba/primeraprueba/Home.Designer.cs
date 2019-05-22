@@ -41,8 +41,8 @@
             this.tbcHome = new System.Windows.Forms.TabControl();
             this.tbpRecetas = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.accesoURRv1 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv2 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv1 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv3 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv4 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv5 = new ControlesPersonalizados.AccesoURRv();
@@ -124,6 +124,7 @@
             this.btIngles.TabIndex = 26;
             this.btIngles.Text = "English";
             this.btIngles.UseVisualStyleBackColor = true;
+            this.btIngles.Click += new System.EventHandler(this.BtIngles_Click);
             // 
             // txtDireccion
             // 
@@ -229,8 +230,8 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRv1, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.accesoURRv2, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRv1, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.accesoURRv3, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.accesoURRv4, 2, 1);
             this.tableLayoutPanel4.Controls.Add(this.accesoURRv5, 1, 1);
@@ -247,6 +248,21 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1350, 486);
             this.tableLayoutPanel4.TabIndex = 15;
+            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel4_Paint);
+            // 
+            // accesoURRv2
+            // 
+            this.accesoURRv2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.accesoURRv2.Foto = null;
+            this.accesoURRv2.ID = 0;
+            this.accesoURRv2.Location = new System.Drawing.Point(105, 4);
+            this.accesoURRv2.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRv2.Name = "accesoURRv2";
+            this.accesoURRv2.Size = new System.Drawing.Size(239, 153);
+            this.accesoURRv2.TabIndex = 1;
+            this.accesoURRv2.Tipo = null;
+            this.accesoURRv2.Titulo = "label1";
+            this.accesoURRv2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AccesoURRv2_MouseClick);
             // 
             // accesoURRv1
             // 
@@ -260,19 +276,6 @@
             this.accesoURRv1.TabIndex = 0;
             this.accesoURRv1.Tipo = null;
             this.accesoURRv1.Titulo = "label1";
-            // 
-            // accesoURRv2
-            // 
-            this.accesoURRv2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv2.Foto = null;
-            this.accesoURRv2.ID = 0;
-            this.accesoURRv2.Location = new System.Drawing.Point(105, 5);
-            this.accesoURRv2.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRv2.Name = "accesoURRv2";
-            this.accesoURRv2.Size = new System.Drawing.Size(239, 152);
-            this.accesoURRv2.TabIndex = 1;
-            this.accesoURRv2.Tipo = null;
-            this.accesoURRv2.Titulo = "label1";
             // 
             // accesoURRv3
             // 
@@ -725,9 +728,9 @@
             // 
             // picUsuario
             // 
-            this.picUsuario.Location = new System.Drawing.Point(82, 6);
+            this.picUsuario.Location = new System.Drawing.Point(73, 3);
             this.picUsuario.Name = "picUsuario";
-            this.picUsuario.Size = new System.Drawing.Size(107, 82);
+            this.picUsuario.Size = new System.Drawing.Size(126, 91);
             this.picUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUsuario.TabIndex = 28;
             this.picUsuario.TabStop = false;
@@ -764,13 +767,13 @@
             // perfilToolStripMenuItem
             // 
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.perfilToolStripMenuItem.Text = "Perfil";
             // 
             // recetasToolStripMenuItem
             // 
             this.recetasToolStripMenuItem.Name = "recetasToolStripMenuItem";
-            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.recetasToolStripMenuItem.Text = "Recetas";
             this.recetasToolStripMenuItem.Click += new System.EventHandler(this.RecetasToolStripMenuItem_Click);
             // 

@@ -58,7 +58,7 @@ namespace ControlesPersonalizados
         public void EliminarTag()
         {
 
-            if(tlpMain.ColumnCount != 0)
+            if(tag.Count != 0)
             {
                 tlpMain.Controls.Remove(controls.ElementAt(tlpMain.ColumnCount - 2));
                 controls.RemoveAt(tlpMain.ColumnCount - 2);

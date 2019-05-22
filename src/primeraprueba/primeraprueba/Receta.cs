@@ -70,7 +70,7 @@ namespace primeraprueba
             nombre = (string)listaReceta[2];
             pasos = (string)listaReceta[3];
             ingredientes = Buscador.ObtenerIngredientes((string)listaReceta[4]);
-            //foto = ConexionBBDD.FromByteToImage((byte[])listaReceta[5]);
+            foto = ConexionBBDD.FromByteToImage((byte[])listaReceta[5]);
             tags = Buscador.ObtenerTags((string)listaReceta[6]);
 
 
@@ -98,11 +98,12 @@ namespace primeraprueba
 
         public static bool CrearReceta(Receta recet)
         {
-            byte[] buffer = ConexionBBDD.FormImageToByte(recet.foto);
+            string consulta = string.Format(
+                "insert into recetas values (null,{0},'{1}','{2}','{3}', @foto,'{4}')", 
+                recet.IdUsuario, recet.Nombre, recet.pasos, Buscador.ObtenerIngredientes(recet.ingredientes), Buscador.ObtenerTags(recet.tags)
+            );
 
-            string consulta = string.Format("insert into recetas values(null,'{0}','{1}','{2}',{3},'{4}')", 
-                recet.IdUsuario, recet.Nombre, recet.pasos, buffer, recet.Tags);
-            if (ConexionBBDD.Instanciar().NonQuery(consulta))
+            if (ConexionBBDD.Instanciar().NonQuery(consulta,recet.foto))
             {
                 return true;
             }

@@ -45,6 +45,60 @@ namespace primeraprueba
 
         private void BtEnviar_Click(object sender, EventArgs e)
         {
+            if(Usuario.UsuarioActual != null)
+            {
+                Receta receta = new Receta();
+                receta.IdUsuario = Usuario.UsuarioActual.ID_Usuario;
+                receta.Foto = picFoto.Image;
+                receta.Indredientes = Buscador.ObtenerIngredientes(txtIngredientes.Text);
+                receta.Pasos = txtPasos.Text;
+                receta.Tags = tgsTags.Tag;
+                receta.Nombre = txtNombreReceta.Text;
+
+                ConexionBBDD.Instanciar().AbrirConexion();
+                Receta.CrearReceta(receta);
+                ConexionBBDD.Instanciar().CerrarConexion();
+            }
+        }
+
+        private void Tags2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAnyadirTag_Click(object sender, EventArgs e)
+        {
+            tgsTags.AnyadirTag(txtTag.Text);
+        }
+
+        private void BtnEliminarTag_Click(object sender, EventArgs e)
+        {
+            tgsTags.EliminarTag();
+        }
+
+        private void TableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CrearReceta_Load(object sender, EventArgs e)
+        {
+            if(Usuario.UsuarioActual != null)
+            {
+                picFotoUsuario.Image = Usuario.UsuarioActual.Foto;
+                lblUsuario.Text = Usuario.UsuarioActual.Nombre;
+            }
+
+
+        }
+
+        private void TextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
