@@ -8,31 +8,52 @@ namespace primeraprueba
 {
     static class Buscador
     {
-        public static List<Receta> BuscarRecetas(string nombre, List<string> tags = null)
+        public static List<Receta> BuscarRecetas(string busqueda)
         {
-            int nletras = nombre.Length;
-            Receta rec;
             List<Receta> List_Receta = new List<Receta>();
+            ConexionBBDD.Instanciar().AbrirConexion();
+
+            string nombre = GetNombre(busqueda);
+            int nletras = nombre.Length;
+
             for (int i = 0; i < nletras; i++)
             {
                 string consulta = string.Format("SELECT * FROM recetas WHERE Nombre_Receta like '{0}%';", nombre);
                 List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
                 if (lista.Count > 0)
                 {
                     foreach (List<object> l1 in lista)
-                    {
-                        rec = new Receta(l1);
-                        List_Receta.Add(rec);
-                    }
+                        List_Receta.Add(new Receta(l1));
                     break;
                 }
-                else
-                {
-                    nombre = nombre.Substring(0, nombre.Length - 2);
-                }
-
+                else nombre = nombre.Substring(0, nombre.Length - 2);
             }
+
+            ConexionBBDD.Instanciar().CerrarConexion();
+
+            if (List_Receta.Count == 0)
+            {
+                List_Receta = Receta.GetRecetas();
+            }
+            
+
             return List_Receta;
+        }
+
+        public static string GetNombre(string busqueda)
+        {
+            string nombre = "";
+
+            foreach(var ch in busqueda)
+            {
+                if (ch == '#' || ch == '@')
+                    break;
+                if (ch != ' ')
+                    nombre += ch;
+            }
+
+            return nombre;
         }
 
         public static List<Usuario> BuscarUsuarios(string nombre)

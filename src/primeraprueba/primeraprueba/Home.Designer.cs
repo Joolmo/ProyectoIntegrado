@@ -43,17 +43,6 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.accesoURRv1 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv2 = new ControlesPersonalizados.AccesoURRv();
-            this.tbpUsuarios = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.accesoURRv10 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv11 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv12 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv13 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv14 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv15 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv16 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv17 = new ControlesPersonalizados.AccesoURRv();
-            this.accesoURRv18 = new ControlesPersonalizados.AccesoURRv();
             this.tbpRetos = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.accesoURRv19 = new ControlesPersonalizados.AccesoURRv();
@@ -86,12 +75,21 @@
             this.accesoURRv6 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv7 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv8 = new ControlesPersonalizados.AccesoURRv();
+            this.tbpUsuarios = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.accesoURRv9 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv11 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv10 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv12 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv13 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv14 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv15 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv16 = new ControlesPersonalizados.AccesoURRv();
+            this.accesoURRv17 = new ControlesPersonalizados.AccesoURRv();
             this.menuStrip1.SuspendLayout();
             this.tbcHome.SuspendLayout();
             this.tbpRecetas.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tbpUsuarios.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.tbpRetos.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -103,6 +101,8 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tbpUsuarios.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btEspanyol
@@ -293,161 +293,6 @@
             this.accesoURRv2.Titulo = "";
             this.accesoURRv2.CualquierClick += new System.EventHandler(this.accesoURRv2_DoubleClick);
             this.accesoURRv2.Load += new System.EventHandler(this.accesoURRv2_Load);
-            // 
-            // tbpUsuarios
-            // 
-            this.tbpUsuarios.Controls.Add(this.tableLayoutPanel5);
-            this.tbpUsuarios.Location = new System.Drawing.Point(4, 29);
-            this.tbpUsuarios.Margin = new System.Windows.Forms.Padding(4);
-            this.tbpUsuarios.Name = "tbpUsuarios";
-            this.tbpUsuarios.Padding = new System.Windows.Forms.Padding(4);
-            this.tbpUsuarios.Size = new System.Drawing.Size(1811, 608);
-            this.tbpUsuarios.TabIndex = 1;
-            this.tbpUsuarios.Text = "Usuarios Destacados";
-            this.tbpUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv10, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv11, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv12, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv13, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv14, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv15, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv16, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv17, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.accesoURRv18, 0, 2);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1803, 600);
-            this.tableLayoutPanel5.TabIndex = 16;
-            // 
-            // accesoURRv10
-            // 
-            this.accesoURRv10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv10.Foto = null;
-            this.accesoURRv10.ID = 0;
-            this.accesoURRv10.Location = new System.Drawing.Point(876, 94);
-            this.accesoURRv10.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv10.Name = "accesoURRv10";
-            this.accesoURRv10.Size = new System.Drawing.Size(51, 11);
-            this.accesoURRv10.TabIndex = 0;
-            this.accesoURRv10.Tipo = null;
-            this.accesoURRv10.Titulo = "label1";
-            // 
-            // accesoURRv11
-            // 
-            this.accesoURRv11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv11.Foto = null;
-            this.accesoURRv11.ID = 0;
-            this.accesoURRv11.Location = new System.Drawing.Point(275, 94);
-            this.accesoURRv11.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv11.Name = "accesoURRv11";
-            this.accesoURRv11.Size = new System.Drawing.Size(51, 11);
-            this.accesoURRv11.TabIndex = 1;
-            this.accesoURRv11.Tipo = null;
-            this.accesoURRv11.Titulo = "label1";
-            // 
-            // accesoURRv12
-            // 
-            this.accesoURRv12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv12.Foto = null;
-            this.accesoURRv12.ID = 0;
-            this.accesoURRv12.Location = new System.Drawing.Point(1476, 94);
-            this.accesoURRv12.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv12.Name = "accesoURRv12";
-            this.accesoURRv12.Size = new System.Drawing.Size(52, 11);
-            this.accesoURRv12.TabIndex = 2;
-            this.accesoURRv12.Tipo = null;
-            this.accesoURRv12.Titulo = "label1";
-            // 
-            // accesoURRv13
-            // 
-            this.accesoURRv13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv13.Foto = null;
-            this.accesoURRv13.ID = 0;
-            this.accesoURRv13.Location = new System.Drawing.Point(1476, 294);
-            this.accesoURRv13.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv13.Name = "accesoURRv13";
-            this.accesoURRv13.Size = new System.Drawing.Size(52, 11);
-            this.accesoURRv13.TabIndex = 3;
-            this.accesoURRv13.Tipo = null;
-            this.accesoURRv13.Titulo = "label1";
-            // 
-            // accesoURRv14
-            // 
-            this.accesoURRv14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv14.Foto = null;
-            this.accesoURRv14.ID = 0;
-            this.accesoURRv14.Location = new System.Drawing.Point(876, 294);
-            this.accesoURRv14.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv14.Name = "accesoURRv14";
-            this.accesoURRv14.Size = new System.Drawing.Size(51, 11);
-            this.accesoURRv14.TabIndex = 4;
-            this.accesoURRv14.Tipo = null;
-            this.accesoURRv14.Titulo = "label1";
-            // 
-            // accesoURRv15
-            // 
-            this.accesoURRv15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv15.Foto = null;
-            this.accesoURRv15.ID = 0;
-            this.accesoURRv15.Location = new System.Drawing.Point(275, 294);
-            this.accesoURRv15.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv15.Name = "accesoURRv15";
-            this.accesoURRv15.Size = new System.Drawing.Size(51, 11);
-            this.accesoURRv15.TabIndex = 5;
-            this.accesoURRv15.Tipo = null;
-            this.accesoURRv15.Titulo = "label1";
-            // 
-            // accesoURRv16
-            // 
-            this.accesoURRv16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv16.Foto = null;
-            this.accesoURRv16.ID = 0;
-            this.accesoURRv16.Location = new System.Drawing.Point(876, 494);
-            this.accesoURRv16.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv16.Name = "accesoURRv16";
-            this.accesoURRv16.Size = new System.Drawing.Size(51, 11);
-            this.accesoURRv16.TabIndex = 6;
-            this.accesoURRv16.Tipo = null;
-            this.accesoURRv16.Titulo = "label1";
-            // 
-            // accesoURRv17
-            // 
-            this.accesoURRv17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv17.Foto = null;
-            this.accesoURRv17.ID = 0;
-            this.accesoURRv17.Location = new System.Drawing.Point(1476, 494);
-            this.accesoURRv17.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv17.Name = "accesoURRv17";
-            this.accesoURRv17.Size = new System.Drawing.Size(52, 11);
-            this.accesoURRv17.TabIndex = 7;
-            this.accesoURRv17.Tipo = null;
-            this.accesoURRv17.Titulo = "label1";
-            // 
-            // accesoURRv18
-            // 
-            this.accesoURRv18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.accesoURRv18.Foto = null;
-            this.accesoURRv18.ID = 0;
-            this.accesoURRv18.Location = new System.Drawing.Point(275, 494);
-            this.accesoURRv18.Margin = new System.Windows.Forms.Padding(5);
-            this.accesoURRv18.Name = "accesoURRv18";
-            this.accesoURRv18.Size = new System.Drawing.Size(51, 11);
-            this.accesoURRv18.TabIndex = 8;
-            this.accesoURRv18.Tipo = null;
-            this.accesoURRv18.Titulo = "label1";
             // 
             // tbpRetos
             // 
@@ -877,6 +722,163 @@
             this.accesoURRv8.Tipo = null;
             this.accesoURRv8.Titulo = "";
             // 
+            // tbpUsuarios
+            // 
+            this.tbpUsuarios.Controls.Add(this.tableLayoutPanel5);
+            this.tbpUsuarios.Location = new System.Drawing.Point(4, 29);
+            this.tbpUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpUsuarios.Name = "tbpUsuarios";
+            this.tbpUsuarios.Padding = new System.Windows.Forms.Padding(4);
+            this.tbpUsuarios.Size = new System.Drawing.Size(1811, 608);
+            this.tbpUsuarios.TabIndex = 1;
+            this.tbpUsuarios.Text = "Usuarios Destacados";
+            this.tbpUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv17, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv16, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv15, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv14, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv13, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv12, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv10, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv9, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRv11, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1803, 600);
+            this.tableLayoutPanel5.TabIndex = 16;
+            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
+            // 
+            // accesoURRv9
+            // 
+            this.accesoURRv9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv9.Foto = null;
+            this.accesoURRv9.ID = 0;
+            this.accesoURRv9.Location = new System.Drawing.Point(151, 406);
+            this.accesoURRv9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv9.Name = "accesoURRv9";
+            this.accesoURRv9.Size = new System.Drawing.Size(299, 188);
+            this.accesoURRv9.TabIndex = 10;
+            this.accesoURRv9.Tipo = null;
+            this.accesoURRv9.Titulo = "";
+            // 
+            // accesoURRv11
+            // 
+            this.accesoURRv11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv11.Foto = null;
+            this.accesoURRv11.ID = 0;
+            this.accesoURRv11.Location = new System.Drawing.Point(167, 5);
+            this.accesoURRv11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.accesoURRv11.Name = "accesoURRv11";
+            this.accesoURRv11.Size = new System.Drawing.Size(266, 190);
+            this.accesoURRv11.TabIndex = 11;
+            this.accesoURRv11.Tipo = null;
+            this.accesoURRv11.Titulo = "";
+            // 
+            // accesoURRv10
+            // 
+            this.accesoURRv10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv10.Foto = null;
+            this.accesoURRv10.ID = 0;
+            this.accesoURRv10.Location = new System.Drawing.Point(752, 6);
+            this.accesoURRv10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv10.Name = "accesoURRv10";
+            this.accesoURRv10.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv10.TabIndex = 12;
+            this.accesoURRv10.Tipo = null;
+            this.accesoURRv10.Titulo = "";
+            // 
+            // accesoURRv12
+            // 
+            this.accesoURRv12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv12.Foto = null;
+            this.accesoURRv12.ID = 0;
+            this.accesoURRv12.Location = new System.Drawing.Point(1353, 6);
+            this.accesoURRv12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv12.Name = "accesoURRv12";
+            this.accesoURRv12.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv12.TabIndex = 13;
+            this.accesoURRv12.Tipo = null;
+            this.accesoURRv12.Titulo = "";
+            // 
+            // accesoURRv13
+            // 
+            this.accesoURRv13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv13.Foto = null;
+            this.accesoURRv13.ID = 0;
+            this.accesoURRv13.Location = new System.Drawing.Point(1353, 206);
+            this.accesoURRv13.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv13.Name = "accesoURRv13";
+            this.accesoURRv13.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv13.TabIndex = 14;
+            this.accesoURRv13.Tipo = null;
+            this.accesoURRv13.Titulo = "";
+            // 
+            // accesoURRv14
+            // 
+            this.accesoURRv14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv14.Foto = null;
+            this.accesoURRv14.ID = 0;
+            this.accesoURRv14.Location = new System.Drawing.Point(752, 206);
+            this.accesoURRv14.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv14.Name = "accesoURRv14";
+            this.accesoURRv14.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv14.TabIndex = 15;
+            this.accesoURRv14.Tipo = null;
+            this.accesoURRv14.Titulo = "";
+            // 
+            // accesoURRv15
+            // 
+            this.accesoURRv15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv15.Foto = null;
+            this.accesoURRv15.ID = 0;
+            this.accesoURRv15.Location = new System.Drawing.Point(151, 206);
+            this.accesoURRv15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv15.Name = "accesoURRv15";
+            this.accesoURRv15.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv15.TabIndex = 16;
+            this.accesoURRv15.Tipo = null;
+            this.accesoURRv15.Titulo = "";
+            // 
+            // accesoURRv16
+            // 
+            this.accesoURRv16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv16.Foto = null;
+            this.accesoURRv16.ID = 0;
+            this.accesoURRv16.Location = new System.Drawing.Point(752, 406);
+            this.accesoURRv16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv16.Name = "accesoURRv16";
+            this.accesoURRv16.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv16.TabIndex = 17;
+            this.accesoURRv16.Tipo = null;
+            this.accesoURRv16.Titulo = "";
+            // 
+            // accesoURRv17
+            // 
+            this.accesoURRv17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.accesoURRv17.Foto = null;
+            this.accesoURRv17.ID = 0;
+            this.accesoURRv17.Location = new System.Drawing.Point(1353, 406);
+            this.accesoURRv17.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv17.Name = "accesoURRv17";
+            this.accesoURRv17.Size = new System.Drawing.Size(298, 188);
+            this.accesoURRv17.TabIndex = 18;
+            this.accesoURRv17.Tipo = null;
+            this.accesoURRv17.Titulo = "";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -897,8 +899,6 @@
             this.tbcHome.ResumeLayout(false);
             this.tbpRecetas.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.tbpUsuarios.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.tbpRetos.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -913,6 +913,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.tbpUsuarios.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -931,7 +933,6 @@
         private System.Windows.Forms.PictureBox ptbApp;
         private System.Windows.Forms.PictureBox ptbIcon;
         private System.Windows.Forms.TabControl tbcHome;
-        private System.Windows.Forms.TabPage tbpUsuarios;
         private System.Windows.Forms.TabPage tbpRetos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
@@ -945,16 +946,6 @@
         private System.Windows.Forms.ToolStripMenuItem miUsuario;
         private System.Windows.Forms.ToolStripMenuItem perfilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recetasToolStripMenuItem;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private ControlesPersonalizados.AccesoURRv accesoURRv10;
-        private ControlesPersonalizados.AccesoURRv accesoURRv11;
-        private ControlesPersonalizados.AccesoURRv accesoURRv12;
-        private ControlesPersonalizados.AccesoURRv accesoURRv13;
-        private ControlesPersonalizados.AccesoURRv accesoURRv14;
-        private ControlesPersonalizados.AccesoURRv accesoURRv15;
-        private ControlesPersonalizados.AccesoURRv accesoURRv16;
-        private ControlesPersonalizados.AccesoURRv accesoURRv17;
-        private ControlesPersonalizados.AccesoURRv accesoURRv18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private ControlesPersonalizados.AccesoURRv accesoURRv19;
         private ControlesPersonalizados.AccesoURRv accesoURRv20;
@@ -976,6 +967,17 @@
         private ControlesPersonalizados.AccesoURRv accesoURRv28;
         private ControlesPersonalizados.AccesoURRv accesoURRv3;
         private ControlesPersonalizados.AccesoURRv accesoURRv30;
+        private System.Windows.Forms.TabPage tbpUsuarios;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private ControlesPersonalizados.AccesoURRv accesoURRv17;
+        private ControlesPersonalizados.AccesoURRv accesoURRv16;
+        private ControlesPersonalizados.AccesoURRv accesoURRv15;
+        private ControlesPersonalizados.AccesoURRv accesoURRv14;
+        private ControlesPersonalizados.AccesoURRv accesoURRv13;
+        private ControlesPersonalizados.AccesoURRv accesoURRv12;
+        private ControlesPersonalizados.AccesoURRv accesoURRv10;
+        private ControlesPersonalizados.AccesoURRv accesoURRv9;
+        private ControlesPersonalizados.AccesoURRv accesoURRv11;
     }
 }
 

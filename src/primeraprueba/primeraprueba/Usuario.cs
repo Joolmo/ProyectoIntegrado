@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace primeraprueba
 {
-    class Usuario
+    public class Usuario
     {
         private int id_usuario;
         private string nombre;
@@ -133,6 +133,13 @@ namespace primeraprueba
 
             return usuario;
         }
+
+        //public bool CambiarContraseña(string correo, string nuevaC)
+        //{
+        //    ConexionBBDD.Instanciar().AbrirConexion();
+        //    string consulta = String.Format(
+        //        "updare usuario set Contraseña='{0}' where Correo={1}",nuevaC , correo)
+        //}
 
         public static void LogOff(MySqlConnection conexion, string nom, string passwd)
         {

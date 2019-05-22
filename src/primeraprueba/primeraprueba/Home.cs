@@ -27,6 +27,7 @@ namespace primeraprueba
         private void Home_Load(object sender, EventArgs e)
         {
             RellenarRecetas();
+            RellenarUsuarios();
 
             if (Usuario.UsuarioActual != null)
             {
@@ -44,17 +45,48 @@ namespace primeraprueba
             Random rnd = new Random();
             List<Receta> rec = Receta.GetRecetas();
             int i = rec.Count;
-            foreach (Control con in Controls)
+            foreach (Control con in tableLayoutPanel4.Controls)
             {
                 if(con.GetType() == accesoURRv1.GetType())
                 {
 
                     int z = rnd.Next(0, i);
                     ((AccesoURRv) con).Titulo = rec[z].Nombre;
+                  
                     ((AccesoURRv)con).Foto = rec[z].Foto;
                     ((AccesoURRv)con).ID = rec[z].IdReceta;
 
                     ((AccesoURRv)con).Tipo = "Receta";
+                    ((AccesoURRv)con).CualquierClick += (object sender, EventArgs e) =>
+                    {
+                        parent.GoReceta(Receta.GetReceta(((AccesoURRv)con).ID));
+                    };
+                }
+            }
+
+        }
+
+        private void RellenarUsuarios()
+        {
+            Random rnd = new Random();
+            List<Usuario> usu = Usuario.GetUsuarios();
+            int i = usu.Count;
+            foreach (Control con in tableLayoutPanel5.Controls)
+            {
+                if (con.GetType() == accesoURRv1.GetType())
+                {
+
+                    int z = rnd.Next(0, i);
+                    ((AccesoURRv)con).Titulo = usu[z].Nombre;
+
+                    ((AccesoURRv)con).Foto = usu[z].Foto;
+                    ((AccesoURRv)con).ID = usu[z].ID_Usuario;
+
+                    ((AccesoURRv)con).Tipo = "Usaurio";
+                    ((AccesoURRv)con).CualquierClick += (object sender, EventArgs e) =>
+                    {
+                        parent.GoUsuario(Usuario.GetUsuario(((AccesoURRv)con).ID));
+                    };
                 }
             }
 
@@ -120,7 +152,12 @@ namespace primeraprueba
 
         private void accesoURRv2_DoubleClick(object sender, EventArgs e)
         {
-            parent.GoReceta(Receta.GetReceta(17));
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

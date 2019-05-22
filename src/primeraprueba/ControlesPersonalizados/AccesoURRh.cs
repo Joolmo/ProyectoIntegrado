@@ -8,20 +8,20 @@ namespace ControlesPersonalizados
         #region propieades
         public string InfoTop
         {
-            get { return lblInfoTop.Text; }
-            set { lblInfoTop.Text = value; }
+            get { return lblTop.Text; }
+            set { lblTop.Text = value; }
         }
 
         public string InfoMid
         {
-            get { return lblInfoMid.Text; }
-            set { lblInfoMid.Text = value; }
+            get { return lblMid.Text; }
+            set { lblMid.Text = value; }
         }
 
         public string InfoBot
         {
-            get { return lblInfoBot.Text; }
-            set { lblInfoBot.Text = value; }
+            get { return lblover.Text; }
+            set { lblover.Text = value; }
         }
 
         public Image Foto

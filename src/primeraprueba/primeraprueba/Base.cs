@@ -66,6 +66,20 @@ namespace primeraprueba
 
         }
 
+        public void GoContraseñaOlvidada()
+        {
+            actual.Dispose();
+            actual = new Contrasenya(this);
+            actual.Show();
+        }
+
+        public void GoUsuario(Usuario usu)
+        {
+            actual.Dispose();
+            actual = new UsuarioInterfaz(this, usu);
+            actual.Show();
+        }
+
 
     }
 }

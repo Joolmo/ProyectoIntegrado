@@ -12,10 +12,22 @@ namespace primeraprueba
 {
 	public partial class UsuarioInterfaz : Form
 	{
-		public UsuarioInterfaz()
+
+        Base parent = null;
+        public UsuarioInterfaz(Base par, Usuario usu)
 		{
 			InitializeComponent();
-		}
+
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+
+            lblNomUsu.Text = usu.Nombre;
+            lblDescrip.Text = usu.Descripcion;
+            
+
+            
+        }
 
 		private void pictureBox10_Click(object sender, EventArgs e){}
 		private void pictureBox9_Click(object sender, EventArgs e){}
@@ -26,5 +38,10 @@ namespace primeraprueba
 		{
 
 		}
-	}
+
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+            parent.GoHome();
+        }
+    }
 }
