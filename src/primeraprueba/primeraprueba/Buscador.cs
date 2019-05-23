@@ -10,7 +10,7 @@ namespace primeraprueba
     {
         public static List<Receta> BuscarRecetas(string busqueda)
         {
-            List<Receta> List_Receta = new List<Receta>();
+            List<Receta> listReceta = new List<Receta>();
             ConexionBBDD.Instanciar().AbrirConexion();
 
             string nombre = GetNombre(busqueda);
@@ -24,7 +24,7 @@ namespace primeraprueba
                 if (lista.Count > 0)
                 {
                     foreach (List<object> l1 in lista)
-                        List_Receta.Add(new Receta(l1));
+                        listReceta.Add(new Receta(l1));
                     break;
                 }
                 else nombre = nombre.Substring(0, nombre.Length - 2);
@@ -32,13 +32,23 @@ namespace primeraprueba
 
             ConexionBBDD.Instanciar().CerrarConexion();
 
-            if (List_Receta.Count == 0)
-            {
-                List_Receta = Receta.GetRecetas();
-            }
-            
+            if (listReceta.Count == 0)
+                listReceta = Receta.GetRecetas();
 
-            return List_Receta;
+            List<string> ingredientes = ObtenerIngredientes(busqueda);
+            List<string> tags = ObtenerTags(busqueda);
+            List<Receta> tmp = new List<Receta>();
+
+            foreach (var ing in ingredientes)
+                tmp.AddRange(listReceta.Where((Receta rec) => rec.Indredientes.Find(x => x == ing).ToList().Count > 0));
+
+            foreach (var t in tags)
+                tmp.AddRange(listReceta.Where((Receta rec) => rec.Tags.Find(x => x == t).ToList().Count > 0));
+
+            if (tmp.Count > 0)
+                listReceta = tmp;
+
+            return listReceta;
         }
 
         public static string GetNombre(string busqueda)
