@@ -492,7 +492,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsuarioInterfaz";
             this.Text = "UsuarioInterfaz";
-            this.Load += new System.EventHandler(this.UsuarioInterfaz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
