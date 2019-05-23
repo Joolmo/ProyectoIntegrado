@@ -15,51 +15,47 @@ namespace primeraprueba
     {
         Usuario u;
         Base parent = null;
+
         public UsuarioInterfaz(Base par, Usuario usu)
         {
             InitializeComponent();
-            u = usu;
-            RellenarRecetas(Receta.GetRecetas(usu.ID_Usuario));
-            RellenarSeguidores(Usuario.GetSeguidores(usu.ID_Usuario));
-            if (Usuario.UsuarioActual == null)
-            {
-                btSeguir.Visible = false;
-            }
-            else if (Usuario.UsuarioActual.ID_Usuario == u.ID_Usuario)
-            {
-                btSeguir.Visible = false;
-            }
 
             MdiParent = par;
             parent = par;
             WindowState = FormWindowState.Maximized;
+
+            u = usu;
+            RellenarRecetas(Receta.GetRecetas(usu.ID_Usuario));
+            RellenarSeguidores(Usuario.GetSeguidos(usu.ID_Usuario));
+
+            if (Usuario.UsuarioActual == null)
+            {
+                btSeguir.Visible = false;
+            }
+
+            else if (Usuario.UsuarioActual.ID_Usuario == u.ID_Usuario)
+            {
+                btSeguir.Visible = false;
+            }
+            
+            else if(Usuario.GetSeguidores(u.ID_Usuario).Find(x => x.ID_Usuario == Usuario.UsuarioActual.ID_Usuario) != null)
+            {
+                if (parent.Idioma == "Castellano")
+                    btSeguir.Text = "Dejar de seguir";
+                else
+                    btSeguir.Text = "Unfollow";
+            }
+            
             ptbUsu.Image = usu.Foto;
             lblNumrec.Text = usu.NumeroRecetas.ToString();
             lblnseg.Text = usu.NumeroSeguidores.ToString();
             lblNomUsu.Text = usu.Nombre;
             lblDescrip.Text = usu.Descripcion;
-
-
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e) { }
-        private void pictureBox9_Click(object sender, EventArgs e) { }
-        private void label12_Click(object sender, EventArgs e) { }
-        private void UsuarioInterfaz_Load(object sender, EventArgs e) { }
-
-        private void btCrearReceta_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ptbApp_Click(object sender, EventArgs e)
         {
             parent.GoHome();
-        }
-
-        private void accesoURRh1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void RellenarRecetas(List<Receta> rec)
@@ -133,9 +129,6 @@ namespace primeraprueba
             }
         }
 
-    
-
-
         private void btSeguir_Click(object sender, EventArgs e)
         {
             if (!Usuario.Seguir(u.ID_Usuario))
@@ -143,6 +136,8 @@ namespace primeraprueba
                 MessageBox.Show(ConexionBBDD.Instanciar().LastError);
             }
             ConexionBBDD.Instanciar().CerrarConexion();
+
+            parent.GoUsuario(Usuario.GetUsuario(u.ID_Usuario));
         }
     }
 }

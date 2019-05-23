@@ -52,7 +52,7 @@ namespace primeraprueba
             "Sin descripción" : (string)listaUsuario[2];
 
             correo = (string)listaUsuario[3];
-            contraseña = ConexionBBDD.EncriptarContraseña((string)listaUsuario[4]);
+            contraseña = (string)listaUsuario[4];
             numRecetas = (int)listaUsuario[5];
             numSeguidores = (int)listaUsuario[6];
             foto = ConexionBBDD.FromByteToImage((byte[])listaUsuario[7]);
@@ -128,9 +128,7 @@ namespace primeraprueba
             if(resultado != null)
             {
                 if (resultado.Count == 0)
-                {
                     return false;
-                }
                 else
                 {
 
@@ -141,15 +139,10 @@ namespace primeraprueba
                 }
             }
             else
-            {
                 return false;
-            }
-            
-
-           
         }
 
-        public static List<Usuario> GetSeguidores(int id)
+        public static List<Usuario> GetSeguidos(int id)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
 
@@ -158,13 +151,27 @@ namespace primeraprueba
             List <List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
 
             foreach (List<object> l1 in lista)
-            {
                 list_usuario.Add(new Usuario(l1));
-            }
+
             ConexionBBDD.Instanciar().CerrarConexion();
             return list_usuario;
-
         }
+
+        public static List<Usuario> GetSeguidores(int id)
+        {
+            ConexionBBDD.Instanciar().AbrirConexion();
+
+            List<Usuario> list_usuario = new List<Usuario>();
+            string consulta = string.Format("SELECT usuario.* from seguidores inner join usuario on seguidores.ID_USUARIO = usuario.ID_Usuario where seguidores.ID_SIGUIENDO ={0}", id);
+            List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            foreach (List<object> l1 in lista)
+                list_usuario.Add(new Usuario(l1));
+
+            ConexionBBDD.Instanciar().CerrarConexion();
+            return list_usuario;
+        }
+
 
         //public bool CambiarContraseña(string correo, string nuevaC)
         //{
@@ -182,21 +189,20 @@ namespace primeraprueba
         public static bool Seguir(int id)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
-            string consulta = String.Format(
-                "SELECT * FROM seguidores where ID_USUARIO='{0}' AND ID_SIGUIENDO='{1}'", Usuario.UsuarioActual.id_usuario, id
+            string consulta = string.Format(
+                "SELECT * FROM seguidores where ID_USUARIO='{0}' AND ID_SIGUIENDO='{1}'",
+                UsuarioActual.id_usuario, id
             );
             
             List<List<object>> funciona = ConexionBBDD.Instanciar().Query(consulta);
             if(funciona == null)
-            {
                 return false;
-            }
             else
             {
                 if (funciona.Count == 0)
                 {
                     consulta = String.Format(
-                    "INSERT INTO seguidores Values('{0}','{1}')", Usuario.UsuarioActual.ID_Usuario, id
+                    "INSERT INTO seguidores Values('{0}','{1}')", UsuarioActual.ID_Usuario, id
                     );
                     funciona = ConexionBBDD.Instanciar().Query(consulta);
                     return true;
@@ -205,30 +211,12 @@ namespace primeraprueba
                 else
                 {
                     consulta = String.Format(
-                        "Delete from seguidores where ID_USUARIO='{0}' AND ID_SIGUIENDO='{1}'", Usuario.UsuarioActual.ID_Usuario, id
+                        "Delete from seguidores where ID_USUARIO='{0}' AND ID_SIGUIENDO='{1}'", UsuarioActual.ID_Usuario, id
                         );
                     funciona = ConexionBBDD.Instanciar().Query(consulta);
                     return true;
                 }
             }
-           
-
-
-            
-
-    }
-
-        //Funcionalidad para dejar de seguir a un usuario
-        public void dejarSeguir()
-        {
-            throw new NotImplementedException();
         }
-
-
-        //Hace la consulta para contar el numero de recetas de cierto usuario
-        public int Cont_NumRecetas()
-        {
-			throw new NotImplementedException();
-		}
     }
 }

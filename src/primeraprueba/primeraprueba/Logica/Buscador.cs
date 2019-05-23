@@ -13,7 +13,7 @@ namespace primeraprueba
             List<Receta> listReceta = new List<Receta>();
             ConexionBBDD.Instanciar().AbrirConexion();
 
-            string nombre = GetNombre(busqueda);
+            string nombre = ObtenerNombre(busqueda);
             int nletras = nombre.Length;
 
             for (int i = 0; i < nletras; i++)
@@ -51,7 +51,37 @@ namespace primeraprueba
             return listReceta;
         }
 
-        public static string GetNombre(string busqueda)
+        public static List<Usuario> BuscarUsuarios(string busqueda)
+        {
+            string nombre = ObtenerNombre(busqueda);
+            int nletras = nombre.Length;
+            List<Usuario> List_Usuario = new List<Usuario>(); ConexionBBDD.Instanciar().AbrirConexion();
+
+            for (int i = 0; i < nletras; i++)
+            {
+                string consulta = string.Format("SELECT * FROM usuario WHERE Nombre_Usuario like '{0}%';", nombre);
+                List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+                if (lista.Count > 0)
+                {
+                    foreach (List<object> l1 in lista)
+                        List_Usuario.Add(new Usuario(l1));
+
+                    break;
+                }
+                else
+                {
+                    nombre = nombre.Substring(0, nombre.Length - 2);
+                }
+
+            }
+            ConexionBBDD.Instanciar().CerrarConexion();
+
+
+            return List_Usuario;
+        }
+
+        public static string ObtenerNombre(string busqueda)
         {
             string nombre = "";
 
@@ -64,33 +94,6 @@ namespace primeraprueba
             }
 
             return nombre;
-        }
-
-        public static List<Usuario> BuscarUsuarios(string nombre)
-        {
-            int nletras = nombre.Length;
-            Usuario u;
-            List<Usuario> List_Usuario = new List<Usuario>();
-            for (int i=0; i<nletras; i++)
-            {
-                string consulta = string.Format("SELECT * FROM usuario WHERE Nombre_Usuario like '{0}%';", nombre);
-                List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
-                if (lista.Count > 0)
-                {
-                    foreach (List<object> l1 in lista)
-                    {
-                        u = new Usuario(l1);
-                        List_Usuario.Add(u);
-                    }
-                    break;
-                }
-                else
-                {
-                    nombre = nombre.Substring(0, nombre.Length - 2);
-                }
-                
-            }
-            return List_Usuario;
         }
 
 		public static List<string> ObtenerTags(string t) 

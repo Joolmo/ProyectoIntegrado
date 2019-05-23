@@ -85,14 +85,29 @@ namespace primeraprueba
             {
                 if (con.GetType() == accesoURRv1.GetType())
                 {
+                    ((AccesoURRv)con).CualquierClick -= (object sender, EventArgs e) =>
+                    {
+                        parent.GoUsuario(Usuario.GetUsuario(((AccesoURRv)con).ID));
+                    };
                     ((AccesoURRv)con).Titulo = "";
                     ((AccesoURRv)con).Foto = null;
                     ((AccesoURRv)con).ID = 0;
                     ((AccesoURRv)con).Tipo = "";
-                    //foreach (Delegate d in ((AccesoURRv)con).CualquierClick.GetInvocationList())
-                    //{
-                    //    FindClicked -= (FindClickedHandler)d;
-                    //}
+                }
+            }
+
+            foreach (Control con in tableLayoutPanel5.Controls)
+            {
+                if (con.GetType() == accesoURRv1.GetType())
+                {
+                    ((AccesoURRv)con).CualquierClick -= (object sender, EventArgs e) =>
+                    {
+                        parent.GoUsuario(Usuario.GetUsuario(((AccesoURRv)con).ID));
+                    };
+                    ((AccesoURRv)con).Titulo = "";
+                    ((AccesoURRv)con).Foto = null;
+                    ((AccesoURRv)con).ID = 0;
+                    ((AccesoURRv)con).Tipo = "";
                 }
             }
         }
@@ -172,6 +187,7 @@ namespace primeraprueba
         {
             Clear();
             RellenarRecetas(Buscador.BuscarRecetas(txtDireccion.Text));
+            RellenarUsuarios(Buscador.BuscarUsuarios(txtDireccion.Text));
         }
 
         private void ptbApp_Click(object sender, EventArgs e)
@@ -204,6 +220,11 @@ namespace primeraprueba
             //MessageBox.Show("Nombre de la referencia cultural en .NET: "+cultura);  // mensaje informativo
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             //AplicarIdioma();
+        }
+
+        private void TxtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         /*private void AplicarIdioma()

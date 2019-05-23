@@ -71,18 +71,18 @@
             this.accesoURRv26 = new ControlesPersonalizados.AccesoURRv();
             this.accesoURRv27 = new ControlesPersonalizados.AccesoURRv();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbIdioma = new System.Windows.Forms.ComboBox();
             this.ptbApp = new System.Windows.Forms.PictureBox();
             this.ptbIcon = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.picUsuario = new System.Windows.Forms.PictureBox();
             this.msDesplegable = new System.Windows.Forms.MenuStrip();
             this.miUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbIdioma = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.tbcHome.SuspendLayout();
             this.tbpRecetas.SuspendLayout();
@@ -92,24 +92,24 @@
             this.tbpRetos.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).BeginInit();
+            this.msDesplegable.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).BeginInit();
-            this.msDesplegable.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDireccion
             // 
             this.txtDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDireccion.Location = new System.Drawing.Point(360, 4);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccion.Location = new System.Drawing.Point(270, 3);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(1078, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(808, 20);
             this.txtDireccion.TabIndex = 29;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.TxtDireccion_TextChanged);
             this.txtDireccion.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TxtDireccion_MouseDoubleClick);
             // 
             // lblDirección
@@ -117,10 +117,9 @@
             this.lblDirección.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDirección.AutoSize = true;
             this.lblDirección.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDirección.Location = new System.Drawing.Point(245, 0);
-            this.lblDirección.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDirección.Location = new System.Drawing.Point(178, 0);
             this.lblDirección.Name = "lblDirección";
-            this.lblDirección.Size = new System.Drawing.Size(107, 25);
+            this.lblDirección.Size = new System.Drawing.Size(86, 20);
             this.lblDirección.TabIndex = 30;
             this.lblDirección.Text = "Búsqueda:";
             // 
@@ -132,28 +131,26 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msRecetas});
-            this.menuStrip1.Location = new System.Drawing.Point(772, -1);
+            this.menuStrip1.Location = new System.Drawing.Point(579, -1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(82, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(67, 24);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // msRecetas
             // 
             this.msRecetas.Name = "msRecetas";
-            this.msRecetas.Size = new System.Drawing.Size(72, 24);
+            this.msRecetas.Size = new System.Drawing.Size(59, 20);
             this.msRecetas.Text = "Recetas";
             // 
             // btRegistro
             // 
             this.btRegistro.BackColor = System.Drawing.Color.White;
             this.btRegistro.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btRegistro.Location = new System.Drawing.Point(97, 60);
-            this.btRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.btRegistro.Location = new System.Drawing.Point(73, 49);
             this.btRegistro.Name = "btRegistro";
-            this.btRegistro.Size = new System.Drawing.Size(168, 42);
+            this.btRegistro.Size = new System.Drawing.Size(126, 34);
             this.btRegistro.TabIndex = 6;
             this.btRegistro.Text = "Registro";
             this.btRegistro.UseVisualStyleBackColor = false;
@@ -163,10 +160,9 @@
             // 
             this.btSesion.BackColor = System.Drawing.Color.White;
             this.btSesion.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btSesion.Location = new System.Drawing.Point(97, 11);
-            this.btSesion.Margin = new System.Windows.Forms.Padding(4);
+            this.btSesion.Location = new System.Drawing.Point(73, 9);
             this.btSesion.Name = "btSesion";
-            this.btSesion.Size = new System.Drawing.Size(168, 42);
+            this.btSesion.Size = new System.Drawing.Size(126, 34);
             this.btSesion.TabIndex = 7;
             this.btSesion.Text = "Iniciar Sesión";
             this.btSesion.UseVisualStyleBackColor = false;
@@ -176,10 +172,9 @@
             // 
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
-            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlAmarillo.Location = new System.Drawing.Point(3, 3);
             this.pnlAmarillo.Name = "pnlAmarillo";
-            this.pnlAmarillo.Size = new System.Drawing.Size(1819, 4);
+            this.pnlAmarillo.Size = new System.Drawing.Size(1364, 4);
             this.pnlAmarillo.TabIndex = 37;
             // 
             // tbcHome
@@ -189,22 +184,20 @@
             this.tbcHome.Controls.Add(this.tbpRetos);
             this.tbcHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbcHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbcHome.Location = new System.Drawing.Point(4, 77);
-            this.tbcHome.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcHome.Location = new System.Drawing.Point(3, 62);
             this.tbcHome.Name = "tbcHome";
             this.tbcHome.SelectedIndex = 0;
-            this.tbcHome.Size = new System.Drawing.Size(1819, 641);
+            this.tbcHome.Size = new System.Drawing.Size(1364, 521);
             this.tbcHome.TabIndex = 38;
             // 
             // tbpRecetas
             // 
             this.tbpRecetas.Controls.Add(this.tableLayoutPanel4);
             this.tbpRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbpRecetas.Location = new System.Drawing.Point(4, 29);
-            this.tbpRecetas.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpRecetas.Location = new System.Drawing.Point(4, 25);
             this.tbpRecetas.Name = "tbpRecetas";
-            this.tbpRecetas.Padding = new System.Windows.Forms.Padding(4);
-            this.tbpRecetas.Size = new System.Drawing.Size(1811, 608);
+            this.tbpRecetas.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbpRecetas.Size = new System.Drawing.Size(1356, 492);
             this.tbpRecetas.TabIndex = 0;
             this.tbpRecetas.Text = "Recetas Destacadas";
             this.tbpRecetas.UseVisualStyleBackColor = true;
@@ -225,15 +218,14 @@
             this.tableLayoutPanel4.Controls.Add(this.accesoURRv2, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.accesoURRv30, 2, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1803, 600);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1350, 486);
             this.tableLayoutPanel4.TabIndex = 15;
             // 
             // accesoURRv8
@@ -241,10 +233,10 @@
             this.accesoURRv8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv8.Foto = null;
             this.accesoURRv8.ID = 0;
-            this.accesoURRv8.Location = new System.Drawing.Point(1207, 406);
-            this.accesoURRv8.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.accesoURRv8.Location = new System.Drawing.Point(904, 329);
+            this.accesoURRv8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accesoURRv8.Name = "accesoURRv8";
-            this.accesoURRv8.Size = new System.Drawing.Size(591, 188);
+            this.accesoURRv8.Size = new System.Drawing.Size(442, 152);
             this.accesoURRv8.TabIndex = 18;
             this.accesoURRv8.Tipo = null;
             this.accesoURRv8.Titulo = "";
@@ -254,10 +246,10 @@
             this.accesoURRv7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv7.Foto = null;
             this.accesoURRv7.ID = 0;
-            this.accesoURRv7.Location = new System.Drawing.Point(606, 406);
-            this.accesoURRv7.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.accesoURRv7.Location = new System.Drawing.Point(454, 329);
+            this.accesoURRv7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accesoURRv7.Name = "accesoURRv7";
-            this.accesoURRv7.Size = new System.Drawing.Size(591, 188);
+            this.accesoURRv7.Size = new System.Drawing.Size(442, 152);
             this.accesoURRv7.TabIndex = 17;
             this.accesoURRv7.Tipo = null;
             this.accesoURRv7.Titulo = "";
@@ -267,10 +259,10 @@
             this.accesoURRv6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv6.Foto = null;
             this.accesoURRv6.ID = 0;
-            this.accesoURRv6.Location = new System.Drawing.Point(5, 206);
-            this.accesoURRv6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.accesoURRv6.Location = new System.Drawing.Point(4, 167);
+            this.accesoURRv6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accesoURRv6.Name = "accesoURRv6";
-            this.accesoURRv6.Size = new System.Drawing.Size(591, 188);
+            this.accesoURRv6.Size = new System.Drawing.Size(442, 152);
             this.accesoURRv6.TabIndex = 16;
             this.accesoURRv6.Tipo = null;
             this.accesoURRv6.Titulo = "";
@@ -280,10 +272,10 @@
             this.accesoURRv5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv5.Foto = null;
             this.accesoURRv5.ID = 0;
-            this.accesoURRv5.Location = new System.Drawing.Point(606, 206);
-            this.accesoURRv5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.accesoURRv5.Location = new System.Drawing.Point(454, 167);
+            this.accesoURRv5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accesoURRv5.Name = "accesoURRv5";
-            this.accesoURRv5.Size = new System.Drawing.Size(591, 188);
+            this.accesoURRv5.Size = new System.Drawing.Size(442, 152);
             this.accesoURRv5.TabIndex = 15;
             this.accesoURRv5.Tipo = null;
             this.accesoURRv5.Titulo = "";
@@ -293,10 +285,10 @@
             this.accesoURRv4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv4.Foto = null;
             this.accesoURRv4.ID = 0;
-            this.accesoURRv4.Location = new System.Drawing.Point(1207, 206);
-            this.accesoURRv4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.accesoURRv4.Location = new System.Drawing.Point(904, 167);
+            this.accesoURRv4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accesoURRv4.Name = "accesoURRv4";
-            this.accesoURRv4.Size = new System.Drawing.Size(591, 188);
+            this.accesoURRv4.Size = new System.Drawing.Size(442, 152);
             this.accesoURRv4.TabIndex = 14;
             this.accesoURRv4.Tipo = null;
             this.accesoURRv4.Titulo = "";
@@ -306,10 +298,10 @@
             this.accesoURRv3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv3.Foto = null;
             this.accesoURRv3.ID = 0;
-            this.accesoURRv3.Location = new System.Drawing.Point(4, 406);
-            this.accesoURRv3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.accesoURRv3.Location = new System.Drawing.Point(3, 329);
+            this.accesoURRv3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.accesoURRv3.Name = "accesoURRv3";
-            this.accesoURRv3.Size = new System.Drawing.Size(593, 188);
+            this.accesoURRv3.Size = new System.Drawing.Size(444, 152);
             this.accesoURRv3.TabIndex = 10;
             this.accesoURRv3.Tipo = null;
             this.accesoURRv3.Titulo = "";
@@ -319,10 +311,10 @@
             this.accesoURRv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv1.Foto = null;
             this.accesoURRv1.ID = 0;
-            this.accesoURRv1.Location = new System.Drawing.Point(606, 5);
-            this.accesoURRv1.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv1.Location = new System.Drawing.Point(454, 4);
+            this.accesoURRv1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv1.Name = "accesoURRv1";
-            this.accesoURRv1.Size = new System.Drawing.Size(591, 190);
+            this.accesoURRv1.Size = new System.Drawing.Size(442, 154);
             this.accesoURRv1.TabIndex = 0;
             this.accesoURRv1.Tipo = null;
             this.accesoURRv1.Titulo = "";
@@ -332,10 +324,10 @@
             this.accesoURRv2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv2.Foto = null;
             this.accesoURRv2.ID = 0;
-            this.accesoURRv2.Location = new System.Drawing.Point(4, 5);
-            this.accesoURRv2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.accesoURRv2.Location = new System.Drawing.Point(3, 4);
+            this.accesoURRv2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accesoURRv2.Name = "accesoURRv2";
-            this.accesoURRv2.Size = new System.Drawing.Size(593, 190);
+            this.accesoURRv2.Size = new System.Drawing.Size(444, 154);
             this.accesoURRv2.TabIndex = 9;
             this.accesoURRv2.Tipo = null;
             this.accesoURRv2.Titulo = "";
@@ -345,10 +337,10 @@
             this.accesoURRv30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv30.Foto = null;
             this.accesoURRv30.ID = 0;
-            this.accesoURRv30.Location = new System.Drawing.Point(1207, 5);
-            this.accesoURRv30.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv30.Location = new System.Drawing.Point(904, 4);
+            this.accesoURRv30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv30.Name = "accesoURRv30";
-            this.accesoURRv30.Size = new System.Drawing.Size(591, 190);
+            this.accesoURRv30.Size = new System.Drawing.Size(442, 154);
             this.accesoURRv30.TabIndex = 13;
             this.accesoURRv30.Tipo = null;
             this.accesoURRv30.Titulo = "";
@@ -356,11 +348,10 @@
             // tbpUsuarios
             // 
             this.tbpUsuarios.Controls.Add(this.tableLayoutPanel5);
-            this.tbpUsuarios.Location = new System.Drawing.Point(4, 29);
-            this.tbpUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpUsuarios.Location = new System.Drawing.Point(4, 25);
             this.tbpUsuarios.Name = "tbpUsuarios";
-            this.tbpUsuarios.Padding = new System.Windows.Forms.Padding(4);
-            this.tbpUsuarios.Size = new System.Drawing.Size(1811, 608);
+            this.tbpUsuarios.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbpUsuarios.Size = new System.Drawing.Size(1356, 492);
             this.tbpUsuarios.TabIndex = 1;
             this.tbpUsuarios.Text = "Usuarios Destacados";
             this.tbpUsuarios.UseVisualStyleBackColor = true;
@@ -381,15 +372,14 @@
             this.tableLayoutPanel5.Controls.Add(this.accesoURRv10, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.accesoURRv9, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1803, 600);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1350, 486);
             this.tableLayoutPanel5.TabIndex = 16;
             // 
             // accesoURRv17
@@ -397,10 +387,10 @@
             this.accesoURRv17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv17.Foto = null;
             this.accesoURRv17.ID = 0;
-            this.accesoURRv17.Location = new System.Drawing.Point(1209, 406);
-            this.accesoURRv17.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv17.Location = new System.Drawing.Point(905, 329);
+            this.accesoURRv17.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv17.Name = "accesoURRv17";
-            this.accesoURRv17.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv17.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv17.TabIndex = 8;
             this.accesoURRv17.Tipo = null;
             this.accesoURRv17.Titulo = "";
@@ -410,10 +400,10 @@
             this.accesoURRv16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv16.Foto = null;
             this.accesoURRv16.ID = 0;
-            this.accesoURRv16.Location = new System.Drawing.Point(608, 406);
-            this.accesoURRv16.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv16.Location = new System.Drawing.Point(455, 329);
+            this.accesoURRv16.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv16.Name = "accesoURRv16";
-            this.accesoURRv16.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv16.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv16.TabIndex = 7;
             this.accesoURRv16.Tipo = null;
             this.accesoURRv16.Titulo = "";
@@ -423,10 +413,10 @@
             this.accesoURRv15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv15.Foto = null;
             this.accesoURRv15.ID = 0;
-            this.accesoURRv15.Location = new System.Drawing.Point(7, 406);
-            this.accesoURRv15.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv15.Location = new System.Drawing.Point(5, 329);
+            this.accesoURRv15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv15.Name = "accesoURRv15";
-            this.accesoURRv15.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv15.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv15.TabIndex = 6;
             this.accesoURRv15.Tipo = null;
             this.accesoURRv15.Titulo = "";
@@ -436,10 +426,10 @@
             this.accesoURRv14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv14.Foto = null;
             this.accesoURRv14.ID = 0;
-            this.accesoURRv14.Location = new System.Drawing.Point(1209, 206);
-            this.accesoURRv14.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv14.Location = new System.Drawing.Point(905, 167);
+            this.accesoURRv14.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv14.Name = "accesoURRv14";
-            this.accesoURRv14.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv14.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv14.TabIndex = 5;
             this.accesoURRv14.Tipo = null;
             this.accesoURRv14.Titulo = "";
@@ -449,10 +439,10 @@
             this.accesoURRv13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv13.Foto = null;
             this.accesoURRv13.ID = 0;
-            this.accesoURRv13.Location = new System.Drawing.Point(608, 206);
-            this.accesoURRv13.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv13.Location = new System.Drawing.Point(455, 167);
+            this.accesoURRv13.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv13.Name = "accesoURRv13";
-            this.accesoURRv13.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv13.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv13.TabIndex = 4;
             this.accesoURRv13.Tipo = null;
             this.accesoURRv13.Titulo = "";
@@ -462,10 +452,10 @@
             this.accesoURRv12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv12.Foto = null;
             this.accesoURRv12.ID = 0;
-            this.accesoURRv12.Location = new System.Drawing.Point(7, 206);
-            this.accesoURRv12.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv12.Location = new System.Drawing.Point(5, 167);
+            this.accesoURRv12.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv12.Name = "accesoURRv12";
-            this.accesoURRv12.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv12.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv12.TabIndex = 3;
             this.accesoURRv12.Tipo = null;
             this.accesoURRv12.Titulo = "";
@@ -475,10 +465,10 @@
             this.accesoURRv11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv11.Foto = null;
             this.accesoURRv11.ID = 0;
-            this.accesoURRv11.Location = new System.Drawing.Point(1209, 6);
-            this.accesoURRv11.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv11.Location = new System.Drawing.Point(905, 5);
+            this.accesoURRv11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv11.Name = "accesoURRv11";
-            this.accesoURRv11.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv11.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv11.TabIndex = 2;
             this.accesoURRv11.Tipo = null;
             this.accesoURRv11.Titulo = "";
@@ -488,10 +478,10 @@
             this.accesoURRv10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv10.Foto = null;
             this.accesoURRv10.ID = 0;
-            this.accesoURRv10.Location = new System.Drawing.Point(608, 6);
-            this.accesoURRv10.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.accesoURRv10.Location = new System.Drawing.Point(455, 5);
+            this.accesoURRv10.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accesoURRv10.Name = "accesoURRv10";
-            this.accesoURRv10.Size = new System.Drawing.Size(587, 188);
+            this.accesoURRv10.Size = new System.Drawing.Size(440, 152);
             this.accesoURRv10.TabIndex = 1;
             this.accesoURRv10.Tipo = null;
             this.accesoURRv10.Titulo = "";
@@ -501,10 +491,10 @@
             this.accesoURRv9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accesoURRv9.Foto = null;
             this.accesoURRv9.ID = 0;
-            this.accesoURRv9.Location = new System.Drawing.Point(5, 5);
-            this.accesoURRv9.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv9.Location = new System.Drawing.Point(4, 4);
+            this.accesoURRv9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv9.Name = "accesoURRv9";
-            this.accesoURRv9.Size = new System.Drawing.Size(591, 190);
+            this.accesoURRv9.Size = new System.Drawing.Size(442, 154);
             this.accesoURRv9.TabIndex = 0;
             this.accesoURRv9.Tipo = null;
             this.accesoURRv9.Titulo = "";
@@ -512,11 +502,10 @@
             // tbpRetos
             // 
             this.tbpRetos.Controls.Add(this.tableLayoutPanel6);
-            this.tbpRetos.Location = new System.Drawing.Point(4, 29);
-            this.tbpRetos.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpRetos.Location = new System.Drawing.Point(4, 25);
             this.tbpRetos.Name = "tbpRetos";
-            this.tbpRetos.Padding = new System.Windows.Forms.Padding(4);
-            this.tbpRetos.Size = new System.Drawing.Size(1811, 608);
+            this.tbpRetos.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbpRetos.Size = new System.Drawing.Size(1356, 492);
             this.tbpRetos.TabIndex = 2;
             this.tbpRetos.Text = "Retos";
             this.tbpRetos.UseVisualStyleBackColor = true;
@@ -537,14 +526,13 @@
             this.tableLayoutPanel6.Controls.Add(this.accesoURRv26, 2, 2);
             this.tableLayoutPanel6.Controls.Add(this.accesoURRv27, 0, 2);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1803, 600);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1350, 486);
             this.tableLayoutPanel6.TabIndex = 16;
             // 
             // accesoURRv19
@@ -552,10 +540,10 @@
             this.accesoURRv19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv19.Foto = null;
             this.accesoURRv19.ID = 0;
-            this.accesoURRv19.Location = new System.Drawing.Point(876, 94);
-            this.accesoURRv19.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv19.Location = new System.Drawing.Point(656, 76);
+            this.accesoURRv19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv19.Name = "accesoURRv19";
-            this.accesoURRv19.Size = new System.Drawing.Size(51, 11);
+            this.accesoURRv19.Size = new System.Drawing.Size(38, 9);
             this.accesoURRv19.TabIndex = 0;
             this.accesoURRv19.Tipo = null;
             this.accesoURRv19.Titulo = "label1";
@@ -565,10 +553,10 @@
             this.accesoURRv20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv20.Foto = null;
             this.accesoURRv20.ID = 0;
-            this.accesoURRv20.Location = new System.Drawing.Point(275, 94);
-            this.accesoURRv20.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv20.Location = new System.Drawing.Point(206, 76);
+            this.accesoURRv20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv20.Name = "accesoURRv20";
-            this.accesoURRv20.Size = new System.Drawing.Size(51, 11);
+            this.accesoURRv20.Size = new System.Drawing.Size(38, 9);
             this.accesoURRv20.TabIndex = 1;
             this.accesoURRv20.Tipo = null;
             this.accesoURRv20.Titulo = "label1";
@@ -578,10 +566,10 @@
             this.accesoURRv21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv21.Foto = null;
             this.accesoURRv21.ID = 0;
-            this.accesoURRv21.Location = new System.Drawing.Point(1476, 94);
-            this.accesoURRv21.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv21.Location = new System.Drawing.Point(1105, 76);
+            this.accesoURRv21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv21.Name = "accesoURRv21";
-            this.accesoURRv21.Size = new System.Drawing.Size(52, 11);
+            this.accesoURRv21.Size = new System.Drawing.Size(39, 9);
             this.accesoURRv21.TabIndex = 2;
             this.accesoURRv21.Tipo = null;
             this.accesoURRv21.Titulo = "label1";
@@ -591,10 +579,10 @@
             this.accesoURRv22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv22.Foto = null;
             this.accesoURRv22.ID = 0;
-            this.accesoURRv22.Location = new System.Drawing.Point(1476, 294);
-            this.accesoURRv22.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv22.Location = new System.Drawing.Point(1105, 238);
+            this.accesoURRv22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv22.Name = "accesoURRv22";
-            this.accesoURRv22.Size = new System.Drawing.Size(52, 11);
+            this.accesoURRv22.Size = new System.Drawing.Size(39, 9);
             this.accesoURRv22.TabIndex = 3;
             this.accesoURRv22.Tipo = null;
             this.accesoURRv22.Titulo = "label1";
@@ -604,10 +592,10 @@
             this.accesoURRv23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv23.Foto = null;
             this.accesoURRv23.ID = 0;
-            this.accesoURRv23.Location = new System.Drawing.Point(876, 294);
-            this.accesoURRv23.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv23.Location = new System.Drawing.Point(656, 238);
+            this.accesoURRv23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv23.Name = "accesoURRv23";
-            this.accesoURRv23.Size = new System.Drawing.Size(51, 11);
+            this.accesoURRv23.Size = new System.Drawing.Size(38, 9);
             this.accesoURRv23.TabIndex = 4;
             this.accesoURRv23.Tipo = null;
             this.accesoURRv23.Titulo = "label1";
@@ -617,10 +605,10 @@
             this.accesoURRv24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv24.Foto = null;
             this.accesoURRv24.ID = 0;
-            this.accesoURRv24.Location = new System.Drawing.Point(275, 294);
-            this.accesoURRv24.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv24.Location = new System.Drawing.Point(206, 238);
+            this.accesoURRv24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv24.Name = "accesoURRv24";
-            this.accesoURRv24.Size = new System.Drawing.Size(51, 11);
+            this.accesoURRv24.Size = new System.Drawing.Size(38, 9);
             this.accesoURRv24.TabIndex = 5;
             this.accesoURRv24.Tipo = null;
             this.accesoURRv24.Titulo = "label1";
@@ -630,10 +618,10 @@
             this.accesoURRv25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv25.Foto = null;
             this.accesoURRv25.ID = 0;
-            this.accesoURRv25.Location = new System.Drawing.Point(876, 494);
-            this.accesoURRv25.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv25.Location = new System.Drawing.Point(656, 400);
+            this.accesoURRv25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv25.Name = "accesoURRv25";
-            this.accesoURRv25.Size = new System.Drawing.Size(51, 11);
+            this.accesoURRv25.Size = new System.Drawing.Size(38, 9);
             this.accesoURRv25.TabIndex = 6;
             this.accesoURRv25.Tipo = null;
             this.accesoURRv25.Titulo = "label1";
@@ -643,10 +631,10 @@
             this.accesoURRv26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv26.Foto = null;
             this.accesoURRv26.ID = 0;
-            this.accesoURRv26.Location = new System.Drawing.Point(1476, 494);
-            this.accesoURRv26.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv26.Location = new System.Drawing.Point(1105, 400);
+            this.accesoURRv26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv26.Name = "accesoURRv26";
-            this.accesoURRv26.Size = new System.Drawing.Size(52, 11);
+            this.accesoURRv26.Size = new System.Drawing.Size(39, 9);
             this.accesoURRv26.TabIndex = 7;
             this.accesoURRv26.Tipo = null;
             this.accesoURRv26.Titulo = "label1";
@@ -656,10 +644,10 @@
             this.accesoURRv27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accesoURRv27.Foto = null;
             this.accesoURRv27.ID = 0;
-            this.accesoURRv27.Location = new System.Drawing.Point(275, 494);
-            this.accesoURRv27.Margin = new System.Windows.Forms.Padding(5);
+            this.accesoURRv27.Location = new System.Drawing.Point(206, 400);
+            this.accesoURRv27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accesoURRv27.Name = "accesoURRv27";
-            this.accesoURRv27.Size = new System.Drawing.Size(51, 11);
+            this.accesoURRv27.Size = new System.Drawing.Size(38, 9);
             this.accesoURRv27.TabIndex = 8;
             this.accesoURRv27.Tipo = null;
             this.accesoURRv27.Titulo = "label1";
@@ -675,93 +663,19 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1827, 119);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 97);
             this.tableLayoutPanel1.TabIndex = 39;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.picUsuario);
-            this.panel1.Controls.Add(this.btRegistro);
-            this.panel1.Controls.Add(this.btSesion);
-            this.panel1.Controls.Add(this.msDesplegable);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(1458, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 111);
-            this.panel1.TabIndex = 26;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pnlAmarillo, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tbcHome, 0, 2);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 119);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.680555F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.31944F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1827, 722);
-            this.tableLayoutPanel2.TabIndex = 40;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.61326F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.73757F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.64917F));
-            this.tableLayoutPanel3.Controls.Add(this.panel2, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtDireccion, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lblDirección, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 16);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1819, 53);
-            this.tableLayoutPanel3.TabIndex = 41;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cmbIdioma);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(1446, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(369, 45);
-            this.panel2.TabIndex = 0;
-            // 
-            // cmbIdioma
-            // 
-            this.cmbIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbIdioma.FormattingEnabled = true;
-            this.cmbIdioma.Items.AddRange(new object[] {
-            "Castellano",
-            "English"});
-            this.cmbIdioma.Location = new System.Drawing.Point(117, 4);
-            this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(121, 24);
-            this.cmbIdioma.TabIndex = 0;
-            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
             // ptbApp
             // 
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = ((System.Drawing.Image)(resources.GetObject("ptbApp.Image")));
-            this.ptbApp.Location = new System.Drawing.Point(352, 4);
-            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbApp.Location = new System.Drawing.Point(264, 3);
             this.ptbApp.Name = "ptbApp";
-            this.ptbApp.Size = new System.Drawing.Size(1098, 111);
+            this.ptbApp.Size = new System.Drawing.Size(824, 91);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
@@ -771,21 +685,31 @@
             // 
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = ((System.Drawing.Image)(resources.GetObject("ptbIcon.Image")));
-            this.ptbIcon.Location = new System.Drawing.Point(106, 4);
-            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbIcon.Location = new System.Drawing.Point(80, 3);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(135, 107);
+            this.ptbIcon.Size = new System.Drawing.Size(101, 87);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbIcon.TabIndex = 22;
             this.ptbIcon.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.picUsuario);
+            this.panel1.Controls.Add(this.btRegistro);
+            this.panel1.Controls.Add(this.btSesion);
+            this.panel1.Controls.Add(this.msDesplegable);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(1094, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(273, 91);
+            this.panel1.TabIndex = 26;
             // 
             // picUsuario
             // 
             this.picUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picUsuario.Location = new System.Drawing.Point(0, 0);
-            this.picUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.picUsuario.Name = "picUsuario";
-            this.picUsuario.Size = new System.Drawing.Size(365, 111);
+            this.picUsuario.Size = new System.Drawing.Size(273, 91);
             this.picUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUsuario.TabIndex = 28;
             this.picUsuario.TabStop = false;
@@ -801,10 +725,9 @@
             this.msDesplegable.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.msDesplegable.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miUsuario});
-            this.msDesplegable.Location = new System.Drawing.Point(109, 78);
+            this.msDesplegable.Location = new System.Drawing.Point(82, 63);
             this.msDesplegable.Name = "msDesplegable";
-            this.msDesplegable.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.msDesplegable.Size = new System.Drawing.Size(84, 28);
+            this.msDesplegable.Size = new System.Drawing.Size(71, 24);
             this.msDesplegable.TabIndex = 27;
             this.msDesplegable.Text = "mspMenu";
             this.msDesplegable.Visible = false;
@@ -817,33 +740,89 @@
             this.recetasToolStripMenuItem});
             this.miUsuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.miUsuario.Name = "miUsuario";
-            this.miUsuario.Size = new System.Drawing.Size(71, 24);
+            this.miUsuario.Size = new System.Drawing.Size(59, 20);
             this.miUsuario.Text = "Usuario";
             // 
             // perfilToolStripMenuItem
             // 
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.perfilToolStripMenuItem.Text = "Perfil";
             // 
             // recetasToolStripMenuItem
             // 
             this.recetasToolStripMenuItem.Name = "recetasToolStripMenuItem";
-            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.recetasToolStripMenuItem.Text = "Recetas";
             this.recetasToolStripMenuItem.Click += new System.EventHandler(this.RecetasToolStripMenuItem_Click);
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pnlAmarillo, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbcHome, 0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 97);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.680555F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.31944F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1370, 586);
+            this.tableLayoutPanel2.TabIndex = 40;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.61326F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.73757F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.64917F));
+            this.tableLayoutPanel3.Controls.Add(this.panel2, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtDireccion, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblDirección, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 13);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1364, 43);
+            this.tableLayoutPanel3.TabIndex = 41;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cmbIdioma);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(1084, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(277, 37);
+            this.panel2.TabIndex = 0;
+            // 
+            // cmbIdioma
+            // 
+            this.cmbIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIdioma.FormattingEnabled = true;
+            this.cmbIdioma.Items.AddRange(new object[] {
+            "Castellano",
+            "English"});
+            this.cmbIdioma.Location = new System.Drawing.Point(88, 3);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(92, 21);
+            this.cmbIdioma.TabIndex = 0;
+            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1827, 841);
+            this.ClientSize = new System.Drawing.Size(1370, 683);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Home";
@@ -858,17 +837,17 @@
             this.tbpRetos.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).EndInit();
+            this.msDesplegable.ResumeLayout(false);
+            this.msDesplegable.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).EndInit();
-            this.msDesplegable.ResumeLayout(false);
-            this.msDesplegable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
