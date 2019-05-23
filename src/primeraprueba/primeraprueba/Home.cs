@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlesPersonalizados;
+using primeraprueba.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
+
 
 namespace primeraprueba
 {
@@ -169,5 +173,42 @@ namespace primeraprueba
             Clear();
             RellenarRecetas(Buscador.BuscarRecetas(txtDireccion.Text));
         }
+
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+            parent.GoHome();
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cultura = "";
+            switch (cmbIdioma.Text)
+            {
+                case "Castellano":
+                    {
+                        cultura = "ES-ES";
+                        break;
+                    }
+                case "Inglés":
+                    {
+                        cultura = "EN-GB";  // Inglés United Kingdom
+                        break;
+                    }
+                case "Italiano":
+                    {
+                        cultura = "IT-IT";  // Inglés United Kingdom
+                        break;
+                    }
+
+            }
+            //MessageBox.Show("Nombre de la referencia cultural en .NET: "+cultura);  // mensaje informativo
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            //AplicarIdioma();
+        }
+
+        /*private void AplicarIdioma()
+        {
+            lblDirección.Text = StringRecursos.
+        }*/
     }
 }

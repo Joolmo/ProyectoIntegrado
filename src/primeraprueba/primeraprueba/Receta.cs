@@ -123,9 +123,7 @@ namespace primeraprueba
             ConexionBBDD.Instanciar().CerrarConexion();
 
             if (result) return true;
-
-            string error = ConexionBBDD.Instanciar().LastError;
-            return false;
+            else return false;
 
         }
 
@@ -138,9 +136,7 @@ namespace primeraprueba
             ConexionBBDD.Instanciar().CerrarConexion();
 
             if (result) return true;
-
-            string error = ConexionBBDD.Instanciar().LastError;
-            return false;
+            else return false;
 
         }
 

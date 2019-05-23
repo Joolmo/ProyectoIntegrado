@@ -290,6 +290,7 @@
             this.lblnomusu.Size = new System.Drawing.Size(131, 20);
             this.lblnomusu.TabIndex = 16;
             this.lblnomusu.Text = "Nombre Usuario";
+            this.lblnomusu.Click += new System.EventHandler(this.lblnomusu_Click);
             // 
             // ptbReceta
             // 

@@ -44,6 +44,14 @@
             this.lblNomReto1 = new System.Windows.Forms.Label();
             this.ptbReto2 = new System.Windows.Forms.PictureBox();
             this.ptbReto1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.accesoURRh5 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh3 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh1 = new ControlesPersonalizados.AccesoURRh();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.accesoURRh2 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh4 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh6 = new ControlesPersonalizados.AccesoURRh();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.ptbApp = new System.Windows.Forms.PictureBox();
             this.ptbIcon = new System.Windows.Forms.PictureBox();
@@ -51,25 +59,19 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblNumrec = new System.Windows.Forms.Label();
             this.lblnseg = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.accesoURRh6 = new ControlesPersonalizados.AccesoURRh();
-            this.accesoURRh5 = new ControlesPersonalizados.AccesoURRh();
-            this.accesoURRh4 = new ControlesPersonalizados.AccesoURRh();
-            this.accesoURRh3 = new ControlesPersonalizados.AccesoURRh();
-            this.accesoURRh2 = new ControlesPersonalizados.AccesoURRh();
-            this.accesoURRh1 = new ControlesPersonalizados.AccesoURRh();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btSeguir
@@ -83,6 +85,7 @@
             this.btSeguir.TabIndex = 12;
             this.btSeguir.Text = "Seguir";
             this.btSeguir.UseVisualStyleBackColor = true;
+            this.btSeguir.Click += new System.EventHandler(this.btSeguir_Click);
             // 
             // lblNomUsu
             // 
@@ -169,25 +172,27 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.tableLayoutPanel3);
-            this.panel1.Location = new System.Drawing.Point(104, 238);
+            this.panel1.Location = new System.Drawing.Point(104, 236);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1571, 418);
+            this.panel1.Size = new System.Drawing.Size(1571, 422);
             this.panel1.TabIndex = 34;
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.Controls.Add(this.panel4, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 2, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1552, 410);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1563, 410);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel4
@@ -198,10 +203,10 @@
             this.panel4.Controls.Add(this.ptbReto2);
             this.panel4.Controls.Add(this.ptbReto1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(780, 4);
+            this.panel4.Location = new System.Drawing.Point(525, 4);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(768, 402);
+            this.panel4.Size = new System.Drawing.Size(513, 402);
             this.panel4.TabIndex = 6;
             // 
             // lblNomReto
@@ -243,6 +248,136 @@
             this.ptbReto1.Size = new System.Drawing.Size(156, 137);
             this.ptbReto1.TabIndex = 11;
             this.ptbReto1.TabStop = false;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRh5, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRh3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRh1, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(515, 404);
+            this.tableLayoutPanel4.TabIndex = 7;
+            // 
+            // accesoURRh5
+            // 
+            this.accesoURRh5.BackColor = System.Drawing.Color.White;
+            this.accesoURRh5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh5.Foto = null;
+            this.accesoURRh5.ID = 0;
+            this.accesoURRh5.InfoBot = "_";
+            this.accesoURRh5.InfoMid = "_";
+            this.accesoURRh5.InfoTop = "_";
+            this.accesoURRh5.Location = new System.Drawing.Point(4, 272);
+            this.accesoURRh5.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh5.Name = "accesoURRh5";
+            this.accesoURRh5.Size = new System.Drawing.Size(507, 128);
+            this.accesoURRh5.TabIndex = 4;
+            this.accesoURRh5.Tipo = null;
+            // 
+            // accesoURRh3
+            // 
+            this.accesoURRh3.BackColor = System.Drawing.Color.White;
+            this.accesoURRh3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh3.Foto = null;
+            this.accesoURRh3.ID = 0;
+            this.accesoURRh3.InfoBot = "_";
+            this.accesoURRh3.InfoMid = "_";
+            this.accesoURRh3.InfoTop = "_";
+            this.accesoURRh3.Location = new System.Drawing.Point(4, 138);
+            this.accesoURRh3.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh3.Name = "accesoURRh3";
+            this.accesoURRh3.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh3.TabIndex = 2;
+            this.accesoURRh3.Tipo = null;
+            // 
+            // accesoURRh1
+            // 
+            this.accesoURRh1.BackColor = System.Drawing.Color.White;
+            this.accesoURRh1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh1.Foto = null;
+            this.accesoURRh1.ID = 0;
+            this.accesoURRh1.InfoBot = "_";
+            this.accesoURRh1.InfoMid = "_";
+            this.accesoURRh1.InfoTop = "_";
+            this.accesoURRh1.Location = new System.Drawing.Point(4, 4);
+            this.accesoURRh1.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh1.Name = "accesoURRh1";
+            this.accesoURRh1.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh1.TabIndex = 0;
+            this.accesoURRh1.Tipo = null;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRh2, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRh4, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRh6, 0, 2);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(1045, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(515, 404);
+            this.tableLayoutPanel5.TabIndex = 8;
+            // 
+            // accesoURRh2
+            // 
+            this.accesoURRh2.BackColor = System.Drawing.Color.White;
+            this.accesoURRh2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh2.Foto = null;
+            this.accesoURRh2.ID = 0;
+            this.accesoURRh2.InfoBot = "_";
+            this.accesoURRh2.InfoMid = "_";
+            this.accesoURRh2.InfoTop = "_";
+            this.accesoURRh2.Location = new System.Drawing.Point(4, 4);
+            this.accesoURRh2.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh2.Name = "accesoURRh2";
+            this.accesoURRh2.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh2.TabIndex = 0;
+            this.accesoURRh2.Tipo = null;
+            // 
+            // accesoURRh4
+            // 
+            this.accesoURRh4.BackColor = System.Drawing.Color.White;
+            this.accesoURRh4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh4.Foto = null;
+            this.accesoURRh4.ID = 0;
+            this.accesoURRh4.InfoBot = "_";
+            this.accesoURRh4.InfoMid = "_";
+            this.accesoURRh4.InfoTop = "_";
+            this.accesoURRh4.Location = new System.Drawing.Point(4, 138);
+            this.accesoURRh4.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh4.Name = "accesoURRh4";
+            this.accesoURRh4.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh4.TabIndex = 1;
+            this.accesoURRh4.Tipo = null;
+            // 
+            // accesoURRh6
+            // 
+            this.accesoURRh6.BackColor = System.Drawing.Color.White;
+            this.accesoURRh6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh6.Foto = null;
+            this.accesoURRh6.ID = 0;
+            this.accesoURRh6.InfoBot = "_";
+            this.accesoURRh6.InfoMid = "_";
+            this.accesoURRh6.InfoTop = "_";
+            this.accesoURRh6.Location = new System.Drawing.Point(4, 272);
+            this.accesoURRh6.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh6.Name = "accesoURRh6";
+            this.accesoURRh6.Size = new System.Drawing.Size(507, 128);
+            this.accesoURRh6.TabIndex = 2;
+            this.accesoURRh6.Tipo = null;
             // 
             // tableLayoutPanel2
             // 
@@ -346,117 +481,6 @@
             this.lblnseg.TabIndex = 13;
             this.lblnseg.Text = "0";
             // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRh6, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRh5, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRh4, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRh3, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRh2, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.accesoURRh1, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(770, 404);
-            this.tableLayoutPanel4.TabIndex = 7;
-            // 
-            // accesoURRh6
-            // 
-            this.accesoURRh6.BackColor = System.Drawing.Color.White;
-            this.accesoURRh6.Foto = null;
-            this.accesoURRh6.ID = 0;
-            this.accesoURRh6.InfoBot = "_";
-            this.accesoURRh6.InfoMid = "_";
-            this.accesoURRh6.InfoTop = "_";
-            this.accesoURRh6.Location = new System.Drawing.Point(389, 272);
-            this.accesoURRh6.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRh6.Name = "accesoURRh6";
-            this.accesoURRh6.Size = new System.Drawing.Size(377, 126);
-            this.accesoURRh6.TabIndex = 5;
-            this.accesoURRh6.Tipo = null;
-            // 
-            // accesoURRh5
-            // 
-            this.accesoURRh5.BackColor = System.Drawing.Color.White;
-            this.accesoURRh5.Foto = null;
-            this.accesoURRh5.ID = 0;
-            this.accesoURRh5.InfoBot = "_";
-            this.accesoURRh5.InfoMid = "_";
-            this.accesoURRh5.InfoTop = "_";
-            this.accesoURRh5.Location = new System.Drawing.Point(4, 272);
-            this.accesoURRh5.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRh5.Name = "accesoURRh5";
-            this.accesoURRh5.Size = new System.Drawing.Size(377, 126);
-            this.accesoURRh5.TabIndex = 4;
-            this.accesoURRh5.Tipo = null;
-            // 
-            // accesoURRh4
-            // 
-            this.accesoURRh4.BackColor = System.Drawing.Color.White;
-            this.accesoURRh4.Foto = null;
-            this.accesoURRh4.ID = 0;
-            this.accesoURRh4.InfoBot = "_";
-            this.accesoURRh4.InfoMid = "_";
-            this.accesoURRh4.InfoTop = "_";
-            this.accesoURRh4.Location = new System.Drawing.Point(389, 138);
-            this.accesoURRh4.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRh4.Name = "accesoURRh4";
-            this.accesoURRh4.Size = new System.Drawing.Size(377, 126);
-            this.accesoURRh4.TabIndex = 3;
-            this.accesoURRh4.Tipo = null;
-            // 
-            // accesoURRh3
-            // 
-            this.accesoURRh3.BackColor = System.Drawing.Color.White;
-            this.accesoURRh3.Foto = null;
-            this.accesoURRh3.ID = 0;
-            this.accesoURRh3.InfoBot = "_";
-            this.accesoURRh3.InfoMid = "_";
-            this.accesoURRh3.InfoTop = "_";
-            this.accesoURRh3.Location = new System.Drawing.Point(4, 138);
-            this.accesoURRh3.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRh3.Name = "accesoURRh3";
-            this.accesoURRh3.Size = new System.Drawing.Size(377, 126);
-            this.accesoURRh3.TabIndex = 2;
-            this.accesoURRh3.Tipo = null;
-            // 
-            // accesoURRh2
-            // 
-            this.accesoURRh2.BackColor = System.Drawing.Color.White;
-            this.accesoURRh2.Foto = null;
-            this.accesoURRh2.ID = 0;
-            this.accesoURRh2.InfoBot = "_";
-            this.accesoURRh2.InfoMid = "_";
-            this.accesoURRh2.InfoTop = "_";
-            this.accesoURRh2.Location = new System.Drawing.Point(389, 4);
-            this.accesoURRh2.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRh2.Name = "accesoURRh2";
-            this.accesoURRh2.Size = new System.Drawing.Size(377, 126);
-            this.accesoURRh2.TabIndex = 1;
-            this.accesoURRh2.Tipo = null;
-            // 
-            // accesoURRh1
-            // 
-            this.accesoURRh1.BackColor = System.Drawing.Color.White;
-            this.accesoURRh1.Foto = null;
-            this.accesoURRh1.ID = 0;
-            this.accesoURRh1.InfoBot = "_";
-            this.accesoURRh1.InfoMid = "_";
-            this.accesoURRh1.InfoTop = "_";
-            this.accesoURRh1.Location = new System.Drawing.Point(4, 4);
-            this.accesoURRh1.Margin = new System.Windows.Forms.Padding(4);
-            this.accesoURRh1.Name = "accesoURRh1";
-            this.accesoURRh1.Size = new System.Drawing.Size(377, 126);
-            this.accesoURRh1.TabIndex = 0;
-            this.accesoURRh1.Tipo = null;
-            // 
             // UsuarioInterfaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -476,13 +500,14 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -511,11 +536,12 @@
         private System.Windows.Forms.Label lblNumrec;
         private System.Windows.Forms.Label lblnseg;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private ControlesPersonalizados.AccesoURRh accesoURRh6;
         private ControlesPersonalizados.AccesoURRh accesoURRh5;
-        private ControlesPersonalizados.AccesoURRh accesoURRh4;
         private ControlesPersonalizados.AccesoURRh accesoURRh3;
-        private ControlesPersonalizados.AccesoURRh accesoURRh2;
         private ControlesPersonalizados.AccesoURRh accesoURRh1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private ControlesPersonalizados.AccesoURRh accesoURRh2;
+        private ControlesPersonalizados.AccesoURRh accesoURRh4;
+        private ControlesPersonalizados.AccesoURRh accesoURRh6;
     }
 }

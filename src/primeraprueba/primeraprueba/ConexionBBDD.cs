@@ -44,11 +44,12 @@ namespace primeraprueba
             string BaseDatos = "pirojo";
             string usuario = "rojo";
             string password = "PI,rojo123";
-            string connectionstring = string.Format("Server={0}; Port={1}; Database={2}; Uid={3}; Pwd={4};",
-                host, puerto, BaseDatos, usuario, password);
+            string connectionstring = string.Format(
+                "Server={0}; Port={1}; Database={2}; Uid={3}; Pwd={4};",
+                host, puerto, BaseDatos, usuario, password
+            );
 
             conexion = new MySqlConnection(connectionstring);
-
         }
         
         /// <summary>

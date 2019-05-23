@@ -37,27 +37,33 @@ namespace primeraprueba
         {
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+
             if (open.ShowDialog() == DialogResult.OK)
-            {
                 picFoto.Image = new Bitmap(open.FileName);
-            }
         }
 
         private void BtEnviar_Click(object sender, EventArgs e)
         {
             if(Usuario.UsuarioActual != null)
             {
-                Receta receta = new Receta();
-                receta.IdUsuario = Usuario.UsuarioActual.ID_Usuario;
-                receta.Foto = picFoto.Image;
-                receta.Indredientes = Buscador.ObtenerIngredientes(txtIngredientes.Text);
-                receta.Pasos = txtPasos.Text;
-                receta.Tags = tgsTags.Tag;
-                receta.Nombre = txtNombreReceta.Text;
+                Receta receta = new Receta()
+                {
+                    IdUsuario = Usuario.UsuarioActual.ID_Usuario,
+                    Foto = picFoto.Image,
+                    Indredientes = Buscador.ObtenerIngredientes(txtIngredientes.Text),
+                    Pasos = txtPasos.Text,
+                    Tags = tgsTags.Tag,
+                    Nombre = txtNombreReceta.Text,
+                };
 
                 ConexionBBDD.Instanciar().AbrirConexion();
-                Receta.CrearReceta(receta);
+                bool valido = Receta.CrearReceta(receta);  
                 ConexionBBDD.Instanciar().CerrarConexion();
+
+                if (valido)
+                    parent.GoHome();
+                else
+                    MessageBox.Show(ConexionBBDD.Instanciar().LastError);
             }
         }
 
@@ -88,8 +94,6 @@ namespace primeraprueba
                 picFotoUsuario.Image = Usuario.UsuarioActual.Foto;
                 lblUsuario.Text = Usuario.UsuarioActual.Nombre;
             }
-
-
         }
 
         private void TextBox1_TextChanged_1(object sender, EventArgs e)

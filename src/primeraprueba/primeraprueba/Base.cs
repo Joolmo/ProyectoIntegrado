@@ -14,6 +14,8 @@ namespace primeraprueba
     {
 
         Form actual = null;
+
+        public string Idioma="Castellano";
         
         public Base()
         {

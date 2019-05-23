@@ -40,10 +40,10 @@ namespace primeraprueba
             List<Receta> tmp = new List<Receta>();
 
             foreach (var ing in ingredientes)
-                tmp.AddRange(listReceta.Where((Receta rec) => rec.Indredientes.Find(x => x == ing).ToList().Count > 0));
+                tmp.AddRange(listReceta.Where((Receta rec) => rec.Indredientes.Find(x => x == ing) != null));
 
             foreach (var t in tags)
-                tmp.AddRange(listReceta.Where((Receta rec) => rec.Tags.Find(x => x == t).ToList().Count > 0));
+                tmp.AddRange(listReceta.Where((Receta rec) => rec.Tags.Find(x => x == t) != null));
 
             if (tmp.Count > 0)
                 listReceta = tmp;

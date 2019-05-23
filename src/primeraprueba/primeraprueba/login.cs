@@ -27,8 +27,24 @@ namespace primeraprueba
 
 		private void btIniciar_Click(object sender, EventArgs e)
 		{
-			Usuario.LogIn(txtNombre.Text, txtContra.Text);
-            parent.GoHome();
+			if(Usuario.LogIn(txtNombre.Text, txtContra.Text))
+            {
+                parent.GoHome();
+            }
+            else
+            {
+                var error = ConexionBBDD.Instanciar().LastError;
+                if (error == "Sin errrores")
+                {
+                    MessageBox.Show("Has puesto mal el usuario o la cntraseña");
+                }
+                else
+                {
+                    MessageBox.Show(error);
+                }
+                
+            }
+            
 			
 		}
 

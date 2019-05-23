@@ -14,12 +14,14 @@ namespace primeraprueba
 	{
         Base parent = null;
 
+        Receta r;
 		public Recetas(Base par, Receta receta)
 		{
 			InitializeComponent();
             MdiParent = par;
             parent = par;
             WindowState = FormWindowState.Maximized;
+            r = receta;
 
             Usuario usuario = Usuario.GetUsuario(receta.IdUsuario);
             lblRetoRecetas.Text = receta.Nombre;
@@ -61,6 +63,11 @@ namespace primeraprueba
         private void tbpIngredientes_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblnomusu_Click(object sender, EventArgs e)
+        {
+            parent.GoUsuario(Usuario.GetUsuario(r.IdUsuario));
         }
     }
 }

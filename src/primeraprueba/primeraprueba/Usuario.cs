@@ -112,7 +112,7 @@ namespace primeraprueba
             return funciona;
         }
 
-        public static Usuario LogIn(string nom, string passwd)
+        public static bool LogIn(string nom, string passwd)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
 
@@ -125,13 +125,45 @@ namespace primeraprueba
             var resultado = ConexionBBDD.Instanciar().Query(consulta);
             
             ConexionBBDD.Instanciar().CerrarConexion();
+            if(resultado != null)
+            {
+                if (resultado.Count == 0)
+                {
+                    return false;
+                }
+                else
+                {
 
-            if (resultado == null) return null;
+                    Usuario usuario = new Usuario(resultado[0]);
+                    usuarioActual = usuario;
 
-            Usuario usuario = new Usuario(resultado[0]);
-            usuarioActual = usuario;
+                    return true;
+                }
+            }
+            else
+            {
+                return false;
+            }
+            
 
-            return usuario;
+           
+        }
+
+        public static List<Usuario> GetSeguidores(int id)
+        {
+            ConexionBBDD.Instanciar().AbrirConexion();
+
+            List<Usuario> list_usuario = new List<Usuario>();
+            string consulta = string.Format("SELECT usuario.* from seguidores inner join usuario on seguidores.ID_SIGUIENDO = usuario.ID_Usuario where seguidores.ID_USUARIO ={0}", id);
+            List <List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+
+            foreach (List<object> l1 in lista)
+            {
+                list_usuario.Add(new Usuario(l1));
+            }
+            ConexionBBDD.Instanciar().CerrarConexion();
+            return list_usuario;
+
         }
 
         //public bool CambiarContraseña(string correo, string nuevaC)
@@ -147,30 +179,49 @@ namespace primeraprueba
         }
 
         //Funcionalidad usada para insertar en la base de datos cuando se quiere seguir a un usuario
-        public void Seguir()
+        public static bool Seguir(int id)
         {
-            throw new NotImplementedException();
-        }
+            ConexionBBDD.Instanciar().AbrirConexion();
+            string consulta = String.Format(
+                "SELECT * FROM seguidores where ID_USUARIO='{0}' AND ID_SIGUIENDO='{1}'", Usuario.UsuarioActual.id_usuario, id
+            );
+            
+            List<List<object>> funciona = ConexionBBDD.Instanciar().Query(consulta);
+            if(funciona == null)
+            {
+                return false;
+            }
+            else
+            {
+                if (funciona.Count == 0)
+                {
+                    consulta = String.Format(
+                    "INSERT INTO seguidores Values('{0}','{1}')", Usuario.UsuarioActual.ID_Usuario, id
+                    );
+                    funciona = ConexionBBDD.Instanciar().Query(consulta);
+                    return true;
+
+                }
+                else
+                {
+                    consulta = String.Format(
+                        "Delete from seguidores where ID_USUARIO='{0}' AND ID_SIGUIENDO='{1}'", Usuario.UsuarioActual.ID_Usuario, id
+                        );
+                    funciona = ConexionBBDD.Instanciar().Query(consulta);
+                    return true;
+                }
+            }
+           
+
+
+            
+
+    }
 
         //Funcionalidad para dejar de seguir a un usuario
         public void dejarSeguir()
         {
             throw new NotImplementedException();
-        }
-
-        //Hace la consulta para contar los seguidores de cierto usuario
-        public static int Cont_NumSeguidores(int id)
-        {
-            ConexionBBDD.Instanciar().AbrirConexion();
-            string consulta = String.Format(
-                "SELECT N_Seguidor FROM usuario WHERE where ID_Usuario={0}", id);
-            var resultado = ConexionBBDD.Instanciar().Query(consulta);
-
-            ConexionBBDD.Instanciar().CerrarConexion();
-
-            int num = int.Parse(resultado[0][0].ToString());
-
-            return num;
         }
 
 
