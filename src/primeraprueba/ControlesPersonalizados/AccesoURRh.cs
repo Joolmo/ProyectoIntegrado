@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using System;
 
 namespace ControlesPersonalizados
 {
@@ -20,8 +21,8 @@ namespace ControlesPersonalizados
 
         public string InfoBot
         {
-            get { return lblover.Text; }
-            set { lblover.Text = value; }
+            get { return lblBot.Text; }
+            set { lblBot.Text = value; }
         }
 
         public Image Foto
@@ -48,6 +49,35 @@ namespace ControlesPersonalizados
         public AccesoURRh()
         {
             InitializeComponent();
+        }
+
+        public event EventHandler CualquierClick
+        {
+
+            add
+            {
+                this.picFoto.Click += value;
+                this.lblBot.Click += value;
+                this.lblMid.Click += value;
+                this.lblTop.Click += value;
+            }
+            remove
+            {
+                this.picFoto.Click -= value;
+                this.lblBot.Click -= value;
+                this.lblMid.Click -= value;
+                this.lblTop.Click -= value;
+            }
+        }
+
+        private void picFoto_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void lblMid_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

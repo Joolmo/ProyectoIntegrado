@@ -159,10 +159,19 @@ namespace primeraprueba
         }
 
         //Hace la consulta para contar los seguidores de cierto usuario
-        public int Cont_NumSeguidores()
+        public static int Cont_NumSeguidores(int id)
         {
-			throw new NotImplementedException();
-		}
+            ConexionBBDD.Instanciar().AbrirConexion();
+            string consulta = String.Format(
+                "SELECT N_Seguidor FROM usuario WHERE where ID_Usuario={0}", id);
+            var resultado = ConexionBBDD.Instanciar().Query(consulta);
+
+            ConexionBBDD.Instanciar().CerrarConexion();
+
+            int num = int.Parse(resultado[0][0].ToString());
+
+            return num;
+        }
 
 
         //Hace la consulta para contar el numero de recetas de cierto usuario

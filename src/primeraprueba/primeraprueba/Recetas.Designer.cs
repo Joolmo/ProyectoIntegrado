@@ -73,7 +73,7 @@
             this.tbcRecetas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbcRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tbcRecetas.Location = new System.Drawing.Point(4, 52);
-            this.tbcRecetas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbcRecetas.Margin = new System.Windows.Forms.Padding(4);
             this.tbcRecetas.Name = "tbcRecetas";
             this.tbcRecetas.SelectedIndex = 0;
             this.tbcRecetas.Size = new System.Drawing.Size(770, 485);
@@ -83,13 +83,14 @@
             // 
             this.tbpIngredientes.Controls.Add(this.lblIngredientes);
             this.tbpIngredientes.Location = new System.Drawing.Point(4, 34);
-            this.tbpIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpIngredientes.Margin = new System.Windows.Forms.Padding(4);
             this.tbpIngredientes.Name = "tbpIngredientes";
-            this.tbpIngredientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpIngredientes.Padding = new System.Windows.Forms.Padding(4);
             this.tbpIngredientes.Size = new System.Drawing.Size(762, 447);
             this.tbpIngredientes.TabIndex = 0;
             this.tbpIngredientes.Text = "Ingredientes";
             this.tbpIngredientes.UseVisualStyleBackColor = true;
+            this.tbpIngredientes.Click += new System.EventHandler(this.tbpIngredientes_Click);
             // 
             // lblIngredientes
             // 
@@ -103,10 +104,10 @@
             // 
             this.tbpPasos.Controls.Add(this.lblPasos);
             this.tbpPasos.Location = new System.Drawing.Point(4, 34);
-            this.tbpPasos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpPasos.Margin = new System.Windows.Forms.Padding(4);
             this.tbpPasos.Name = "tbpPasos";
-            this.tbpPasos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbpPasos.Size = new System.Drawing.Size(761, 448);
+            this.tbpPasos.Padding = new System.Windows.Forms.Padding(4);
+            this.tbpPasos.Size = new System.Drawing.Size(762, 447);
             this.tbpPasos.TabIndex = 1;
             this.tbpPasos.Text = "Pasos";
             this.tbpPasos.UseVisualStyleBackColor = true;
@@ -128,7 +129,7 @@
             this.tableLayoutPanel2.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -140,7 +141,7 @@
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Top;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
             this.ptbApp.Location = new System.Drawing.Point(258, 4);
-            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
             this.ptbApp.Name = "ptbApp";
             this.ptbApp.Size = new System.Drawing.Size(1317, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -153,7 +154,7 @@
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
             this.ptbIcon.Location = new System.Drawing.Point(59, 4);
-            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,7 +169,7 @@
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 119);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -181,7 +182,7 @@
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
-            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAmarillo.Name = "pnlAmarillo";
             this.pnlAmarillo.Size = new System.Drawing.Size(1571, 6);
             this.pnlAmarillo.TabIndex = 35;
@@ -195,7 +196,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 18);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -209,13 +210,13 @@
             this.tableLayoutPanel4.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.07246F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 543F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 543F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 543F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 541F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 541F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 541F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(777, 541);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -225,7 +226,7 @@
             this.panel1.Controls.Add(this.tableLayoutPanel6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(769, 533);
             this.panel1.TabIndex = 37;
@@ -238,7 +239,7 @@
             this.tableLayoutPanel6.Controls.Add(this.ptbReceta, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -253,7 +254,7 @@
             this.panel2.Controls.Add(this.lblnomusu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(761, 126);
             this.panel2.TabIndex = 37;
@@ -261,7 +262,7 @@
             // ptbFoto
             // 
             this.ptbFoto.Location = new System.Drawing.Point(0, -2);
-            this.ptbFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbFoto.Margin = new System.Windows.Forms.Padding(4);
             this.ptbFoto.Name = "ptbFoto";
             this.ptbFoto.Size = new System.Drawing.Size(167, 122);
             this.ptbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -294,7 +295,7 @@
             // 
             this.ptbReceta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbReceta.Location = new System.Drawing.Point(4, 138);
-            this.ptbReceta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbReceta.Margin = new System.Windows.Forms.Padding(4);
             this.ptbReceta.Name = "ptbReceta";
             this.ptbReceta.Size = new System.Drawing.Size(761, 391);
             this.ptbReceta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -310,7 +311,7 @@
             this.tableLayoutPanel5.Controls.Add(this.tags1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(789, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -336,7 +337,7 @@
             this.ClientSize = new System.Drawing.Size(1579, 690);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Recetas";
             this.Text = "Recetas";
             this.Load += new System.EventHandler(this.Recetas_Load);

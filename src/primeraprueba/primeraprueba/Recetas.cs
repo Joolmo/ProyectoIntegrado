@@ -57,5 +57,10 @@ namespace primeraprueba
         {
 
         }
+
+        private void tbpIngredientes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

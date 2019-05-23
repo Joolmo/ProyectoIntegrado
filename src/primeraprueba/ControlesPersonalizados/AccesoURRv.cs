@@ -61,5 +61,9 @@ namespace ControlesPersonalizados
             }
         }
 
+        private void picFoto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
