@@ -49,6 +49,7 @@
             this.ptbReceta = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tags1 = new ControlesPersonalizados.Tags();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.tbcRecetas.SuspendLayout();
             this.tbpIngredientes.SuspendLayout();
             this.tbpPasos.SuspendLayout();
@@ -249,6 +250,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnBorrar);
             this.panel2.Controls.Add(this.ptbFoto);
             this.panel2.Controls.Add(this.lblRetoRecetas);
             this.panel2.Controls.Add(this.lblnomusu);
@@ -330,6 +332,16 @@
             this.tags1.Size = new System.Drawing.Size(772, 44);
             this.tags1.TabIndex = 15;
             // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(573, 43);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 17;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
             // Recetas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -386,5 +398,6 @@
         private System.Windows.Forms.Label lblPasos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnBorrar;
     }
 }

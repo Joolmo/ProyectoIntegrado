@@ -210,4 +210,7 @@
   <data name="usuariosDestacadosHome" xml:space="preserve">
     <value>Usuarios Destacados</value>
   </data>
+  <data name="btnBorrar" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
 </root>
