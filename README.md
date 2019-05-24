@@ -3,6 +3,8 @@
 
 Esquema base de datos: https://drive.google.com/file/d/17_AzZyPsbRonhKbV04MYapRcH4zkQETW/view?ts=5cdacedb
 Esquema Clases: https://drive.google.com/file/d/1RAAdb7Fc689YvnpKNaLtINxopAyLzkTk/view?ts=5cdaceca
+Esquema Casos de Uso: https://drive.google.com/file/d/1b9I8OeSkyFK9kg-kQaQW4eGMVUOKPTbg/view
+Esquema de Actividades: https://drive.google.com/file/d/1hoqivaxPwtujZb__z3ajy3prANHoA-Ah/view
 
 Ip AWS: 18.191.242.134;
 
