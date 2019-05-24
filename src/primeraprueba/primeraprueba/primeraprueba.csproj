@@ -129,10 +129,10 @@
     <Compile Include="Recetas.Designer.cs">
       <DependentUpon>Recetas.cs</DependentUpon>
     </Compile>
-    <Compile Include="RecursosLocalizables\Resource1.Designer.cs">
+    <Compile Include="RecursosLocalizables\StringRecursos.EN-GB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resource1.resx</DependentUpon>
+      <DependentUpon>StringRecursos.EN-GB.resx</DependentUpon>
     </Compile>
     <Compile Include="RecursosLocalizables\StringRecursos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -181,9 +181,9 @@
     <EmbeddedResource Include="Recetas.resx">
       <DependentUpon>Recetas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RecursosLocalizables\Resource1.resx">
+    <EmbeddedResource Include="RecursosLocalizables\StringRecursos.EN-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <LastGenOutput>StringRecursos.EN-GB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RecursosLocalizables\StringRecursos.resx">
       <Generator>ResXFileCodeGenerator</Generator>

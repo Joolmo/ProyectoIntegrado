@@ -55,7 +55,7 @@
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
-            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAmarillo.Name = "pnlAmarillo";
             this.pnlAmarillo.Size = new System.Drawing.Size(1571, 6);
             this.pnlAmarillo.TabIndex = 32;
@@ -74,7 +74,7 @@
             this.pnlIniciar.Controls.Add(this.txtContraseñaN);
             this.pnlIniciar.Controls.Add(this.btIniciar);
             this.pnlIniciar.Location = new System.Drawing.Point(345, 44);
-            this.pnlIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlIniciar.Name = "pnlIniciar";
             this.pnlIniciar.Size = new System.Drawing.Size(888, 496);
             this.pnlIniciar.TabIndex = 33;
@@ -83,7 +83,7 @@
             // 
             this.lblConfirmar.AutoSize = true;
             this.lblConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblConfirmar.Location = new System.Drawing.Point(128, 266);
+            this.lblConfirmar.Location = new System.Drawing.Point(146, 263);
             this.lblConfirmar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirmar.Name = "lblConfirmar";
             this.lblConfirmar.Size = new System.Drawing.Size(205, 25);
@@ -93,7 +93,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(359, 178);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(223, 22);
             this.txtCorreo.TabIndex = 9;
@@ -112,8 +112,8 @@
             // btConfirmar
             // 
             this.btConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btConfirmar.Location = new System.Drawing.Point(657, 390);
-            this.btConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btConfirmar.Location = new System.Drawing.Point(446, 390);
+            this.btConfirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btConfirmar.Name = "btConfirmar";
             this.btConfirmar.Size = new System.Drawing.Size(136, 42);
             this.btConfirmar.TabIndex = 8;
@@ -124,7 +124,7 @@
             // 
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblCorreo.Location = new System.Drawing.Point(160, 176);
+            this.lblCorreo.Location = new System.Drawing.Point(172, 175);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(177, 25);
@@ -134,7 +134,7 @@
             // txtConfirmar
             // 
             this.txtConfirmar.Location = new System.Drawing.Point(359, 266);
-            this.txtConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmar.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.PasswordChar = '*';
             this.txtConfirmar.Size = new System.Drawing.Size(223, 22);
@@ -144,7 +144,7 @@
             // 
             this.lblContraseñaN.AutoSize = true;
             this.lblContraseñaN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblContraseñaN.Location = new System.Drawing.Point(159, 219);
+            this.lblContraseñaN.Location = new System.Drawing.Point(172, 215);
             this.lblContraseñaN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseñaN.Name = "lblContraseñaN";
             this.lblContraseñaN.Size = new System.Drawing.Size(179, 25);
@@ -154,7 +154,7 @@
             // txtContraseñaN
             // 
             this.txtContraseñaN.Location = new System.Drawing.Point(359, 219);
-            this.txtContraseñaN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContraseñaN.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseñaN.Name = "txtContraseñaN";
             this.txtContraseñaN.PasswordChar = '*';
             this.txtContraseñaN.Size = new System.Drawing.Size(223, 22);
@@ -163,8 +163,8 @@
             // btIniciar
             // 
             this.btIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btIniciar.Location = new System.Drawing.Point(135, 390);
-            this.btIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btIniciar.Location = new System.Drawing.Point(164, 390);
+            this.btIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.btIniciar.Name = "btIniciar";
             this.btIniciar.Size = new System.Drawing.Size(161, 42);
             this.btIniciar.TabIndex = 4;
@@ -181,7 +181,7 @@
             this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -193,7 +193,7 @@
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
             this.ptbApp.Location = new System.Drawing.Point(258, 4);
-            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
             this.ptbApp.Name = "ptbApp";
             this.ptbApp.Size = new System.Drawing.Size(1317, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -206,7 +206,7 @@
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
             this.ptbIcon.Location = new System.Drawing.Point(59, 4);
-            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +221,7 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlIniciar, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 119);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -237,9 +237,10 @@
             this.ClientSize = new System.Drawing.Size(1579, 690);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Contrasenya";
             this.Text = "Contrasenya";
+            this.Load += new System.EventHandler(this.Contrasenya_Load);
             this.pnlIniciar.ResumeLayout(false);
             this.pnlIniciar.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

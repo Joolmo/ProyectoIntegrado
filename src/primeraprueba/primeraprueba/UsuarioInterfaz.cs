@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlesPersonalizados;
+using primeraprueba.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace primeraprueba
 {
@@ -138,6 +141,19 @@ namespace primeraprueba
             ConexionBBDD.Instanciar().CerrarConexion();
 
             parent.GoUsuario(Usuario.GetUsuario(u.ID_Usuario));
+        }
+
+        private void UsuarioInterfaz_Load(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            lblDescrip.Text = StringRecursos.descripcionUI;
+            lblNumSeguidores.Text = StringRecursos.numSeguidoresUI;
+            btSeguir.Text = StringRecursos.btnSeguirUI;
+            lblRecetas.Text = StringRecursos.numRecetasUI;
         }
     }
 }

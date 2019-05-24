@@ -15,8 +15,14 @@ namespace primeraprueba
 
         Form actual = null;
 
-        public string Idioma="Castellano";
-        
+        private string idioma;
+
+        public string Idioma
+        {
+            get { return idioma; }
+            set { idioma = value; }
+        }
+
         public Base()
         {
             InitializeComponent();

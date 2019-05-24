@@ -75,7 +75,7 @@
             // 
             this.linkContraseña.AutoSize = true;
             this.linkContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.linkContraseña.Location = new System.Drawing.Point(61, 407);
+            this.linkContraseña.Location = new System.Drawing.Point(228, 411);
             this.linkContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkContraseña.Name = "linkContraseña";
             this.linkContraseña.Size = new System.Drawing.Size(192, 25);
@@ -87,8 +87,8 @@
             // btIniciar
             // 
             this.btIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btIniciar.Location = new System.Drawing.Point(693, 399);
-            this.btIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btIniciar.Location = new System.Drawing.Point(233, 336);
+            this.btIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.btIniciar.Name = "btIniciar";
             this.btIniciar.Size = new System.Drawing.Size(133, 42);
             this.btIniciar.TabIndex = 4;
@@ -111,7 +111,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(369, 187);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(223, 22);
             this.txtNombre.TabIndex = 6;
@@ -119,7 +119,7 @@
             // txtContra
             // 
             this.txtContra.Location = new System.Drawing.Point(369, 258);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(223, 22);
@@ -128,8 +128,8 @@
             // btRegistrar
             // 
             this.btRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btRegistrar.Location = new System.Drawing.Point(400, 399);
-            this.btRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btRegistrar.Location = new System.Drawing.Point(456, 336);
+            this.btRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(136, 42);
             this.btRegistrar.TabIndex = 8;
@@ -150,7 +150,7 @@
             this.pnlIniciar.Controls.Add(this.linkContraseña);
             this.pnlIniciar.Controls.Add(this.btIniciar);
             this.pnlIniciar.Location = new System.Drawing.Point(424, 79);
-            this.pnlIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlIniciar.Name = "pnlIniciar";
             this.pnlIniciar.Size = new System.Drawing.Size(888, 496);
             this.pnlIniciar.TabIndex = 9;
@@ -160,7 +160,7 @@
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
-            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAmarillo.Name = "pnlAmarillo";
             this.pnlAmarillo.Size = new System.Drawing.Size(1728, 6);
             this.pnlAmarillo.TabIndex = 31;
@@ -174,7 +174,7 @@
             this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -186,7 +186,7 @@
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
             this.ptbApp.Location = new System.Drawing.Point(284, 4);
-            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
             this.ptbApp.Name = "ptbApp";
             this.ptbApp.Size = new System.Drawing.Size(1448, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -199,7 +199,7 @@
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
             this.ptbIcon.Location = new System.Drawing.Point(72, 4);
-            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +214,7 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlIniciar, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 119);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -230,9 +230,10 @@
             this.ClientSize = new System.Drawing.Size(1736, 759);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "login";
             this.Text = "login";
+            this.Load += new System.EventHandler(this.login_Load);
             this.pnlIniciar.ResumeLayout(false);
             this.pnlIniciar.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

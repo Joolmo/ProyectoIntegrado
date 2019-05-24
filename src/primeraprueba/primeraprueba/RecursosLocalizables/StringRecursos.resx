@@ -120,4 +120,94 @@
   <data name="barrabusqueda" xml:space="preserve">
     <value>Búsqueda</value>
   </data>
+  <data name="btnconfirmarCon" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="btnIniciarCon" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="contrasenyaCon" xml:space="preserve">
+    <value>Nueva Contraseña</value>
+  </data>
+  <data name="contrasenyaConfirmarCon" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+  </data>
+  <data name="contrasenyaLogin" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="contrasenyaOlvidadaLogin" xml:space="preserve">
+    <value>Contraseña Olvidada</value>
+  </data>
+  <data name="correoCon" xml:space="preserve">
+    <value>Correo Electrónico</value>
+  </data>
+  <data name="iniciarLogin" xml:space="preserve">
+    <value>Iniciar</value>
+  </data>
+  <data name="inicioLogin" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="nombreLogin" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="registrarLogin" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="tituloCon" xml:space="preserve">
+    <value>Contraseña Olvidada</value>
+  </data>
+  <data name="btnIniciarSesionHome" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="btnRegistroHome" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="btnAddTagRec" xml:space="preserve">
+    <value>Añadir Tag</value>
+  </data>
+  <data name="btnBorrarTagRec" xml:space="preserve">
+    <value>Borrar Tag</value>
+  </data>
+  <data name="btnCancelRec" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnEnviarRec" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ingredientesRec" xml:space="preserve">
+    <value>Ingredientes</value>
+  </data>
+  <data name="insertarImagenRec" xml:space="preserve">
+    <value>Subir Imagen</value>
+  </data>
+  <data name="nomRecetaRec" xml:space="preserve">
+    <value>Nombre de la receta</value>
+  </data>
+  <data name="pasosRec" xml:space="preserve">
+    <value>Pasos a seguir</value>
+  </data>
+  <data name="btnSeguirUI" xml:space="preserve">
+    <value>Seguir</value>
+  </data>
+  <data name="challengeUI" xml:space="preserve">
+    <value>Reto</value>
+  </data>
+  <data name="descripcionUI" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="numRecetasUI" xml:space="preserve">
+    <value>Nº Recetas</value>
+  </data>
+  <data name="numSeguidoresUI" xml:space="preserve">
+    <value>Nº Seguidores</value>
+  </data>
+  <data name="recetasDestacadasHome" xml:space="preserve">
+    <value>Recetas Destacadas</value>
+  </data>
+  <data name="retosHome" xml:space="preserve">
+    <value>Retos</value>
+  </data>
+  <data name="usuariosDestacadosHome" xml:space="preserve">
+    <value>Usuarios Destacados</value>
+  </data>
 </root>

@@ -131,9 +131,9 @@
             this.lblRanking.Location = new System.Drawing.Point(656, 58);
             this.lblRanking.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRanking.Name = "lblRanking";
-            this.lblRanking.Size = new System.Drawing.Size(151, 31);
+            this.lblRanking.Size = new System.Drawing.Size(114, 31);
             this.lblRanking.TabIndex = 3;
-            this.lblRanking.Text = "Ranking Nº";
+            this.lblRanking.Text = "Ranking";
             // 
             // lblRecetas
             // 
@@ -492,6 +492,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsuarioInterfaz";
             this.Text = "UsuarioInterfaz";
+            this.Load += new System.EventHandler(this.UsuarioInterfaz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);

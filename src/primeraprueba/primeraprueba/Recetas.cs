@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using primeraprueba.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace primeraprueba
 {
@@ -57,7 +60,7 @@ namespace primeraprueba
 
         private void Recetas_Load(object sender, EventArgs e)
         {
-
+            AplicarIdioma();
         }
 
         private void tbpIngredientes_Click(object sender, EventArgs e)
@@ -68,6 +71,12 @@ namespace primeraprueba
         private void lblnomusu_Click(object sender, EventArgs e)
         {
             parent.GoUsuario(Usuario.GetUsuario(r.IdUsuario));
+        }
+
+        private void AplicarIdioma()
+        {
+            tbpIngredientes.Text = StringRecursos.ingredientesRec;
+            tbpPasos.Text = StringRecursos.pasosRec;
         }
     }
 }

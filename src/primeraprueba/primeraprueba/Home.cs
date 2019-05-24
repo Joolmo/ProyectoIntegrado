@@ -42,6 +42,9 @@ namespace primeraprueba
 
                 picUsuario.Image = Usuario.UsuarioActual.Foto;
             }
+
+            cmbIdioma.Text = "Castellano";
+            AplicarIdioma();
         }
 
         private void RellenarRecetas(List<Receta> rec)
@@ -203,23 +206,20 @@ namespace primeraprueba
                 case "Castellano":
                     {
                         cultura = "ES-ES";
+                        parent.Idioma = "Castellano";
                         break;
                     }
-                case "Inglés":
+                case "English":
                     {
-                        cultura = "EN-GB";  // Inglés United Kingdom
-                        break;
-                    }
-                case "Italiano":
-                    {
-                        cultura = "IT-IT";  // Inglés United Kingdom
+                        cultura = "EN-GB";
+                        parent.Idioma = "English";
                         break;
                     }
 
             }
             //MessageBox.Show("Nombre de la referencia cultural en .NET: "+cultura);  // mensaje informativo
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
-            //AplicarIdioma();
+            AplicarIdioma();
         }
 
         private void TxtDireccion_TextChanged(object sender, EventArgs e)
@@ -227,9 +227,14 @@ namespace primeraprueba
 
         }
 
-        /*private void AplicarIdioma()
+        private void AplicarIdioma()
         {
-            lblDirección.Text = StringRecursos.
-        }*/
+            lblDirección.Text = StringRecursos.barrabusqueda;
+            btSesion.Text = StringRecursos.btnIniciarSesionHome;
+            btRegistro.Text = StringRecursos.btnRegistroHome;
+            tbpRecetas.Text = StringRecursos.recetasDestacadasHome;
+            tbpRetos.Text = StringRecursos.retosHome;
+            tbpUsuarios.Text = StringRecursos.usuariosDestacadosHome;
+        }
     }
 }

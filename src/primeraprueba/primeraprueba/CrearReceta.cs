@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using primeraprueba.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace primeraprueba
 {
@@ -94,6 +97,8 @@ namespace primeraprueba
                 picFotoUsuario.Image = Usuario.UsuarioActual.Foto;
                 lblUsuario.Text = Usuario.UsuarioActual.Nombre;
             }
+
+            AplicarIdioma();
         }
 
         private void TextBox1_TextChanged_1(object sender, EventArgs e)
@@ -109,6 +114,19 @@ namespace primeraprueba
         private void ptbApp_Click(object sender, EventArgs e)
         {
             parent.GoHome();
+        }
+
+        private void AplicarIdioma()
+        {
+            lblNombreReceta.Text = StringRecursos.nomRecetaRec;
+            lblInsertarImagen.Text = StringRecursos.insertarImagenRec;
+            lblIngredientes.Text = StringRecursos.ingredientesRec;
+            lblPasos.Text = StringRecursos.pasosRec;
+            btnAnyadirTag.Text = StringRecursos.btnAddTagRec;
+            btnEliminarTag.Text = StringRecursos.btnBorrarTagRec;
+            btCancelar.Text = StringRecursos.btnCancelRec;
+            btEnviar.Text = StringRecursos.btnEnviarRec;
+
         }
     }
 }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using primeraprueba.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace primeraprueba
 {
@@ -44,8 +47,6 @@ namespace primeraprueba
                 }
                 
             }
-            
-			
 		}
 
 		private void btRegistrar_Click(object sender, EventArgs e)
@@ -65,6 +66,21 @@ namespace primeraprueba
         private void ptbApp_Click(object sender, EventArgs e)
         {
             parent.GoHome();
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            lblInicio.Text = StringRecursos.inicioLogin;
+            lblNombre.Text = StringRecursos.nombreLogin;
+            lblContraseña.Text = StringRecursos.contrasenyaLogin;
+            btIniciar.Text = StringRecursos.iniciarLogin;
+            btRegistrar.Text = StringRecursos.registrarLogin;
+            linkContraseña.Text = StringRecursos.contrasenyaOlvidadaLogin;
         }
     }
 }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using primeraprueba.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace primeraprueba
 {
@@ -25,7 +28,10 @@ namespace primeraprueba
 		private void textBox5_TextChanged(object sender, EventArgs e){}
 		private void textBox6_TextChanged(object sender, EventArgs e){}
 		private void pictureBox2_Click(object sender, EventArgs e){}
-		private void Registrarse_Load(object sender, EventArgs e){}
+		private void Registrarse_Load(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
 
 		private void button1_Click(object sender, EventArgs e)
 		{
@@ -88,6 +94,16 @@ namespace primeraprueba
             {
                 ptbImagen.Image = new Bitmap(open.FileName);
             }
+        }
+
+        private void AplicarIdioma()
+        {
+            lblNombre.Text = StringRecursos.nombreLogin;
+            lblCorreo.Text = StringRecursos.correoCon;
+            lblContra.Text = StringRecursos.contrasenyaLogin;
+            lblConfirContra.Text = StringRecursos.contrasenyaConfirmarCon;
+            linkIniciar.Text = StringRecursos.iniciarLogin;
+            btRegistrar.Text = StringRecursos.registrarLogin;
         }
     }
 }
