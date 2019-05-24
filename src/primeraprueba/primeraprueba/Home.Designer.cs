@@ -83,6 +83,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
+            this.logOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tbcHome.SuspendLayout();
             this.tbpRecetas.SuspendLayout();
@@ -746,7 +747,7 @@
             this.msDesplegable.Location = new System.Drawing.Point(109, 78);
             this.msDesplegable.Name = "msDesplegable";
             this.msDesplegable.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.msDesplegable.Size = new System.Drawing.Size(84, 28);
+            this.msDesplegable.Size = new System.Drawing.Size(234, 28);
             this.msDesplegable.TabIndex = 27;
             this.msDesplegable.Text = "mspMenu";
             this.msDesplegable.Visible = false;
@@ -756,7 +757,8 @@
             this.miUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.miUsuario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.perfilToolStripMenuItem,
-            this.recetasToolStripMenuItem});
+            this.recetasToolStripMenuItem,
+            this.logOffToolStripMenuItem});
             this.miUsuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.miUsuario.Name = "miUsuario";
             this.miUsuario.Size = new System.Drawing.Size(71, 24);
@@ -765,13 +767,14 @@
             // perfilToolStripMenuItem
             // 
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.perfilToolStripMenuItem.Text = "Perfil";
+            this.perfilToolStripMenuItem.Click += new System.EventHandler(this.perfilToolStripMenuItem_Click);
             // 
             // recetasToolStripMenuItem
             // 
             this.recetasToolStripMenuItem.Name = "recetasToolStripMenuItem";
-            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.recetasToolStripMenuItem.Text = "Recetas";
             this.recetasToolStripMenuItem.Click += new System.EventHandler(this.RecetasToolStripMenuItem_Click);
             // 
@@ -834,6 +837,13 @@
             this.cmbIdioma.Size = new System.Drawing.Size(121, 24);
             this.cmbIdioma.TabIndex = 0;
             this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
+            // 
+            // logOffToolStripMenuItem
+            // 
+            this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
+            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.logOffToolStripMenuItem.Text = "Log off";
+            this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -931,6 +941,7 @@
         private ControlesPersonalizados.AccesoURRv accesoURRv10;
         private ControlesPersonalizados.AccesoURRv accesoURRv9;
         private System.Windows.Forms.ComboBox cmbIdioma;
+        private System.Windows.Forms.ToolStripMenuItem logOffToolStripMenuItem;
     }
 }
 

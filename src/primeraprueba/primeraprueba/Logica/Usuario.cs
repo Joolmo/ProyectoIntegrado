@@ -180,7 +180,7 @@ namespace primeraprueba
         //        "updare usuario set Contraseña='{0}' where Correo={1}",nuevaC , correo)
         //}
 
-        public static void LogOff(MySqlConnection conexion, string nom, string passwd)
+        public static void LogOff()
         {
             usuarioActual = null;
         }

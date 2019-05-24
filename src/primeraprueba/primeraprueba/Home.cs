@@ -236,5 +236,16 @@ namespace primeraprueba
             tbpRetos.Text = StringRecursos.retosHome;
             tbpUsuarios.Text = StringRecursos.usuariosDestacadosHome;
         }
+
+        private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            parent.GoUsuario(Usuario.GetUsuario(Usuario.UsuarioActual.ID_Usuario));
+        }
+
+        private void logOffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuario.LogOff();
+            parent.GoHome();
+        }
     }
 }

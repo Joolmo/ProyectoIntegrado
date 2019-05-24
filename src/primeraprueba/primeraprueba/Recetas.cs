@@ -18,6 +18,7 @@ namespace primeraprueba
         Base parent = null;
 
         Receta r;
+        Usuario u;
 		public Recetas(Base par, Receta receta)
 		{
 			InitializeComponent();
@@ -27,6 +28,7 @@ namespace primeraprueba
             r = receta;
 
             Usuario usuario = Usuario.GetUsuario(receta.IdUsuario);
+            u = usuario;
             lblRetoRecetas.Text = receta.Nombre;
             ptbFoto.Image = usuario.Foto;
             ptbReceta.Image = receta.Foto;
@@ -34,6 +36,19 @@ namespace primeraprueba
             foreach(string tag in receta.Tags) tags1.AnyadirTag(tag);
             foreach (string ing in receta.Indredientes) lblIngredientes.Text += ing + "\n";
             lblPasos.Text = receta.Pasos;
+
+            if (Usuario.UsuarioActual != null)
+            {
+                if (u.ID_Usuario != Usuario.UsuarioActual.ID_Usuario)
+                {
+                    btnBorrar.Visible = false;
+
+                }
+            }
+            else
+            {
+                btnBorrar.Visible = false;
+            }
         }
 
 		private void pictureBox2_Click(object sender, EventArgs e){}
@@ -77,6 +92,13 @@ namespace primeraprueba
         {
             tbpIngredientes.Text = StringRecursos.ingredientesRec;
             tbpPasos.Text = StringRecursos.pasosRec;
+            btnBorrar.Text = StringRecursos.btnBorrar;
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            Receta.BorrarReceta(r.IdReceta);
+            parent.GoHome();
         }
     }
 }

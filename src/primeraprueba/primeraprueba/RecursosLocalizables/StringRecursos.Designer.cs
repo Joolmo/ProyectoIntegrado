@@ -79,6 +79,15 @@ namespace primeraprueba.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Borrar.
+        /// </summary>
+        internal static string btnBorrar {
+            get {
+                return ResourceManager.GetString("btnBorrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Borrar Tag.
         /// </summary>
         internal static string btnBorrarTagRec {
