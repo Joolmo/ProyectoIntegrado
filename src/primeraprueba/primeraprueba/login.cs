@@ -12,38 +12,59 @@ namespace primeraprueba
 {
 	public partial class login : Form
 	{
-		public login()
+
+        Base parent = null;
+		public login(Base par)
 		{
 			InitializeComponent();
-		}
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+        }
 
 		private void label3_Click(object sender, EventArgs e){}
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e) { }
 
 		private void btIniciar_Click(object sender, EventArgs e)
 		{
-			Hide();
-			Home homeusuario = new Home();
-			homeusuario.ShowDialog();
+			if(Usuario.LogIn(txtNombre.Text, txtContra.Text))
+            {
+                parent.GoHome();
+            }
+            else
+            {
+                var error = ConexionBBDD.Instanciar().LastError;
+                if (error == "Sin errrores")
+                {
+                    MessageBox.Show("Has puesto mal el usuario o la cntraseña");
+                }
+                else
+                {
+                    MessageBox.Show(error);
+                }
+                
+            }
+            
 			
 		}
 
 		private void btRegistrar_Click(object sender, EventArgs e)
 		{
-			Hide();
-			Registrarse Registro = new Registrarse();
-			Registro.ShowDialog();
+            parent.GoRegistro();
 		}
 
 
 
 		private void linlContraseña_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Hide();
-			Contrasenya reg = new Contrasenya();
-			reg.ShowDialog();
+		
 			
 			
 		}
-	}
+
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+            parent.GoHome();
+        }
+    }
 }

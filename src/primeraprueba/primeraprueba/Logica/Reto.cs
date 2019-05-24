@@ -54,76 +54,66 @@ namespace primeraprueba
         //Obtiene una lista de los retos del usuario seleccionado
         static List<Reto> GetRetos(int user)
         {
-            Reto r;
             List<Reto> List_Reto = new List<Reto>();
+
+            ConexionBBDD.Instanciar().AbrirConexion();
 
             string consulta = string.Format("select * from retos where ID_Usuario_P={0}", user);
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
 
+            ConexionBBDD.Instanciar().AbrirConexion();
+
             if (lista == null) return null;
 
             foreach (List<object> l1 in lista)
-            {
-                r = new Reto(l1);
-                List_Reto.Add(r);
-            }
+                List_Reto.Add(new Reto(l1));
+
             return List_Reto;
         }
 
 
         public static bool CrearReto(Reto ret)
         {
+            string consulta = string.Format(
+                "insert into reto values(null,'{0}','{1}','{2}','{3}','{4}')",
+                ret.id_usuario, ret.nombre, ret.descripcion, ret.fecha_inicial, ret.fecha_final
+            );
 
-            string consulta = string.Format("insert into reto values(null,'{0}','{1}','{2}','{3}','{4}')",
-                ret.id_usuario, ret.nombre, ret.descripcion, ret.fecha_inicial, ret.fecha_final);
-            if (ConexionBBDD.Instanciar().NonQuery(consulta))
-            {
-                return true;
-            }
-            else
-            {
-                string error = ConexionBBDD.Instanciar().LastError;
-                return false;
-            }
+            ConexionBBDD.Instanciar().AbrirConexion();
+            bool result = ConexionBBDD.Instanciar().NonQuery(consulta);
+            ConexionBBDD.Instanciar().CerrarConexion();
 
+            if (result) return true;
+
+            string error = ConexionBBDD.Instanciar().LastError;
+            return false;
         }
 
         public static bool BorrarReto(int id)
         {
             string consulta = string.Format("Delete from reto where ID_Reto={0}", id);
 
-            if (ConexionBBDD.Instanciar().NonQuery(consulta))
-            {
-                return true;
-            }
-            else
-            {
-                string error = ConexionBBDD.Instanciar().LastError;
-                return false;
-            }
+            ConexionBBDD.Instanciar().AbrirConexion();
+            bool result = ConexionBBDD.Instanciar().NonQuery(consulta);
+            ConexionBBDD.Instanciar().CerrarConexion();
+
+            if (result) return true;
+
+            string error = ConexionBBDD.Instanciar().LastError;
+            return false;
 
         }
 
         public static Reto GetReto(int id)
         {
-            Reto ret = null;
             string consulta = string.Format("select * from retos where ID_Reto={0}", id);
+
+            ConexionBBDD.Instanciar().AbrirConexion();
             List<List<object>> lista = ConexionBBDD.Instanciar().Query(consulta);
+            ConexionBBDD.Instanciar().CerrarConexion();
 
             if (lista == null) return null;
-
-            foreach (List<object> l1 in lista)
-            {
-                ret = new Reto(l1);
-               
-            }
-            return ret;
-
+            return new Reto(lista[0]);
         }
-
-
-
-
-
     }
 }

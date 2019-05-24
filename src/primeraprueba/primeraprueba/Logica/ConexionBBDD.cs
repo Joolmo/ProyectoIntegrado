@@ -44,11 +44,12 @@ namespace primeraprueba
             string BaseDatos = "pirojo";
             string usuario = "rojo";
             string password = "PI,rojo123";
-            string connectionstring = string.Format("Server={0}; Port={1}; Database={2}; Uid={3}; Pwd={4};",
-                host, puerto, BaseDatos, usuario, password);
+            string connectionstring = string.Format(
+                "Server={0}; Port={1}; Database={2}; Uid={3}; Pwd={4};",
+                host, puerto, BaseDatos, usuario, password
+            );
 
             conexion = new MySqlConnection(connectionstring);
-
         }
         
         /// <summary>
@@ -193,6 +194,15 @@ namespace primeraprueba
                 byteArr = stream.ToArray();
             }
             return byteArr;
+
+        }
+
+        public static Image FromByteToImage(byte[] b)
+        {
+            using(MemoryStream image = new MemoryStream(b))
+            {
+                return Image.FromStream(image);
+            }
 
         }
 

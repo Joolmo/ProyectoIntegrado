@@ -45,5 +45,25 @@ namespace ControlesPersonalizados
         {
             InitializeComponent();
         }
+
+        public event EventHandler CualquierClick
+        {
+
+            add
+            {
+                this.picFoto.Click += value;
+                this.lblTitulo.Click += value;
+            }
+            remove
+            {
+                this.picFoto.Click -= value;
+                this.lblTitulo.Click -= value;
+            }
+        }
+
+        private void picFoto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

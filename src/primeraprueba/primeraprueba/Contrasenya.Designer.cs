@@ -54,9 +54,10 @@
             // 
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAmarillo.Location = new System.Drawing.Point(3, 3);
+            this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlAmarillo.Name = "pnlAmarillo";
-            this.pnlAmarillo.Size = new System.Drawing.Size(1178, 5);
+            this.pnlAmarillo.Size = new System.Drawing.Size(1571, 6);
             this.pnlAmarillo.TabIndex = 32;
             // 
             // pnlIniciar
@@ -72,44 +73,49 @@
             this.pnlIniciar.Controls.Add(this.lblContraseñaN);
             this.pnlIniciar.Controls.Add(this.txtContraseñaN);
             this.pnlIniciar.Controls.Add(this.btIniciar);
-            this.pnlIniciar.Location = new System.Drawing.Point(259, 36);
+            this.pnlIniciar.Location = new System.Drawing.Point(345, 44);
+            this.pnlIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlIniciar.Name = "pnlIniciar";
-            this.pnlIniciar.Size = new System.Drawing.Size(666, 403);
+            this.pnlIniciar.Size = new System.Drawing.Size(888, 496);
             this.pnlIniciar.TabIndex = 33;
             // 
             // lblConfirmar
             // 
             this.lblConfirmar.AutoSize = true;
             this.lblConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblConfirmar.Location = new System.Drawing.Point(96, 216);
+            this.lblConfirmar.Location = new System.Drawing.Point(128, 266);
+            this.lblConfirmar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirmar.Name = "lblConfirmar";
-            this.lblConfirmar.Size = new System.Drawing.Size(166, 20);
+            this.lblConfirmar.Size = new System.Drawing.Size(205, 25);
             this.lblConfirmar.TabIndex = 10;
             this.lblConfirmar.Text = "Confirmar contraseña:";
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(269, 145);
+            this.txtCorreo.Location = new System.Drawing.Point(359, 178);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(168, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(223, 22);
             this.txtCorreo.TabIndex = 9;
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(168, 44);
+            this.lblContraseña.Location = new System.Drawing.Point(224, 54);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(337, 37);
+            this.lblContraseña.Size = new System.Drawing.Size(412, 46);
             this.lblContraseña.TabIndex = 5;
             this.lblContraseña.Text = "Contraseña Olvidada";
             // 
             // btConfirmar
             // 
             this.btConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btConfirmar.Location = new System.Drawing.Point(493, 317);
+            this.btConfirmar.Location = new System.Drawing.Point(657, 390);
+            this.btConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btConfirmar.Name = "btConfirmar";
-            this.btConfirmar.Size = new System.Drawing.Size(102, 34);
+            this.btConfirmar.Size = new System.Drawing.Size(136, 42);
             this.btConfirmar.TabIndex = 8;
             this.btConfirmar.Text = "Confirmar";
             this.btConfirmar.UseVisualStyleBackColor = true;
@@ -118,42 +124,49 @@
             // 
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblCorreo.Location = new System.Drawing.Point(120, 143);
+            this.lblCorreo.Location = new System.Drawing.Point(160, 176);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(142, 20);
+            this.lblCorreo.Size = new System.Drawing.Size(177, 25);
             this.lblCorreo.TabIndex = 1;
             this.lblCorreo.Text = "Correo electrónico:";
             // 
             // txtConfirmar
             // 
-            this.txtConfirmar.Location = new System.Drawing.Point(269, 216);
+            this.txtConfirmar.Location = new System.Drawing.Point(359, 266);
+            this.txtConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirmar.Name = "txtConfirmar";
-            this.txtConfirmar.Size = new System.Drawing.Size(168, 20);
+            this.txtConfirmar.PasswordChar = '*';
+            this.txtConfirmar.Size = new System.Drawing.Size(223, 22);
             this.txtConfirmar.TabIndex = 7;
             // 
             // lblContraseñaN
             // 
             this.lblContraseñaN.AutoSize = true;
             this.lblContraseñaN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblContraseñaN.Location = new System.Drawing.Point(119, 178);
+            this.lblContraseñaN.Location = new System.Drawing.Point(159, 219);
+            this.lblContraseñaN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseñaN.Name = "lblContraseñaN";
-            this.lblContraseñaN.Size = new System.Drawing.Size(143, 20);
+            this.lblContraseñaN.Size = new System.Drawing.Size(179, 25);
             this.lblContraseñaN.TabIndex = 2;
             this.lblContraseñaN.Text = "Contraseña nueva:";
             // 
             // txtContraseñaN
             // 
-            this.txtContraseñaN.Location = new System.Drawing.Point(269, 178);
+            this.txtContraseñaN.Location = new System.Drawing.Point(359, 219);
+            this.txtContraseñaN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraseñaN.Name = "txtContraseñaN";
-            this.txtContraseñaN.Size = new System.Drawing.Size(168, 20);
+            this.txtContraseñaN.PasswordChar = '*';
+            this.txtContraseñaN.Size = new System.Drawing.Size(223, 22);
             this.txtContraseñaN.TabIndex = 6;
             // 
             // btIniciar
             // 
             this.btIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btIniciar.Location = new System.Drawing.Point(101, 317);
+            this.btIniciar.Location = new System.Drawing.Point(135, 390);
+            this.btIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btIniciar.Name = "btIniciar";
-            this.btIniciar.Size = new System.Drawing.Size(121, 34);
+            this.btIniciar.Size = new System.Drawing.Size(161, 42);
             this.btIniciar.TabIndex = 4;
             this.btIniciar.Text = "Iniciar Sesión";
             this.btIniciar.UseVisualStyleBackColor = true;
@@ -168,30 +181,34 @@
             this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 97);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1579, 119);
             this.tableLayoutPanel1.TabIndex = 41;
             // 
             // ptbApp
             // 
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
-            this.ptbApp.Location = new System.Drawing.Point(194, 3);
+            this.ptbApp.Location = new System.Drawing.Point(258, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptbApp.Name = "ptbApp";
-            this.ptbApp.Size = new System.Drawing.Size(987, 91);
+            this.ptbApp.Size = new System.Drawing.Size(1317, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
+            this.ptbApp.Click += new System.EventHandler(this.ptbApp_Click);
             // 
             // ptbIcon
             // 
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
-            this.ptbIcon.Location = new System.Drawing.Point(45, 3);
+            this.ptbIcon.Location = new System.Drawing.Point(59, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(101, 87);
+            this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbIcon.TabIndex = 22;
             this.ptbIcon.TabStop = false;
@@ -203,22 +220,24 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlAmarillo, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pnlIniciar, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 97);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 119);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1184, 464);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1579, 571);
             this.tableLayoutPanel2.TabIndex = 42;
             // 
             // Contrasenya
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1579, 690);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Contrasenya";
             this.Text = "Contrasenya";
             this.pnlIniciar.ResumeLayout(false);

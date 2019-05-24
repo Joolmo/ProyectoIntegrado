@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using System;
 
 namespace ControlesPersonalizados
 {
@@ -8,20 +9,20 @@ namespace ControlesPersonalizados
         #region propieades
         public string InfoTop
         {
-            get { return lblInfoTop.Text; }
-            set { lblInfoTop.Text = value; }
+            get { return lblTop.Text; }
+            set { lblTop.Text = value; }
         }
 
         public string InfoMid
         {
-            get { return lblInfoMid.Text; }
-            set { lblInfoMid.Text = value; }
+            get { return lblMid.Text; }
+            set { lblMid.Text = value; }
         }
 
         public string InfoBot
         {
-            get { return lblInfoBot.Text; }
-            set { lblInfoBot.Text = value; }
+            get { return lblBot.Text; }
+            set { lblBot.Text = value; }
         }
 
         public Image Foto
@@ -48,6 +49,35 @@ namespace ControlesPersonalizados
         public AccesoURRh()
         {
             InitializeComponent();
+        }
+
+        public event EventHandler CualquierClick
+        {
+
+            add
+            {
+                this.picFoto.Click += value;
+                this.lblBot.Click += value;
+                this.lblMid.Click += value;
+                this.lblTop.Click += value;
+            }
+            remove
+            {
+                this.picFoto.Click -= value;
+                this.lblBot.Click -= value;
+                this.lblMid.Click -= value;
+                this.lblTop.Click -= value;
+            }
+        }
+
+        private void picFoto_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void lblMid_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

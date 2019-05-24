@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblInfoBot = new System.Windows.Forms.Label();
-            this.lblInfoMid = new System.Windows.Forms.Label();
-            this.lblInfoTop = new System.Windows.Forms.Label();
+            this.lblBot = new System.Windows.Forms.Label();
+            this.lblMid = new System.Windows.Forms.Label();
+            this.lblTop = new System.Windows.Forms.Label();
             this.picFoto = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -39,44 +39,51 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblInfoBot
+            // lblBot
             // 
-            this.lblInfoBot.AutoSize = true;
-            this.lblInfoBot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblInfoBot.Location = new System.Drawing.Point(3, 96);
-            this.lblInfoBot.Name = "lblInfoBot";
-            this.lblInfoBot.Size = new System.Drawing.Size(122, 50);
-            this.lblInfoBot.TabIndex = 0;
-            this.lblInfoBot.Text = "label1";
+            this.lblBot.AutoSize = true;
+            this.lblBot.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblBot.Location = new System.Drawing.Point(4, 118);
+            this.lblBot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBot.Name = "lblBot";
+            this.lblBot.Size = new System.Drawing.Size(162, 61);
+            this.lblBot.TabIndex = 0;
+            this.lblBot.Text = "_";
             // 
-            // lblInfoMid
+            // lblMid
             // 
-            this.lblInfoMid.AutoSize = true;
-            this.lblInfoMid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblInfoMid.Location = new System.Drawing.Point(3, 48);
-            this.lblInfoMid.Name = "lblInfoMid";
-            this.lblInfoMid.Size = new System.Drawing.Size(122, 48);
-            this.lblInfoMid.TabIndex = 1;
-            this.lblInfoMid.Text = "label2";
+            this.lblMid.AutoSize = true;
+            this.lblMid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMid.Location = new System.Drawing.Point(4, 59);
+            this.lblMid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMid.Name = "lblMid";
+            this.lblMid.Size = new System.Drawing.Size(162, 59);
+            this.lblMid.TabIndex = 1;
+            this.lblMid.Text = "_";
+            this.lblMid.Click += new System.EventHandler(this.lblMid_Click);
             // 
-            // lblInfoTop
+            // lblTop
             // 
-            this.lblInfoTop.AutoSize = true;
-            this.lblInfoTop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblInfoTop.Location = new System.Drawing.Point(3, 0);
-            this.lblInfoTop.Name = "lblInfoTop";
-            this.lblInfoTop.Size = new System.Drawing.Size(122, 48);
-            this.lblInfoTop.TabIndex = 2;
-            this.lblInfoTop.Text = "label3";
+            this.lblTop.AutoSize = true;
+            this.lblTop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTop.Location = new System.Drawing.Point(4, 0);
+            this.lblTop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTop.Name = "lblTop";
+            this.lblTop.Size = new System.Drawing.Size(162, 59);
+            this.lblTop.TabIndex = 2;
+            this.lblTop.Text = "_";
             // 
             // picFoto
             // 
             this.picFoto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picFoto.Location = new System.Drawing.Point(3, 3);
+            this.picFoto.Location = new System.Drawing.Point(4, 4);
+            this.picFoto.Margin = new System.Windows.Forms.Padding(4);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(193, 146);
+            this.picFoto.Size = new System.Drawing.Size(258, 179);
+            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFoto.TabIndex = 3;
             this.picFoto.TabStop = false;
+            this.picFoto.Click += new System.EventHandler(this.picFoto_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -87,36 +94,39 @@
             this.tableLayoutPanel1.Controls.Add(this.picFoto, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(333, 152);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(444, 187);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.lblInfoTop, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblInfoMid, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblInfoBot, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblTop, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblMid, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblBot, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(202, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(270, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(128, 146);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(170, 179);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // AccesoURRh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AccesoURRh";
-            this.Size = new System.Drawing.Size(333, 152);
+            this.Size = new System.Drawing.Size(444, 187);
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -127,9 +137,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblInfoBot;
-        private System.Windows.Forms.Label lblInfoMid;
-        private System.Windows.Forms.Label lblInfoTop;
+        private System.Windows.Forms.Label lblBot;
+        private System.Windows.Forms.Label lblMid;
+        private System.Windows.Forms.Label lblTop;
         private System.Windows.Forms.PictureBox picFoto;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
