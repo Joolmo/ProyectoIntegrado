@@ -30,7 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dispenser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dispenser.1.0.0\lib\net452\Dispenser.dll</HintPath>
+    </Reference>
+    <Reference Include="Dispenser.Hasher.Sha256, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dispenser.Hasher.Sha256.1.0.0\lib\net452\Dispenser.Hasher.Sha256.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.LiveShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.LiveShare.1.0.181\lib\net461\Microsoft.VisualStudio.LiveShare.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,18 +52,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserControl1.cs">
+    <Compile Include="AccesoURRh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="AccesoURRh.Designer.cs">
+      <DependentUpon>AccesoURRh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoURRv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccesoURRv.Designer.cs">
+      <DependentUpon>AccesoURRv.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tags.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tags.Designer.cs">
+      <DependentUpon>Tags.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccesoURRh.resx">
+      <DependentUpon>AccesoURRh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccesoURRv.resx">
+      <DependentUpon>AccesoURRv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tags.resx">
+      <DependentUpon>Tags.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

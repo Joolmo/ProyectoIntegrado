@@ -28,522 +28,537 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblmedia3 = new System.Windows.Forms.Label();
-            this.lblMedia2 = new System.Windows.Forms.Label();
-            this.lblNOMBRERECETA = new System.Windows.Forms.Label();
-            this.ORIGEN = new System.Windows.Forms.Label();
-            this.lblMedia = new System.Windows.Forms.Label();
-            this.lblNoReceta = new System.Windows.Forms.Label();
-            this.lblOrigen = new System.Windows.Forms.Label();
-            this.lblNomReceta = new System.Windows.Forms.Label();
-            this.lblOrig = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblNomUsu2 = new System.Windows.Forms.Label();
-            this.lblComentario2 = new System.Windows.Forms.Label();
-            this.lblNomUsu1 = new System.Windows.Forms.Label();
-            this.btEnviar = new System.Windows.Forms.Button();
-            this.lblComentario1 = new System.Windows.Forms.Label();
-            this.txtComentario = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblNomReto = new System.Windows.Forms.Label();
-            this.lblNomReto1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioInterfaz));
             this.btSeguir = new System.Windows.Forms.Button();
             this.lblNomUsu = new System.Windows.Forms.Label();
-            this.lblDescrip = new System.Windows.Forms.Label();
             this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.lblRanking = new System.Windows.Forms.Label();
             this.lblRecetas = new System.Windows.Forms.Label();
             this.ptbUsu = new System.Windows.Forms.PictureBox();
+            this.pnlAmarillo = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblNomReto = new System.Windows.Forms.Label();
+            this.lblNomReto1 = new System.Windows.Forms.Label();
             this.ptbReto2 = new System.Windows.Forms.PictureBox();
             this.ptbReto1 = new System.Windows.Forms.PictureBox();
-            this.ptbComentario2 = new System.Windows.Forms.PictureBox();
-            this.ptbComentario1 = new System.Windows.Forms.PictureBox();
-            this.ptbReceta3 = new System.Windows.Forms.PictureBox();
-            this.ptbReceta2 = new System.Windows.Forms.PictureBox();
-            this.ptbReceta1 = new System.Windows.Forms.PictureBox();
-            this.pnlAmarillo = new System.Windows.Forms.Panel();
-            this.pnlCabecera = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.accesoURRh5 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh3 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh1 = new ControlesPersonalizados.AccesoURRh();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.accesoURRh2 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh4 = new ControlesPersonalizados.AccesoURRh();
+            this.accesoURRh6 = new ControlesPersonalizados.AccesoURRh();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.ptbApp = new System.Windows.Forms.PictureBox();
             this.ptbIcon = new System.Windows.Forms.PictureBox();
-            this.btRegistro = new System.Windows.Forms.Button();
-            this.btSesion = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.lblNumrec = new System.Windows.Forms.Label();
+            this.lblnseg = new System.Windows.Forms.Label();
+            this.lblDescrip = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbComentario2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbComentario1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReceta3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReceta2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReceta1)).BeginInit();
-            this.pnlCabecera.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblmedia3);
-            this.panel2.Controls.Add(this.lblMedia2);
-            this.panel2.Controls.Add(this.lblNOMBRERECETA);
-            this.panel2.Controls.Add(this.ORIGEN);
-            this.panel2.Controls.Add(this.lblMedia);
-            this.panel2.Controls.Add(this.lblNoReceta);
-            this.panel2.Controls.Add(this.lblOrigen);
-            this.panel2.Controls.Add(this.lblNomReceta);
-            this.panel2.Controls.Add(this.ptbReceta3);
-            this.panel2.Controls.Add(this.ptbReceta2);
-            this.panel2.Controls.Add(this.ptbReceta1);
-            this.panel2.Controls.Add(this.lblOrig);
-            this.panel2.Location = new System.Drawing.Point(12, 194);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(232, 251);
-            this.panel2.TabIndex = 1;
-            // 
-            // lblmedia3
-            // 
-            this.lblmedia3.AutoSize = true;
-            this.lblmedia3.Location = new System.Drawing.Point(116, 231);
-            this.lblmedia3.Name = "lblmedia3";
-            this.lblmedia3.Size = new System.Drawing.Size(36, 13);
-            this.lblmedia3.TabIndex = 18;
-            this.lblmedia3.Text = "Media";
-            // 
-            // lblMedia2
-            // 
-            this.lblMedia2.AutoSize = true;
-            this.lblMedia2.Location = new System.Drawing.Point(116, 154);
-            this.lblMedia2.Name = "lblMedia2";
-            this.lblMedia2.Size = new System.Drawing.Size(36, 13);
-            this.lblMedia2.TabIndex = 13;
-            this.lblMedia2.Text = "Media";
-            // 
-            // lblNOMBRERECETA
-            // 
-            this.lblNOMBRERECETA.AutoSize = true;
-            this.lblNOMBRERECETA.Location = new System.Drawing.Point(116, 188);
-            this.lblNOMBRERECETA.Name = "lblNOMBRERECETA";
-            this.lblNOMBRERECETA.Size = new System.Drawing.Size(82, 13);
-            this.lblNOMBRERECETA.TabIndex = 19;
-            this.lblNOMBRERECETA.Text = "Nombre Receta";
-            // 
-            // ORIGEN
-            // 
-            this.ORIGEN.AutoSize = true;
-            this.ORIGEN.Location = new System.Drawing.Point(116, 211);
-            this.ORIGEN.Name = "ORIGEN";
-            this.ORIGEN.Size = new System.Drawing.Size(38, 13);
-            this.ORIGEN.TabIndex = 21;
-            this.ORIGEN.Text = "Origen";
-            // 
-            // lblMedia
-            // 
-            this.lblMedia.AutoSize = true;
-            this.lblMedia.Location = new System.Drawing.Point(118, 64);
-            this.lblMedia.Name = "lblMedia";
-            this.lblMedia.Size = new System.Drawing.Size(36, 13);
-            this.lblMedia.TabIndex = 9;
-            this.lblMedia.Text = "Media";
-            // 
-            // lblNoReceta
-            // 
-            this.lblNoReceta.AutoSize = true;
-            this.lblNoReceta.Location = new System.Drawing.Point(116, 102);
-            this.lblNoReceta.Name = "lblNoReceta";
-            this.lblNoReceta.Size = new System.Drawing.Size(77, 13);
-            this.lblNoReceta.TabIndex = 14;
-            this.lblNoReceta.Text = "Nombre receta";
-            this.lblNoReceta.Click += new System.EventHandler(this.label12_Click);
-            // 
-            // lblOrigen
-            // 
-            this.lblOrigen.AutoSize = true;
-            this.lblOrigen.Location = new System.Drawing.Point(116, 41);
-            this.lblOrigen.Name = "lblOrigen";
-            this.lblOrigen.Size = new System.Drawing.Size(38, 13);
-            this.lblOrigen.TabIndex = 8;
-            this.lblOrigen.Text = "Origen";
-            // 
-            // lblNomReceta
-            // 
-            this.lblNomReceta.AutoSize = true;
-            this.lblNomReceta.Location = new System.Drawing.Point(116, 11);
-            this.lblNomReceta.Name = "lblNomReceta";
-            this.lblNomReceta.Size = new System.Drawing.Size(82, 13);
-            this.lblNomReceta.TabIndex = 7;
-            this.lblNomReceta.Text = "Nombre Receta";
-            // 
-            // lblOrig
-            // 
-            this.lblOrig.AutoSize = true;
-            this.lblOrig.Location = new System.Drawing.Point(118, 129);
-            this.lblOrig.Name = "lblOrig";
-            this.lblOrig.Size = new System.Drawing.Size(38, 13);
-            this.lblOrig.TabIndex = 4;
-            this.lblOrig.Text = "Origen";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.lblNomUsu2);
-            this.panel3.Controls.Add(this.lblComentario2);
-            this.panel3.Controls.Add(this.lblNomUsu1);
-            this.panel3.Controls.Add(this.btEnviar);
-            this.panel3.Controls.Add(this.lblComentario1);
-            this.panel3.Controls.Add(this.txtComentario);
-            this.panel3.Controls.Add(this.ptbComentario2);
-            this.panel3.Controls.Add(this.ptbComentario1);
-            this.panel3.Location = new System.Drawing.Point(275, 194);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(245, 251);
-            this.panel3.TabIndex = 2;
-            // 
-            // lblNomUsu2
-            // 
-            this.lblNomUsu2.AutoSize = true;
-            this.lblNomUsu2.Location = new System.Drawing.Point(114, 102);
-            this.lblNomUsu2.Name = "lblNomUsu2";
-            this.lblNomUsu2.Size = new System.Drawing.Size(83, 13);
-            this.lblNomUsu2.TabIndex = 15;
-            this.lblNomUsu2.Text = "Nombre Usuario";
-            // 
-            // lblComentario2
-            // 
-            this.lblComentario2.AutoSize = true;
-            this.lblComentario2.Location = new System.Drawing.Point(109, 129);
-            this.lblComentario2.Name = "lblComentario2";
-            this.lblComentario2.Size = new System.Drawing.Size(60, 13);
-            this.lblComentario2.TabIndex = 16;
-            this.lblComentario2.Text = "Comentario";
-            // 
-            // lblNomUsu1
-            // 
-            this.lblNomUsu1.AutoSize = true;
-            this.lblNomUsu1.Location = new System.Drawing.Point(114, 11);
-            this.lblNomUsu1.Name = "lblNomUsu1";
-            this.lblNomUsu1.Size = new System.Drawing.Size(83, 13);
-            this.lblNomUsu1.TabIndex = 17;
-            this.lblNomUsu1.Text = "Nombre Usuario";
-            // 
-            // btEnviar
-            // 
-            this.btEnviar.Location = new System.Drawing.Point(143, 226);
-            this.btEnviar.Name = "btEnviar";
-            this.btEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btEnviar.TabIndex = 14;
-            this.btEnviar.Text = "Enviar";
-            this.btEnviar.UseVisualStyleBackColor = true;
-            // 
-            // lblComentario1
-            // 
-            this.lblComentario1.AutoSize = true;
-            this.lblComentario1.Location = new System.Drawing.Point(114, 41);
-            this.lblComentario1.Name = "lblComentario1";
-            this.lblComentario1.Size = new System.Drawing.Size(60, 13);
-            this.lblComentario1.TabIndex = 22;
-            this.lblComentario1.Text = "Comentario";
-            // 
-            // txtComentario
-            // 
-            this.txtComentario.Location = new System.Drawing.Point(3, 228);
-            this.txtComentario.Name = "txtComentario";
-            this.txtComentario.Size = new System.Drawing.Size(125, 20);
-            this.txtComentario.TabIndex = 13;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.lblNomReto);
-            this.panel4.Controls.Add(this.lblNomReto1);
-            this.panel4.Controls.Add(this.ptbReto2);
-            this.panel4.Controls.Add(this.ptbReto1);
-            this.panel4.Location = new System.Drawing.Point(557, 194);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(227, 251);
-            this.panel4.TabIndex = 3;
-            // 
-            // lblNomReto
-            // 
-            this.lblNomReto.AutoSize = true;
-            this.lblNomReto.Location = new System.Drawing.Point(119, 102);
-            this.lblNomReto.Name = "lblNomReto";
-            this.lblNomReto.Size = new System.Drawing.Size(70, 13);
-            this.lblNomReto.TabIndex = 20;
-            this.lblNomReto.Text = "Nombre Reto";
-            // 
-            // lblNomReto1
-            // 
-            this.lblNomReto1.AutoSize = true;
-            this.lblNomReto1.Location = new System.Drawing.Point(119, 29);
-            this.lblNomReto1.Name = "lblNomReto1";
-            this.lblNomReto1.Size = new System.Drawing.Size(70, 13);
-            this.lblNomReto1.TabIndex = 5;
-            this.lblNomReto1.Text = "Nombre Reto";
             // 
             // btSeguir
             // 
-            this.btSeguir.Location = new System.Drawing.Point(696, 110);
+            this.btSeguir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSeguir.ForeColor = System.Drawing.Color.Black;
+            this.btSeguir.Location = new System.Drawing.Point(1391, 11);
+            this.btSeguir.Margin = new System.Windows.Forms.Padding(4);
             this.btSeguir.Name = "btSeguir";
-            this.btSeguir.Size = new System.Drawing.Size(79, 28);
+            this.btSeguir.Size = new System.Drawing.Size(148, 41);
             this.btSeguir.TabIndex = 12;
             this.btSeguir.Text = "Seguir";
             this.btSeguir.UseVisualStyleBackColor = true;
+            this.btSeguir.Click += new System.EventHandler(this.btSeguir_Click);
             // 
             // lblNomUsu
             // 
             this.lblNomUsu.AutoSize = true;
-            this.lblNomUsu.Location = new System.Drawing.Point(156, 118);
+            this.lblNomUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomUsu.ForeColor = System.Drawing.Color.White;
+            this.lblNomUsu.Location = new System.Drawing.Point(160, 16);
+            this.lblNomUsu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomUsu.Name = "lblNomUsu";
-            this.lblNomUsu.Size = new System.Drawing.Size(83, 13);
+            this.lblNomUsu.Size = new System.Drawing.Size(211, 31);
             this.lblNomUsu.TabIndex = 0;
             this.lblNomUsu.Text = "Nombre Usuario";
-            // 
-            // lblDescrip
-            // 
-            this.lblDescrip.AutoSize = true;
-            this.lblDescrip.Location = new System.Drawing.Point(156, 150);
-            this.lblDescrip.Name = "lblDescrip";
-            this.lblDescrip.Size = new System.Drawing.Size(63, 13);
-            this.lblDescrip.TabIndex = 1;
-            this.lblDescrip.Text = "Descripción";
             // 
             // lblNumSeguidores
             // 
             this.lblNumSeguidores.AutoSize = true;
-            this.lblNumSeguidores.Location = new System.Drawing.Point(406, 118);
+            this.lblNumSeguidores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumSeguidores.ForeColor = System.Drawing.Color.White;
+            this.lblNumSeguidores.Location = new System.Drawing.Point(656, 16);
+            this.lblNumSeguidores.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumSeguidores.Name = "lblNumSeguidores";
-            this.lblNumSeguidores.Size = new System.Drawing.Size(72, 13);
+            this.lblNumSeguidores.Size = new System.Drawing.Size(181, 31);
             this.lblNumSeguidores.TabIndex = 2;
             this.lblNumSeguidores.Text = "NºSeguidores";
             // 
             // lblRanking
             // 
             this.lblRanking.AutoSize = true;
-            this.lblRanking.Location = new System.Drawing.Point(406, 150);
+            this.lblRanking.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRanking.ForeColor = System.Drawing.Color.White;
+            this.lblRanking.Location = new System.Drawing.Point(656, 58);
+            this.lblRanking.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRanking.Name = "lblRanking";
-            this.lblRanking.Size = new System.Drawing.Size(62, 13);
+            this.lblRanking.Size = new System.Drawing.Size(114, 31);
             this.lblRanking.TabIndex = 3;
-            this.lblRanking.Text = "Ranking Nº";
+            this.lblRanking.Text = "Ranking";
             // 
             // lblRecetas
             // 
             this.lblRecetas.AutoSize = true;
-            this.lblRecetas.Location = new System.Drawing.Point(693, 150);
+            this.lblRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecetas.ForeColor = System.Drawing.Color.White;
+            this.lblRecetas.Location = new System.Drawing.Point(1113, 58);
+            this.lblRecetas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRecetas.Name = "lblRecetas";
-            this.lblRecetas.Size = new System.Drawing.Size(59, 13);
+            this.lblRecetas.Size = new System.Drawing.Size(145, 31);
             this.lblRecetas.TabIndex = 6;
             this.lblRecetas.Text = "NºRecetas";
             // 
             // ptbUsu
             // 
-            this.ptbUsu.Location = new System.Drawing.Point(12, 108);
+            this.ptbUsu.Location = new System.Drawing.Point(4, 4);
+            this.ptbUsu.Margin = new System.Windows.Forms.Padding(4);
             this.ptbUsu.Name = "ptbUsu";
-            this.ptbUsu.Size = new System.Drawing.Size(91, 75);
+            this.ptbUsu.Size = new System.Drawing.Size(137, 114);
+            this.ptbUsu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbUsu.TabIndex = 11;
             this.ptbUsu.TabStop = false;
-            // 
-            // ptbReto2
-            // 
-            this.ptbReto2.Location = new System.Drawing.Point(12, 92);
-            this.ptbReto2.Name = "ptbReto2";
-            this.ptbReto2.Size = new System.Drawing.Size(91, 75);
-            this.ptbReto2.TabIndex = 12;
-            this.ptbReto2.TabStop = false;
-            this.ptbReto2.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // ptbReto1
-            // 
-            this.ptbReto1.Location = new System.Drawing.Point(12, 11);
-            this.ptbReto1.Name = "ptbReto1";
-            this.ptbReto1.Size = new System.Drawing.Size(91, 75);
-            this.ptbReto1.TabIndex = 11;
-            this.ptbReto1.TabStop = false;
-            // 
-            // ptbComentario2
-            // 
-            this.ptbComentario2.Location = new System.Drawing.Point(12, 92);
-            this.ptbComentario2.Name = "ptbComentario2";
-            this.ptbComentario2.Size = new System.Drawing.Size(91, 75);
-            this.ptbComentario2.TabIndex = 12;
-            this.ptbComentario2.TabStop = false;
-            // 
-            // ptbComentario1
-            // 
-            this.ptbComentario1.Location = new System.Drawing.Point(12, 11);
-            this.ptbComentario1.Name = "ptbComentario1";
-            this.ptbComentario1.Size = new System.Drawing.Size(91, 75);
-            this.ptbComentario1.TabIndex = 11;
-            this.ptbComentario1.TabStop = false;
-            // 
-            // ptbReceta3
-            // 
-            this.ptbReceta3.Location = new System.Drawing.Point(9, 173);
-            this.ptbReceta3.Name = "ptbReceta3";
-            this.ptbReceta3.Size = new System.Drawing.Size(91, 75);
-            this.ptbReceta3.TabIndex = 14;
-            this.ptbReceta3.TabStop = false;
-            // 
-            // ptbReceta2
-            // 
-            this.ptbReceta2.Location = new System.Drawing.Point(9, 92);
-            this.ptbReceta2.Name = "ptbReceta2";
-            this.ptbReceta2.Size = new System.Drawing.Size(91, 75);
-            this.ptbReceta2.TabIndex = 13;
-            this.ptbReceta2.TabStop = false;
-            // 
-            // ptbReceta1
-            // 
-            this.ptbReceta1.Location = new System.Drawing.Point(9, 11);
-            this.ptbReceta1.Name = "ptbReceta1";
-            this.ptbReceta1.Size = new System.Drawing.Size(91, 75);
-            this.ptbReceta1.TabIndex = 12;
-            this.ptbReceta1.TabStop = false;
             // 
             // pnlAmarillo
             // 
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnlAmarillo.Location = new System.Drawing.Point(1, 96);
+            this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAmarillo.Name = "pnlAmarillo";
-            this.pnlAmarillo.Size = new System.Drawing.Size(1620, 3);
+            this.pnlAmarillo.Size = new System.Drawing.Size(1771, 6);
             this.pnlAmarillo.TabIndex = 33;
             // 
-            // pnlCabecera
+            // panel1
             // 
-            this.pnlCabecera.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pnlCabecera.Controls.Add(this.ptbApp);
-            this.pnlCabecera.Controls.Add(this.ptbIcon);
-            this.pnlCabecera.Controls.Add(this.btRegistro);
-            this.pnlCabecera.Controls.Add(this.btSesion);
-            this.pnlCabecera.Location = new System.Drawing.Point(1, 0);
-            this.pnlCabecera.Name = "pnlCabecera";
-            this.pnlCabecera.Size = new System.Drawing.Size(1599, 96);
-            this.pnlCabecera.TabIndex = 32;
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.tableLayoutPanel3);
+            this.panel1.Location = new System.Drawing.Point(104, 236);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1571, 422);
+            this.panel1.TabIndex = 34;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 2, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1563, 410);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.lblNomReto);
+            this.panel4.Controls.Add(this.lblNomReto1);
+            this.panel4.Controls.Add(this.ptbReto2);
+            this.panel4.Controls.Add(this.ptbReto1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(525, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(513, 402);
+            this.panel4.TabIndex = 6;
+            // 
+            // lblNomReto
+            // 
+            this.lblNomReto.AutoSize = true;
+            this.lblNomReto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblNomReto.Location = new System.Drawing.Point(205, 265);
+            this.lblNomReto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNomReto.Name = "lblNomReto";
+            this.lblNomReto.Size = new System.Drawing.Size(126, 25);
+            this.lblNomReto.TabIndex = 20;
+            this.lblNomReto.Text = "Nombre Reto";
+            // 
+            // lblNomReto1
+            // 
+            this.lblNomReto1.AutoSize = true;
+            this.lblNomReto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblNomReto1.Location = new System.Drawing.Point(205, 103);
+            this.lblNomReto1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNomReto1.Name = "lblNomReto1";
+            this.lblNomReto1.Size = new System.Drawing.Size(126, 25);
+            this.lblNomReto1.TabIndex = 5;
+            this.lblNomReto1.Text = "Nombre Reto";
+            // 
+            // ptbReto2
+            // 
+            this.ptbReto2.Location = new System.Drawing.Point(41, 214);
+            this.ptbReto2.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbReto2.Name = "ptbReto2";
+            this.ptbReto2.Size = new System.Drawing.Size(156, 138);
+            this.ptbReto2.TabIndex = 12;
+            this.ptbReto2.TabStop = false;
+            // 
+            // ptbReto1
+            // 
+            this.ptbReto1.Location = new System.Drawing.Point(41, 36);
+            this.ptbReto1.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbReto1.Name = "ptbReto1";
+            this.ptbReto1.Size = new System.Drawing.Size(156, 137);
+            this.ptbReto1.TabIndex = 11;
+            this.ptbReto1.TabStop = false;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRh5, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRh3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.accesoURRh1, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(515, 404);
+            this.tableLayoutPanel4.TabIndex = 7;
+            // 
+            // accesoURRh5
+            // 
+            this.accesoURRh5.BackColor = System.Drawing.Color.White;
+            this.accesoURRh5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh5.Foto = null;
+            this.accesoURRh5.ID = 0;
+            this.accesoURRh5.InfoBot = "_";
+            this.accesoURRh5.InfoMid = "_";
+            this.accesoURRh5.InfoTop = "_";
+            this.accesoURRh5.Location = new System.Drawing.Point(4, 272);
+            this.accesoURRh5.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh5.Name = "accesoURRh5";
+            this.accesoURRh5.Size = new System.Drawing.Size(507, 128);
+            this.accesoURRh5.TabIndex = 4;
+            this.accesoURRh5.Tipo = null;
+            // 
+            // accesoURRh3
+            // 
+            this.accesoURRh3.BackColor = System.Drawing.Color.White;
+            this.accesoURRh3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh3.Foto = null;
+            this.accesoURRh3.ID = 0;
+            this.accesoURRh3.InfoBot = "_";
+            this.accesoURRh3.InfoMid = "_";
+            this.accesoURRh3.InfoTop = "_";
+            this.accesoURRh3.Location = new System.Drawing.Point(4, 138);
+            this.accesoURRh3.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh3.Name = "accesoURRh3";
+            this.accesoURRh3.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh3.TabIndex = 2;
+            this.accesoURRh3.Tipo = null;
+            // 
+            // accesoURRh1
+            // 
+            this.accesoURRh1.BackColor = System.Drawing.Color.White;
+            this.accesoURRh1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh1.Foto = null;
+            this.accesoURRh1.ID = 0;
+            this.accesoURRh1.InfoBot = "_";
+            this.accesoURRh1.InfoMid = "_";
+            this.accesoURRh1.InfoTop = "_";
+            this.accesoURRh1.Location = new System.Drawing.Point(4, 4);
+            this.accesoURRh1.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh1.Name = "accesoURRh1";
+            this.accesoURRh1.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh1.TabIndex = 0;
+            this.accesoURRh1.Tipo = null;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRh2, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRh4, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.accesoURRh6, 0, 2);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(1045, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(515, 404);
+            this.tableLayoutPanel5.TabIndex = 8;
+            // 
+            // accesoURRh2
+            // 
+            this.accesoURRh2.BackColor = System.Drawing.Color.White;
+            this.accesoURRh2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh2.Foto = null;
+            this.accesoURRh2.ID = 0;
+            this.accesoURRh2.InfoBot = "_";
+            this.accesoURRh2.InfoMid = "_";
+            this.accesoURRh2.InfoTop = "_";
+            this.accesoURRh2.Location = new System.Drawing.Point(4, 4);
+            this.accesoURRh2.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh2.Name = "accesoURRh2";
+            this.accesoURRh2.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh2.TabIndex = 0;
+            this.accesoURRh2.Tipo = null;
+            // 
+            // accesoURRh4
+            // 
+            this.accesoURRh4.BackColor = System.Drawing.Color.White;
+            this.accesoURRh4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh4.Foto = null;
+            this.accesoURRh4.ID = 0;
+            this.accesoURRh4.InfoBot = "_";
+            this.accesoURRh4.InfoMid = "_";
+            this.accesoURRh4.InfoTop = "_";
+            this.accesoURRh4.Location = new System.Drawing.Point(4, 138);
+            this.accesoURRh4.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh4.Name = "accesoURRh4";
+            this.accesoURRh4.Size = new System.Drawing.Size(507, 126);
+            this.accesoURRh4.TabIndex = 1;
+            this.accesoURRh4.Tipo = null;
+            // 
+            // accesoURRh6
+            // 
+            this.accesoURRh6.BackColor = System.Drawing.Color.White;
+            this.accesoURRh6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accesoURRh6.Foto = null;
+            this.accesoURRh6.ID = 0;
+            this.accesoURRh6.InfoBot = "_";
+            this.accesoURRh6.InfoMid = "_";
+            this.accesoURRh6.InfoTop = "_";
+            this.accesoURRh6.Location = new System.Drawing.Point(4, 272);
+            this.accesoURRh6.Margin = new System.Windows.Forms.Padding(4);
+            this.accesoURRh6.Name = "accesoURRh6";
+            this.accesoURRh6.Size = new System.Drawing.Size(507, 128);
+            this.accesoURRh6.TabIndex = 2;
+            this.accesoURRh6.Tipo = null;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.13176F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.86824F));
+            this.tableLayoutPanel2.Controls.Add(this.ptbApp, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.ptbIcon, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1779, 119);
+            this.tableLayoutPanel2.TabIndex = 42;
             // 
             // ptbApp
             // 
-            this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
-            this.ptbApp.Location = new System.Drawing.Point(697, 4);
+            this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ptbApp.Image = ((System.Drawing.Image)(resources.GetObject("ptbApp.Image")));
+            this.ptbApp.Location = new System.Drawing.Point(290, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
             this.ptbApp.Name = "ptbApp";
-            this.ptbApp.Size = new System.Drawing.Size(372, 88);
+            this.ptbApp.Size = new System.Drawing.Size(1485, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
+            this.ptbApp.Click += new System.EventHandler(this.ptbApp_Click);
             // 
             // ptbIcon
             // 
-            this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
-            this.ptbIcon.Location = new System.Drawing.Point(174, 4);
+            this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ptbIcon.Image = ((System.Drawing.Image)(resources.GetObject("ptbIcon.Image")));
+            this.ptbIcon.Location = new System.Drawing.Point(75, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(101, 87);
+            this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbIcon.TabIndex = 22;
             this.ptbIcon.TabStop = false;
             // 
-            // btRegistro
+            // tableLayoutPanel1
             // 
-            this.btRegistro.BackColor = System.Drawing.Color.White;
-            this.btRegistro.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btRegistro.Location = new System.Drawing.Point(1458, 52);
-            this.btRegistro.Name = "btRegistro";
-            this.btRegistro.Size = new System.Drawing.Size(126, 34);
-            this.btRegistro.TabIndex = 6;
-            this.btRegistro.Text = "Registro";
-            this.btRegistro.UseVisualStyleBackColor = false;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnlAmarillo, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 119);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.39956F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.60044F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1779, 717);
+            this.tableLayoutPanel1.TabIndex = 43;
             // 
-            // btSesion
+            // panel5
             // 
-            this.btSesion.BackColor = System.Drawing.Color.White;
-            this.btSesion.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btSesion.Location = new System.Drawing.Point(1458, 12);
-            this.btSesion.Name = "btSesion";
-            this.btSesion.Size = new System.Drawing.Size(126, 34);
-            this.btSesion.TabIndex = 7;
-            this.btSesion.Text = "Iniciar Sesión";
-            this.btSesion.UseVisualStyleBackColor = false;
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Controls.Add(this.lblDescrip);
+            this.panel5.Controls.Add(this.btnModificar);
+            this.panel5.Controls.Add(this.lblNumrec);
+            this.panel5.Controls.Add(this.lblnseg);
+            this.panel5.Controls.Add(this.lblRecetas);
+            this.panel5.Controls.Add(this.btSeguir);
+            this.panel5.Controls.Add(this.lblNumSeguidores);
+            this.panel5.Controls.Add(this.ptbUsu);
+            this.panel5.Controls.Add(this.lblNomUsu);
+            this.panel5.Controls.Add(this.lblRanking);
+            this.panel5.Location = new System.Drawing.Point(104, 35);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1571, 122);
+            this.panel5.TabIndex = 43;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.Location = new System.Drawing.Point(1391, 60);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(148, 41);
+            this.btnModificar.TabIndex = 15;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Visible = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // lblNumrec
+            // 
+            this.lblNumrec.AutoSize = true;
+            this.lblNumrec.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumrec.ForeColor = System.Drawing.Color.White;
+            this.lblNumrec.Location = new System.Drawing.Point(1267, 58);
+            this.lblNumrec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumrec.Name = "lblNumrec";
+            this.lblNumrec.Size = new System.Drawing.Size(29, 31);
+            this.lblNumrec.TabIndex = 14;
+            this.lblNumrec.Text = "0";
+            // 
+            // lblnseg
+            // 
+            this.lblnseg.AutoSize = true;
+            this.lblnseg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnseg.ForeColor = System.Drawing.Color.White;
+            this.lblnseg.Location = new System.Drawing.Point(845, 16);
+            this.lblnseg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblnseg.Name = "lblnseg";
+            this.lblnseg.Size = new System.Drawing.Size(29, 31);
+            this.lblnseg.TabIndex = 13;
+            this.lblnseg.Text = "0";
+            // 
+            // lblDescrip
+            // 
+            this.lblDescrip.AutoSize = true;
+            this.lblDescrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescrip.ForeColor = System.Drawing.Color.White;
+            this.lblDescrip.Location = new System.Drawing.Point(160, 65);
+            this.lblDescrip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescrip.Name = "lblDescrip";
+            this.lblDescrip.Size = new System.Drawing.Size(157, 31);
+            this.lblDescrip.TabIndex = 16;
+            this.lblDescrip.Text = "Descripcion";
             // 
             // UsuarioInterfaz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
-            this.Controls.Add(this.pnlAmarillo);
-            this.Controls.Add(this.pnlCabecera);
-            this.Controls.Add(this.btSeguir);
-            this.Controls.Add(this.ptbUsu);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.lblRecetas);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lblRanking);
-            this.Controls.Add(this.lblNomUsu);
-            this.Controls.Add(this.lblNumSeguidores);
-            this.Controls.Add(this.lblDescrip);
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ClientSize = new System.Drawing.Size(1779, 836);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsuarioInterfaz";
             this.Text = "UsuarioInterfaz";
             this.Load += new System.EventHandler(this.UsuarioInterfaz_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbReto1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbComentario2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbComentario1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReceta3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReceta2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbReceta1)).EndInit();
-            this.pnlCabecera.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbIcon)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
 		#endregion
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.PictureBox ptbReceta3;
-		private System.Windows.Forms.PictureBox ptbReceta2;
-		private System.Windows.Forms.PictureBox ptbReceta1;
-		private System.Windows.Forms.PictureBox ptbComentario2;
-		private System.Windows.Forms.PictureBox ptbComentario1;
-		private System.Windows.Forms.PictureBox ptbReto2;
-		private System.Windows.Forms.PictureBox ptbReto1;
 		private System.Windows.Forms.PictureBox ptbUsu;
-		private System.Windows.Forms.Label lblMedia;
-		private System.Windows.Forms.Label lblOrigen;
-		private System.Windows.Forms.Label lblNomReceta;
-		private System.Windows.Forms.Label lblNomUsu2;
-		private System.Windows.Forms.Label lblComentario2;
-		private System.Windows.Forms.Label lblNomUsu1;
-		private System.Windows.Forms.Button btEnviar;
-		private System.Windows.Forms.TextBox txtComentario;
-		private System.Windows.Forms.Label lblOrig;
-		private System.Windows.Forms.Label lblmedia3;
-		private System.Windows.Forms.Label lblNOMBRERECETA;
-		private System.Windows.Forms.Label lblNomReto;
-		private System.Windows.Forms.Label ORIGEN;
-		private System.Windows.Forms.Label lblComentario1;
-		private System.Windows.Forms.Label lblNomReto1;
 		private System.Windows.Forms.Button btSeguir;
 		private System.Windows.Forms.Label lblNomUsu;
-		private System.Windows.Forms.Label lblDescrip;
 		private System.Windows.Forms.Label lblNumSeguidores;
 		private System.Windows.Forms.Label lblRanking;
 		private System.Windows.Forms.Label lblRecetas;
-		private System.Windows.Forms.Label lblMedia2;
-		private System.Windows.Forms.Label lblNoReceta;
         private System.Windows.Forms.Panel pnlAmarillo;
-        private System.Windows.Forms.Panel pnlCabecera;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox ptbApp;
         private System.Windows.Forms.PictureBox ptbIcon;
-        private System.Windows.Forms.Button btRegistro;
-        private System.Windows.Forms.Button btSesion;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblNomReto;
+        private System.Windows.Forms.Label lblNomReto1;
+        private System.Windows.Forms.PictureBox ptbReto2;
+        private System.Windows.Forms.PictureBox ptbReto1;
+        private System.Windows.Forms.Label lblNumrec;
+        private System.Windows.Forms.Label lblnseg;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private ControlesPersonalizados.AccesoURRh accesoURRh5;
+        private ControlesPersonalizados.AccesoURRh accesoURRh3;
+        private ControlesPersonalizados.AccesoURRh accesoURRh1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private ControlesPersonalizados.AccesoURRh accesoURRh2;
+        private ControlesPersonalizados.AccesoURRh accesoURRh4;
+        private ControlesPersonalizados.AccesoURRh accesoURRh6;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Label lblDescrip;
     }
 }

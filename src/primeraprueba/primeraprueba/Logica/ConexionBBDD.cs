@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using Dispenser;
+using System.Security.Cryptography;
 namespace primeraprueba
 {
     class ConexionBBDD
@@ -40,10 +44,12 @@ namespace primeraprueba
             string BaseDatos = "pirojo";
             string usuario = "rojo";
             string password = "PI,rojo123";
-            string connectionstring = host + puerto + BaseDatos + usuario + password;
+            string connectionstring = string.Format(
+                "Server={0}; Port={1}; Database={2}; Uid={3}; Pwd={4};",
+                host, puerto, BaseDatos, usuario, password
+            );
 
             conexion = new MySqlConnection(connectionstring);
-
         }
         
         /// <summary>
@@ -135,6 +141,7 @@ namespace primeraprueba
         /// </returns>
         public bool NonQuery(string consulta)
         {
+            
             try
             {
                 using (var cmd = new MySqlCommand(consulta, conexion))
@@ -147,6 +154,65 @@ namespace primeraprueba
             {
                 errores.Push(ex.Message);
                 return false;
+            }
+        }
+
+        /// <summary>
+        /// Funcion para hacer inserts, deltes y ipdates que tengan alguna foto
+        /// </summary>
+        /// <param name="consulta">String dondese guarda la consulta MySql</param>
+        /// <param name="picture">La imagen que queremos guardar en la base de datos</param>
+        /// <returns></returns>
+        public bool NonQuery(string consulta, Image picture)
+        {
+
+            try
+            {
+                byte[] pic = FormImageToByte(picture);
+                using (var cmd = new MySqlCommand(consulta, conexion))
+                {
+                    cmd.Parameters.AddWithValue("@foto", pic);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                errores.Push(ex.Message);
+                return false;
+            }
+        }
+
+        public static byte[] FormImageToByte(Image foto)
+        {
+            byte[] byteArr = new byte[0];
+            using (MemoryStream stream = new MemoryStream())
+            {
+                foto.Save(stream, ImageFormat.Png);
+                stream.Close();
+
+                byteArr = stream.ToArray();
+            }
+            return byteArr;
+
+        }
+
+        public static Image FromByteToImage(byte[] b)
+        {
+            using(MemoryStream image = new MemoryStream(b))
+            {
+                return Image.FromStream(image);
+            }
+
+        }
+
+        //La encriptacion de la contraseña, puede que no este completa
+        public static string EncriptarContraseña(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            { 
+                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password)); 
+                return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
     }
