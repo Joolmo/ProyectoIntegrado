@@ -24,7 +24,26 @@ namespace primeraprueba
             WindowState = FormWindowState.Maximized;
         }
 
-		private void label2_Click(object sender, EventArgs e){}
+        public Registrarse(Base par, bool i)
+        {
+            InitializeComponent();
+            MdiParent = par;
+            parent = par;
+            WindowState = FormWindowState.Maximized;
+            ptbImagen.Image = Usuario.UsuarioActual.Foto;
+            lblDesc.Visible = true;
+            btRegistrar.Visible = false;
+            btnModificar.Visible = true;
+            lblNombre.Visible = false; ;
+            txtNombre.Height = 15;
+            lblCorreo.Visible = false;
+            txtCorreo.Visible = false;
+            linkIniciar.Visible = false;
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e){}
 		private void textBox5_TextChanged(object sender, EventArgs e){}
 		private void textBox6_TextChanged(object sender, EventArgs e){}
 		private void pictureBox2_Click(object sender, EventArgs e){}
@@ -36,7 +55,7 @@ namespace primeraprueba
 		private void button1_Click(object sender, EventArgs e)
 		{
             errorProvider1.Clear();
-            if (Validar())
+            if (Validar(1))
             {
 
                 Usuario reg = new Usuario(txtNombre.Text, txtContra.Text, txtCorreo.Text, "", ptbImagen.Image);
@@ -53,13 +72,13 @@ namespace primeraprueba
             parent.GoLogin();
 		}
 
-        private bool Validar()
+        private bool Validar(int i)
         {
             bool val = true;
             if(txtNombre.Text == "")
             {
                 val = false; ;
-                errorProvider1.SetError(txtNombre, "INTRODUCE UN NOMBRE PARA EL USUARIO");
+                errorProvider1.SetError(txtNombre, "INTRODUCE ALGO");
             }
 
             if(txtContra.Text == "")
@@ -75,12 +94,15 @@ namespace primeraprueba
                     errorProvider1.SetError(txtConfirContra, "PON LA MISMA CONTRASEÑA");
                 }
             }
-
-            if(txtCorreo.Text == "")
+            if(i == 1)
             {
-                val = false;
-                errorProvider1.SetError(txtCorreo, "PON UN CORREO");
+                if (txtCorreo.Text == "")
+                {
+                    val = false;
+                    errorProvider1.SetError(txtCorreo, "PON UN CORREO");
+                }
             }
+            
 
 
             return val;
@@ -104,6 +126,24 @@ namespace primeraprueba
             lblConfirContra.Text = StringRecursos.contrasenyaConfirmarCon;
             linkIniciar.Text = StringRecursos.iniciarLogin;
             btRegistrar.Text = StringRecursos.registrarLogin;
+            btnModificar.Text = StringRecursos.btnModificar;
+            lblDesc.Text = StringRecursos.lblDesc;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+            if (Validar(2))
+            {
+                Usuario.ModificarUsuario(Usuario.UsuarioActual.ID_Usuario, txtNombre.Text, txtContra.Text, ptbImagen.Image);
+            }
+            parent.GoUsuario(Usuario.UsuarioActual);
+            
+        }
+
+        private void ptbApp_Click(object sender, EventArgs e)
+        {
+            parent.GoHome();
         }
     }
 }

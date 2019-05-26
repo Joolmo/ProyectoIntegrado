@@ -39,14 +39,22 @@ namespace primeraprueba
             else if (Usuario.UsuarioActual.ID_Usuario == u.ID_Usuario)
             {
                 btSeguir.Visible = false;
+                btnModificar.Visible = true;
             }
             
             else if(Usuario.GetSeguidores(u.ID_Usuario).Find(x => x.ID_Usuario == Usuario.UsuarioActual.ID_Usuario) != null)
             {
                 if (parent.Idioma == "Castellano")
+                {
                     btSeguir.Text = "Dejar de seguir";
+                    btnModificar.Text = "Modificar";
+                }
+
                 else
+                {
                     btSeguir.Text = "Unfollow";
+                    btnModificar.Text = "Modify";
+                }
             }
             
             ptbUsu.Image = usu.Foto;
@@ -54,6 +62,8 @@ namespace primeraprueba
             lblnseg.Text = usu.NumeroSeguidores.ToString();
             lblNomUsu.Text = usu.Nombre;
             lblDescrip.Text = usu.Descripcion;
+
+
         }
 
         private void ptbApp_Click(object sender, EventArgs e)
@@ -150,10 +160,16 @@ namespace primeraprueba
 
         private void AplicarIdioma()
         {
-            lblDescrip.Text = StringRecursos.descripcionUI;
+               
             lblNumSeguidores.Text = StringRecursos.numSeguidoresUI;
             btSeguir.Text = StringRecursos.btnSeguirUI;
             lblRecetas.Text = StringRecursos.numRecetasUI;
+            btnModificar.Text = StringRecursos.btnModificar;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            parent.GoModificar();
         }
     }
 }

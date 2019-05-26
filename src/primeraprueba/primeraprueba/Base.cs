@@ -88,6 +88,13 @@ namespace primeraprueba
             actual.Show();
         }
 
+        public void GoModificar()
+        {
+            actual.Dispose();
+            actual = new Registrarse(this, true);
+            actual.Show();
+        }
+
 
     }
 }

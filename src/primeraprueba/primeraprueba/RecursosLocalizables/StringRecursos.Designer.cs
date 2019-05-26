@@ -142,6 +142,15 @@ namespace primeraprueba.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Modificar.
+        /// </summary>
+        internal static string btnModificar {
+            get {
+                return ResourceManager.GetString("btnModificar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Registrarse.
         /// </summary>
         internal static string btnRegistroHome {
@@ -259,6 +268,15 @@ namespace primeraprueba.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Descripcion.
+        /// </summary>
+        internal static string lblDesc {
+            get {
+                return ResourceManager.GetString("lblDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Nombre.
         /// </summary>
         internal static string nombreLogin {
@@ -304,11 +322,29 @@ namespace primeraprueba.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Perfil.
+        /// </summary>
+        internal static string perfilToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("perfilToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Recetas Destacadas.
         /// </summary>
         internal static string recetasDestacadasHome {
             get {
                 return ResourceManager.GetString("recetasDestacadasHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Recetas.
+        /// </summary>
+        internal static string recetasToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("recetasToolStripMenuItem", resourceCulture);
             }
         }
         

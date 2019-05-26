@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrarse));
             this.pnlRegistro = new System.Windows.Forms.Panel();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.btRegistrar = new System.Windows.Forms.Button();
             this.linkIniciar = new System.Windows.Forms.LinkLabel();
             this.ptbImagen = new System.Windows.Forms.PictureBox();
@@ -48,6 +49,7 @@
             this.ptbIcon = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblDesc = new System.Windows.Forms.Label();
             this.pnlRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagen)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -61,6 +63,8 @@
             // 
             this.pnlRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlRegistro.BackColor = System.Drawing.Color.White;
+            this.pnlRegistro.Controls.Add(this.lblDesc);
+            this.pnlRegistro.Controls.Add(this.btnModificar);
             this.pnlRegistro.Controls.Add(this.btRegistrar);
             this.pnlRegistro.Controls.Add(this.linkIniciar);
             this.pnlRegistro.Controls.Add(this.ptbImagen);
@@ -75,17 +79,31 @@
             this.pnlRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlRegistro.ForeColor = System.Drawing.Color.White;
             this.pnlRegistro.Location = new System.Drawing.Point(331, 80);
-            this.pnlRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlRegistro.Margin = new System.Windows.Forms.Padding(4);
             this.pnlRegistro.Name = "pnlRegistro";
             this.pnlRegistro.Size = new System.Drawing.Size(916, 425);
             this.pnlRegistro.TabIndex = 0;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.Location = new System.Drawing.Point(385, 335);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(173, 49);
+            this.btnModificar.TabIndex = 13;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Visible = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btRegistrar
             // 
             this.btRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegistrar.ForeColor = System.Drawing.Color.Black;
             this.btRegistrar.Location = new System.Drawing.Point(385, 335);
-            this.btRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(173, 49);
             this.btRegistrar.TabIndex = 12;
@@ -110,7 +128,7 @@
             // 
             this.ptbImagen.Image = ((System.Drawing.Image)(resources.GetObject("ptbImagen.Image")));
             this.ptbImagen.Location = new System.Drawing.Point(624, 62);
-            this.ptbImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbImagen.Margin = new System.Windows.Forms.Padding(4);
             this.ptbImagen.Name = "ptbImagen";
             this.ptbImagen.Size = new System.Drawing.Size(239, 212);
             this.ptbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +139,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(351, 249);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(207, 23);
             this.txtCorreo.TabIndex = 9;
@@ -130,7 +148,7 @@
             // txtConfirContra
             // 
             this.txtConfirContra.Location = new System.Drawing.Point(351, 191);
-            this.txtConfirContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirContra.Name = "txtConfirContra";
             this.txtConfirContra.PasswordChar = '*';
             this.txtConfirContra.Size = new System.Drawing.Size(207, 23);
@@ -139,7 +157,7 @@
             // txtContra
             // 
             this.txtContra.Location = new System.Drawing.Point(351, 133);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(207, 23);
@@ -148,7 +166,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(351, 79);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(207, 23);
             this.txtNombre.TabIndex = 5;
@@ -159,7 +177,7 @@
             this.lblConfirContra.BackColor = System.Drawing.Color.Transparent;
             this.lblConfirContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirContra.ForeColor = System.Drawing.Color.Black;
-            this.lblConfirContra.Location = new System.Drawing.Point(61, 191);
+            this.lblConfirContra.Location = new System.Drawing.Point(101, 188);
             this.lblConfirContra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirContra.Name = "lblConfirContra";
             this.lblConfirContra.Size = new System.Drawing.Size(282, 25);
@@ -172,7 +190,7 @@
             this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.Color.Black;
-            this.lblCorreo.Location = new System.Drawing.Point(239, 249);
+            this.lblCorreo.Location = new System.Drawing.Point(130, 246);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(104, 25);
@@ -185,7 +203,7 @@
             this.lblContra.BackColor = System.Drawing.Color.Transparent;
             this.lblContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContra.ForeColor = System.Drawing.Color.Black;
-            this.lblContra.Location = new System.Drawing.Point(185, 130);
+            this.lblContra.Location = new System.Drawing.Point(203, 133);
             this.lblContra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContra.Name = "lblContra";
             this.lblContra.Size = new System.Drawing.Size(158, 25);
@@ -211,7 +229,7 @@
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
-            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAmarillo.Name = "pnlAmarillo";
             this.pnlAmarillo.Size = new System.Drawing.Size(1571, 6);
             this.pnlAmarillo.TabIndex = 30;
@@ -225,7 +243,7 @@
             this.tableLayoutPanel1.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -237,19 +255,20 @@
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = ((System.Drawing.Image)(resources.GetObject("ptbApp.Image")));
             this.ptbApp.Location = new System.Drawing.Point(258, 4);
-            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
             this.ptbApp.Name = "ptbApp";
             this.ptbApp.Size = new System.Drawing.Size(1317, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbApp.TabIndex = 25;
             this.ptbApp.TabStop = false;
+            this.ptbApp.Click += new System.EventHandler(this.ptbApp_Click);
             // 
             // ptbIcon
             // 
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = ((System.Drawing.Image)(resources.GetObject("ptbIcon.Image")));
             this.ptbIcon.Location = new System.Drawing.Point(59, 4);
-            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +283,7 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlRegistro, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 119);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -276,6 +295,20 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.BackColor = System.Drawing.Color.Transparent;
+            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.ForeColor = System.Drawing.Color.Black;
+            this.lblDesc.Location = new System.Drawing.Point(185, 79);
+            this.lblDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(155, 25);
+            this.lblDesc.TabIndex = 14;
+            this.lblDesc.Text = "DESCRIPCION:";
+            this.lblDesc.Visible = false;
+            // 
             // Registrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -284,7 +317,7 @@
             this.ClientSize = new System.Drawing.Size(1579, 690);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Registrarse";
             this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.Registrarse_Load);
@@ -320,5 +353,7 @@
         private System.Windows.Forms.PictureBox ptbIcon;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Label lblDesc;
     }
 }

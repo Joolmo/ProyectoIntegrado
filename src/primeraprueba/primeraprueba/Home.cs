@@ -39,7 +39,7 @@ namespace primeraprueba
                 btSesion.Hide();
                 picUsuario.Show();
                 msDesplegable.Show();
-
+                miUsuario.Text = Usuario.UsuarioActual.Nombre;
                 picUsuario.Image = Usuario.UsuarioActual.Foto;
             }
 
@@ -235,6 +235,8 @@ namespace primeraprueba
             tbpRecetas.Text = StringRecursos.recetasDestacadasHome;
             tbpRetos.Text = StringRecursos.retosHome;
             tbpUsuarios.Text = StringRecursos.usuariosDestacadosHome;
+            perfilToolStripMenuItem.Text = StringRecursos.perfilToolStripMenuItem;
+            recetasToolStripMenuItem.Text = StringRecursos.recetasToolStripMenuItem;
         }
 
         private void perfilToolStripMenuItem_Click(object sender, EventArgs e)

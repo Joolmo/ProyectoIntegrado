@@ -48,8 +48,7 @@ namespace primeraprueba
             id_usuario = (int)listaUsuario[0];
             nombre = (string)listaUsuario[1];
 
-            descripcion = Convert.IsDBNull(listaUsuario[2]) ? 
-            "Sin descripción" : (string)listaUsuario[2];
+            descripcion = (string)listaUsuario[2];
 
             correo = (string)listaUsuario[3];
             contraseña = (string)listaUsuario[4];
@@ -101,8 +100,8 @@ namespace primeraprueba
 
             string passhash = ConexionBBDD.EncriptarContraseña(u.Contraseña);
             string consulta = String.Format(
-                "INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor, Foto) " +
-                "VALUES('{0}','{1}','{2}',0,0, @foto)", u.Nombre, u.Correo, passhash
+                "INSERT INTO usuario(Nombre_Usuario, Correo, Contraseña, N_Receta, N_Seguidor, Foto, descripcion) " +
+                "VALUES('{0}','{1}','{2}',0,0, @foto,'')", u.Nombre, u.Correo, passhash
             );
             
             bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, u.foto);
@@ -217,6 +216,19 @@ namespace primeraprueba
                     return true;
                 }
             }
+        }
+
+        public static void ModificarUsuario(int id, string desc, string passwd, Image foto)
+        {
+            ConexionBBDD.Instanciar().AbrirConexion();
+            string pas = ConexionBBDD.EncriptarContraseña(passwd);
+            string consulta = String.Format(
+                "UPDATE usuario SET descripcion='{0}', Contraseña = '{1}',Foto = @foto WHERE ID_Usuario={2}",desc, pas, id
+            );
+
+            bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, foto);
+            ConexionBBDD.Instanciar().CerrarConexion();
+
         }
     }
 }

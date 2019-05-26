@@ -213,4 +213,16 @@
   <data name="btnBorrar" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="btnModificar" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="perfilToolStripMenuItem" xml:space="preserve">
+    <value>profile</value>
+  </data>
+  <data name="recetasToolStripMenuItem" xml:space="preserve">
+    <value>Recipes</value>
+  </data>
 </root>

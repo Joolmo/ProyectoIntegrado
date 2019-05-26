@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioInterfaz));
             this.btSeguir = new System.Windows.Forms.Button();
             this.lblNomUsu = new System.Windows.Forms.Label();
-            this.lblDescrip = new System.Windows.Forms.Label();
             this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.lblRanking = new System.Windows.Forms.Label();
             this.lblRecetas = new System.Windows.Forms.Label();
@@ -57,8 +56,10 @@
             this.ptbIcon = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.lblNumrec = new System.Windows.Forms.Label();
             this.lblnseg = new System.Windows.Forms.Label();
+            this.lblDescrip = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsu)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -98,18 +99,6 @@
             this.lblNomUsu.Size = new System.Drawing.Size(211, 31);
             this.lblNomUsu.TabIndex = 0;
             this.lblNomUsu.Text = "Nombre Usuario";
-            // 
-            // lblDescrip
-            // 
-            this.lblDescrip.AutoSize = true;
-            this.lblDescrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescrip.ForeColor = System.Drawing.Color.White;
-            this.lblDescrip.Location = new System.Drawing.Point(160, 58);
-            this.lblDescrip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDescrip.Name = "lblDescrip";
-            this.lblDescrip.Size = new System.Drawing.Size(157, 31);
-            this.lblDescrip.TabIndex = 1;
-            this.lblDescrip.Text = "Descripción";
             // 
             // lblNumSeguidores
             // 
@@ -442,10 +431,11 @@
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Controls.Add(this.lblDescrip);
+            this.panel5.Controls.Add(this.btnModificar);
             this.panel5.Controls.Add(this.lblNumrec);
             this.panel5.Controls.Add(this.lblnseg);
             this.panel5.Controls.Add(this.lblRecetas);
-            this.panel5.Controls.Add(this.lblDescrip);
             this.panel5.Controls.Add(this.btSeguir);
             this.panel5.Controls.Add(this.lblNumSeguidores);
             this.panel5.Controls.Add(this.ptbUsu);
@@ -456,6 +446,20 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1571, 122);
             this.panel5.TabIndex = 43;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.Location = new System.Drawing.Point(1391, 60);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(148, 41);
+            this.btnModificar.TabIndex = 15;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Visible = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // lblNumrec
             // 
@@ -480,6 +484,18 @@
             this.lblnseg.Size = new System.Drawing.Size(29, 31);
             this.lblnseg.TabIndex = 13;
             this.lblnseg.Text = "0";
+            // 
+            // lblDescrip
+            // 
+            this.lblDescrip.AutoSize = true;
+            this.lblDescrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescrip.ForeColor = System.Drawing.Color.White;
+            this.lblDescrip.Location = new System.Drawing.Point(160, 65);
+            this.lblDescrip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescrip.Name = "lblDescrip";
+            this.lblDescrip.Size = new System.Drawing.Size(157, 31);
+            this.lblDescrip.TabIndex = 16;
+            this.lblDescrip.Text = "Descripcion";
             // 
             // UsuarioInterfaz
             // 
@@ -516,7 +532,6 @@
 		private System.Windows.Forms.PictureBox ptbUsu;
 		private System.Windows.Forms.Button btSeguir;
 		private System.Windows.Forms.Label lblNomUsu;
-		private System.Windows.Forms.Label lblDescrip;
 		private System.Windows.Forms.Label lblNumSeguidores;
 		private System.Windows.Forms.Label lblRanking;
 		private System.Windows.Forms.Label lblRecetas;
@@ -543,5 +558,7 @@
         private ControlesPersonalizados.AccesoURRh accesoURRh2;
         private ControlesPersonalizados.AccesoURRh accesoURRh4;
         private ControlesPersonalizados.AccesoURRh accesoURRh6;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Label lblDescrip;
     }
 }
