@@ -162,7 +162,7 @@ namespace primeraprueba
         {
                
             lblNumSeguidores.Text = StringRecursos.numSeguidoresUI;
-            btSeguir.Text = StringRecursos.btnSeguirUI;
+            btSeguir.Text = StringRecursos.btSeguir;
             lblRecetas.Text = StringRecursos.numRecetasUI;
             btnModificar.Text = StringRecursos.btnModificar;
         }

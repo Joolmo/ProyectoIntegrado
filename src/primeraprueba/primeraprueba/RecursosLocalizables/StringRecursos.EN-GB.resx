@@ -186,7 +186,7 @@
   <data name="pasosRec" xml:space="preserve">
     <value>Method</value>
   </data>
-  <data name="btnSeguirUI" xml:space="preserve">
+  <data name="btSeguir" xml:space="preserve">
     <value>Follow</value>
   </data>
   <data name="challengeUI" xml:space="preserve">

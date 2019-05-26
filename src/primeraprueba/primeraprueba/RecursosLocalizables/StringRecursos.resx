@@ -186,7 +186,7 @@
   <data name="pasosRec" xml:space="preserve">
     <value>Pasos a seguir</value>
   </data>
-  <data name="btnSeguirUI" xml:space="preserve">
+  <data name="btSeguir" xml:space="preserve">
     <value>Seguir</value>
   </data>
   <data name="challengeUI" xml:space="preserve">

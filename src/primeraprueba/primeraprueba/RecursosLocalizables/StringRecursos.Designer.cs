@@ -162,9 +162,9 @@ namespace primeraprueba.RecursosLocalizables {
         /// <summary>
         ///   Busca una cadena traducida similar a Seguir.
         /// </summary>
-        internal static string btnSeguirUI {
+        internal static string btSeguir {
             get {
-                return ResourceManager.GetString("btnSeguirUI", resourceCulture);
+                return ResourceManager.GetString("btSeguir", resourceCulture);
             }
         }
         

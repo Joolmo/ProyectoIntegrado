@@ -31,6 +31,7 @@ namespace primeraprueba
             parent = par;
             WindowState = FormWindowState.Maximized;
             ptbImagen.Image = Usuario.UsuarioActual.Foto;
+            txtNombre.Text = Usuario.UsuarioActual.Descripcion;
             lblDesc.Visible = true;
             btRegistrar.Visible = false;
             btnModificar.Visible = true;
