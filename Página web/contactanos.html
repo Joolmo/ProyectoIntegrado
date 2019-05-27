@@ -2,11 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cuisine Aapp</title>
+    <title>Cuisine App</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+        alert("Gracias por contactar con nosotros. Esperemos que sigas disfrutando de la app.");
+        }   
+    </script>
 </head>
 <body>
    
@@ -19,6 +24,7 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="funcionalidades.html">Funcionalidades</a></li>
                     <li><a href="caracteristicas.html">Características</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contactanos.html">Contáctanos</a></li>
                     <li><a href="mailto:proyecto.cuisineapp@gmail.com" class="fa fa-google"></a></li>
                     <li><a href="https://www.instagram.com/proyecto.cuisineapp/" class="fa fa-instagram"></a></li>
@@ -31,11 +37,29 @@
         </tr>
         
         <tr>
-            <td><h1>TÍTULO</h1></td>
+            <td><h1>CONTÁCTANOS</h1></td>
         </tr>
         
         <tr>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+            <td>¿Te gusta nuestra aplicación?¿Quieres sugerirnos alguna forma de mejorarla? A continuación hay un formulario donde puedes comunicarte con nosotros.<br><br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+            <form >
+                    
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre...">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido...">
+
+            <label for="sugerencia">Sugerencia</label>
+            <textarea id="sugerencia" name="sugerencia" placeholder="Escribe tu sugerencia..." style="height:200px"></textarea>
+
+            <button onclick="myFunction()">Enviar</button>    
+            </form></td>
         </tr>
 
     </table>
