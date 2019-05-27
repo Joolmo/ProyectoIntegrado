@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
 
 
 ul {
@@ -45,6 +45,12 @@ body {
     width: 200px;
 }
 
+/* Formato de imagénes acerca de nosotros*/
+#imgPortfolio{
+    height: 350px;
+    border-radius: 800px;
+}
+
 table {
     width: 85%;
     margin-left: 100px;
@@ -81,5 +87,72 @@ hr{
     display: block;
     border-style: solid;
     color: white;
+}
+
+div{
+    background-color: white;
+    margin:0 auto;
+    overflow:hidden;
+    width: 100%;
+    float: left;
+}
+
+#divImgL{
+    float: left;
+    height: 350px;
+    text-align: left;
+    width: 50%;
+}
+
+#divTextoL{
+    float: left;
+    height: 350px;
+    text-align: left;
+    width: 50%;
+    font-size: 24px;
+}
+
+#divImgR{
+    float: left;
+    height: 350px;
+    text-align: right;
+    width: 50%;
+}
+
+#divTextoR{
+    float: left;
+    height: 350px;
+    text-align: right;
+    width: 50%;
+    font-size: 24px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+button {
+    background-color: white;
+    border-radius: 6px;
+    color: black;
+    border: 0px solid lightblue; 
+    height: 30px;
+}
+
+button:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+#appfotos{
+    width: 800px;
 }
 
