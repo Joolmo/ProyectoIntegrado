@@ -133,12 +133,23 @@ namespace primeraprueba
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            int i = 0;
+            if (txtContra.Text == "") i = 0;
+            else i = 1;
             errorProvider1.Clear();
-            if (Validar(2))
+            if(txtContra.Text == txtConfirContra.Text)
             {
-                Usuario.ModificarUsuario(Usuario.UsuarioActual.ID_Usuario, txtNombre.Text, txtContra.Text, ptbImagen.Image);
+                Usuario.ModificarUsuario(i, Usuario.UsuarioActual.ID_Usuario, txtNombre.Text, txtContra.Text, ptbImagen.Image);
+                Usuario.ActualizarUsuario();
+                parent.GoUsuario(Usuario.UsuarioActual);
             }
-            parent.GoUsuario(Usuario.UsuarioActual);
+            else
+            {
+                errorProvider1.SetError(txtConfirContra, "PON LA MISMA CONTRASEÑA");
+            }
+                
+            
+            
             
         }
 

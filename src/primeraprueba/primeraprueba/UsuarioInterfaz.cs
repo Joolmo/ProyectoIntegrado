@@ -93,9 +93,9 @@ namespace primeraprueba
                     usados.Add(z);
 
                     ((AccesoURRh)con).Foto = rec[z].Foto;
-                    ((AccesoURRh)con).InfoTop = rec[z].IdReceta.ToString();
-                    ((AccesoURRh)con).InfoMid = rec[z].Nombre;
-                    ((AccesoURRh)con).InfoBot = u.Nombre;
+                    ((AccesoURRh)con).InfoTop = rec[z].Nombre;
+                    ((AccesoURRh)con).InfoMid = u.Nombre;
+                    ((AccesoURRh)con).InfoBot = "";
                     ((AccesoURRh)con).ID = rec[z].IdReceta;
                     ((AccesoURRh)con).Tipo = "Receta";
                     ((AccesoURRh)con).CualquierClick += (object sender, EventArgs e) =>
@@ -127,9 +127,9 @@ namespace primeraprueba
 
                     usados.Add(z);
                     ((AccesoURRh)con).Foto = list[z].Foto;
-                    ((AccesoURRh)con).InfoTop = list[z].ID_Usuario.ToString();
-                    ((AccesoURRh)con).InfoMid = list[z].Nombre;
-                    ((AccesoURRh)con).InfoBot = list[z].NumeroRecetas.ToString();
+                    ((AccesoURRh)con).InfoTop = list[z].Nombre;
+                    ((AccesoURRh)con).InfoMid = (list[z].NumeroRecetas + " Recetas").ToString();
+                    ((AccesoURRh)con).InfoBot = (list[z].NumeroSeguidores + " Seguidores").ToString();
                     ((AccesoURRh)con).ID = list[z].ID_Usuario;
                     ((AccesoURRh)con).Tipo = "Usuario";
                     ((AccesoURRh)con).CualquierClick += (object sender, EventArgs e) =>

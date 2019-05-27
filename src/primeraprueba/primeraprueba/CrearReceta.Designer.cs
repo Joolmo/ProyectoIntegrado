@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearReceta));
             this.picFotoUsuario = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNombreReceta = new System.Windows.Forms.Label();
@@ -63,7 +64,7 @@
             // picFotoUsuario
             // 
             this.picFotoUsuario.Location = new System.Drawing.Point(21, 4);
-            this.picFotoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picFotoUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.picFotoUsuario.Name = "picFotoUsuario";
             this.picFotoUsuario.Size = new System.Drawing.Size(145, 111);
             this.picFotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +92,7 @@
             this.panel1.Controls.Add(this.picFoto);
             this.panel1.Controls.Add(this.picFotoUsuario);
             this.panel1.Location = new System.Drawing.Point(126, 79);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1399, 550);
             this.panel1.TabIndex = 35;
@@ -110,7 +111,7 @@
             // txtNombreReceta
             // 
             this.txtNombreReceta.Location = new System.Drawing.Point(181, 90);
-            this.txtNombreReceta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreReceta.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreReceta.Name = "txtNombreReceta";
             this.txtNombreReceta.Size = new System.Drawing.Size(132, 22);
             this.txtNombreReceta.TabIndex = 50;
@@ -119,7 +120,7 @@
             // btnEliminarTag
             // 
             this.btnEliminarTag.Location = new System.Drawing.Point(419, 489);
-            this.btnEliminarTag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarTag.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarTag.Name = "btnEliminarTag";
             this.btnEliminarTag.Size = new System.Drawing.Size(100, 28);
             this.btnEliminarTag.TabIndex = 49;
@@ -130,7 +131,7 @@
             // btnAnyadirTag
             // 
             this.btnAnyadirTag.Location = new System.Drawing.Point(304, 489);
-            this.btnAnyadirTag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnyadirTag.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnyadirTag.Name = "btnAnyadirTag";
             this.btnAnyadirTag.Size = new System.Drawing.Size(100, 28);
             this.btnAnyadirTag.TabIndex = 48;
@@ -141,7 +142,7 @@
             // txtTag
             // 
             this.txtTag.Location = new System.Drawing.Point(21, 492);
-            this.txtTag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTag.Margin = new System.Windows.Forms.Padding(4);
             this.txtTag.Name = "txtTag";
             this.txtTag.Size = new System.Drawing.Size(273, 22);
             this.txtTag.TabIndex = 47;
@@ -158,7 +159,7 @@
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(940, 494);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(188, 42);
             this.btCancelar.TabIndex = 43;
@@ -168,7 +169,7 @@
             // btEnviar
             // 
             this.btEnviar.Location = new System.Drawing.Point(1136, 492);
-            this.btEnviar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btEnviar.Margin = new System.Windows.Forms.Padding(4);
             this.btEnviar.Name = "btEnviar";
             this.btEnviar.Size = new System.Drawing.Size(188, 43);
             this.btEnviar.TabIndex = 42;
@@ -179,7 +180,7 @@
             // txtIngredientes
             // 
             this.txtIngredientes.Location = new System.Drawing.Point(857, 310);
-            this.txtIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIngredientes.Margin = new System.Windows.Forms.Padding(4);
             this.txtIngredientes.Multiline = true;
             this.txtIngredientes.Name = "txtIngredientes";
             this.txtIngredientes.Size = new System.Drawing.Size(504, 149);
@@ -199,7 +200,7 @@
             // txtPasos
             // 
             this.txtPasos.Location = new System.Drawing.Point(857, 69);
-            this.txtPasos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPasos.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasos.Multiline = true;
             this.txtPasos.Name = "txtPasos";
             this.txtPasos.Size = new System.Drawing.Size(504, 157);
@@ -242,8 +243,9 @@
             // 
             // picFoto
             // 
+            this.picFoto.Image = ((System.Drawing.Image)(resources.GetObject("picFoto.Image")));
             this.picFoto.Location = new System.Drawing.Point(21, 158);
-            this.picFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picFoto.Margin = new System.Windows.Forms.Padding(4);
             this.picFoto.Name = "picFoto";
             this.picFoto.Size = new System.Drawing.Size(411, 279);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -260,7 +262,7 @@
             this.tableLayoutPanel2.Controls.Add(this.ptbIcon, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -273,7 +275,7 @@
             this.ptbApp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbApp.Image = global::primeraprueba.Properties.Resources.letra;
             this.ptbApp.Location = new System.Drawing.Point(270, 4);
-            this.ptbApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbApp.Margin = new System.Windows.Forms.Padding(4);
             this.ptbApp.Name = "ptbApp";
             this.ptbApp.Size = new System.Drawing.Size(1377, 111);
             this.ptbApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -286,7 +288,7 @@
             this.ptbIcon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ptbIcon.Image = global::primeraprueba.Properties.Resources.logo1;
             this.ptbIcon.Location = new System.Drawing.Point(65, 4);
-            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(4);
             this.ptbIcon.Name = "ptbIcon";
             this.ptbIcon.Size = new System.Drawing.Size(135, 107);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -298,7 +300,7 @@
             this.pnlAmarillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnlAmarillo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAmarillo.Location = new System.Drawing.Point(4, 4);
-            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAmarillo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAmarillo.Name = "pnlAmarillo";
             this.pnlAmarillo.Size = new System.Drawing.Size(1643, 6);
             this.pnlAmarillo.TabIndex = 33;
@@ -311,7 +313,7 @@
             this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 119);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -328,7 +330,7 @@
             this.ClientSize = new System.Drawing.Size(1651, 814);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearReceta";
             this.Text = "CrearReceta";
             this.Load += new System.EventHandler(this.CrearReceta_Load);

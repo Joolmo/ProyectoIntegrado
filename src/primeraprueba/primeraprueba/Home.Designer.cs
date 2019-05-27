@@ -747,7 +747,7 @@
             this.msDesplegable.Location = new System.Drawing.Point(109, 78);
             this.msDesplegable.Name = "msDesplegable";
             this.msDesplegable.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.msDesplegable.Size = new System.Drawing.Size(234, 28);
+            this.msDesplegable.Size = new System.Drawing.Size(84, 28);
             this.msDesplegable.TabIndex = 27;
             this.msDesplegable.Text = "mspMenu";
             this.msDesplegable.Visible = false;
@@ -767,21 +767,21 @@
             // perfilToolStripMenuItem
             // 
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.perfilToolStripMenuItem.Text = "Perfil";
             this.perfilToolStripMenuItem.Click += new System.EventHandler(this.perfilToolStripMenuItem_Click);
             // 
             // recetasToolStripMenuItem
             // 
             this.recetasToolStripMenuItem.Name = "recetasToolStripMenuItem";
-            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.recetasToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.recetasToolStripMenuItem.Text = "Recetas";
             this.recetasToolStripMenuItem.Click += new System.EventHandler(this.RecetasToolStripMenuItem_Click);
             // 
             // logOffToolStripMenuItem
             // 
             this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
-            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.logOffToolStripMenuItem.Text = "Log off";
             this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
             // 

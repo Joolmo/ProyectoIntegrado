@@ -27,6 +27,7 @@ namespace primeraprueba
         public int NumeroSeguidores { get { return numSeguidores; } }
         public int NumeroRecetas { get { return numRecetas; } }
         public Image Foto { get { return foto; } }
+        public static void ActualizarUsuario() { usuarioActual = GetUsuario(usuarioActual.ID_Usuario); }
 
         public Usuario(string nomb, string paswd, string mail, string desc, Image f)
         {
@@ -218,13 +219,25 @@ namespace primeraprueba
             }
         }
 
-        public static void ModificarUsuario(int id, string desc, string passwd, Image foto)
+        public static void ModificarUsuario(int i ,int id, string desc, string passwd, Image foto)
         {
             ConexionBBDD.Instanciar().AbrirConexion();
-            string pas = ConexionBBDD.EncriptarContraseña(passwd);
-            string consulta = String.Format(
-                "UPDATE usuario SET descripcion='{0}', Contraseña = '{1}',Foto = @foto WHERE ID_Usuario={2}",desc, pas, id
+            string consulta;
+            if(i == 1)
+            {
+                string pas = ConexionBBDD.EncriptarContraseña(passwd);
+                consulta = String.Format(
+                "UPDATE usuario SET descripcion='{0}', Contraseña = '{1}',Foto = @foto WHERE ID_Usuario={2}", desc, pas, id
             );
+            }
+            else
+            {
+                
+                consulta = String.Format(
+                "UPDATE usuario SET descripcion='{0}', Foto = @foto WHERE ID_Usuario={1}", desc, id
+            );
+            }
+            
 
             bool funciona = ConexionBBDD.Instanciar().NonQuery(consulta, foto);
             ConexionBBDD.Instanciar().CerrarConexion();
